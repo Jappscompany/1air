@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>1air — 간결한 MP4 플레이어</title>
+  <meta name="description" content="1air는 PiP, 부드러운 컨트롤, 백그라운드 오디오를 지원하는 간결하고 깔끔한 MP4 플레이어입니다. 개인, 광고 없음, 유료." />
+  <meta property="og:title" content="1air — MP4s the way they should play" />
+  <meta property="og:description" content="PiP 지원, 부드러운 컨트롤, 백그라운드 오디오. Private, ad‑free, and paid." />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --fg: #e7e9ee;
+      --muted: #a6adbb;
+      --card: #12131a;
+      --stroke: #262938;
+      --brand: #7aa2ff;
+      --brand-ink: #0b1020;
+      --accent: #9ae6b4;
+      --focus: 2px solid #7aa2ff88;
+      --shadow: 0 8px 30px rgb(0 0 0 / 25%);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fbfbfd;
+        --fg: #0b0c10;
+        --muted: #5b6474;
+        --card: #ffffff;
+        --stroke: #e6e8ef;
+        --brand: #2b59ff;
+        --brand-ink: #ffffff;
+        --accent: #0cab6b;
+        --shadow: 0 8px 30px rgb(40 60 120 / 10%);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Apple SD Gothic Neo, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 80% -200px, color-mix(in oklab, var(--brand) 15%, transparent), transparent), var(--bg);
+      color: var(--fg);
+      letter-spacing: -0.2px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 20px; }
+
+    /* Header */
+    header { position: sticky; top: 0; backdrop-filter: saturate(150%) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--stroke); z-index: 5; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+    .badge { font-size: 12px; padding: 3px 8px; border: 1px solid var(--stroke); border-radius: 999px; color: var(--muted); }
+    .links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+    .btn { display: inline-flex; gap: 8px; align-items: center; justify-content: center; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--stroke); background: linear-gradient(180deg, color-mix(in oklab, var(--card) 85%, transparent), var(--card)); box-shadow: var(--shadow); transition: transform .08s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:focus-visible { outline: var(--focus); outline-offset: 2px; }
+    .btn.primary { background: linear-gradient(180deg, color-mix(in oklab, var(--brand) 25%, var(--card)), var(--brand)); color: var(--brand-ink); border-color: color-mix(in oklab, var(--brand) 50%, var(--stroke)); font-weight: 700; }
+    .btn.ghost { background: transparent; }
+
+    /* Hero */
+    .hero { padding: 72px 0 28px; display: grid; gap: 18px; text-align: center; }
+    .eyebrow { color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
+    h1 { margin: 0; font-size: clamp(28px, 5vw, 44px); line-height: 1.15; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); font-size: 18px; }
+    .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
+
+    /* Sections */
+    section { padding: 36px 0; border-top: 1px dashed var(--stroke); }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .card { grid-column: span 12; padding: 18px; border: 1px solid var(--stroke); border-radius: 16px; background: var(--card); }
+    @media (min-width: 760px) {
+      .card { grid-column: span 6; }
+    }
+    h2 { margin: 0 0 6px; font-size: 20px; }
+    p { margin: 0; color: var(--muted); }
+
+    .steps { display: grid; gap: 10px; }
+    .step { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: center; border: 1px dashed var(--stroke); border-radius: 12px; padding: 12px; }
+    .step .no { width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; background: color-mix(in oklab, var(--accent) 15%, var(--card)); border: 1px solid var(--stroke); font-weight: 700; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--stroke); padding: 22px 0 48px; color: var(--muted); }
+    .foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+    .foot a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav" role="navigation" aria-label="주요">
+      <div class="brand" aria-label="1air">
+        <span style="font-weight:800; font-size: 18px">1air</span>
+        <span class="badge">MP4 Player</span>
+      </div>
+      <nav class="links">
+        <a class="btn ghost" href="#features">기능</a>
+        <a class="btn ghost" href="#how">시작하기</a>
+        <a class="btn" href="privacy.html" aria-label="개인정보보호">개인정보보호</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow">Minimal • Private • Fast</div>
+      <h1 id="hero-title">MP4s the way they should play.</h1>
+      <p class="sub">PiP 지원, 부드러운 컨트롤, 백그라운드 오디오. Private, ad‑free, and paid.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download" aria-label="다운로드">다운로드 안내</a>
+        <a class="btn" href="privacy.html" aria-label="개인정보보호로 이동">개인정보보호</a>
+      </div>
+    </section>
+
+    <section id="features" aria-labelledby="features-title">
+      <h2 id="features-title">핵심 기능</h2>
+      <div class="grid" style="margin-top:12px">
+        <article class="card" aria-label="PiP 지원">
+          <h3 style="margin:0 0 4px; font-size:18px">Picture‑in‑Picture</h3>
+          <p>영상 위로 다른 일을 해도 끊김 없이. iOS·iPadOS·macOS의 PiP를 자연스럽게 지원합니다.</p>
+        </article>
+        <article class="card" aria-label="부드러운 컨트롤">
+          <h3 style="margin:0 0 4px; font-size:18px">부드러운 컨트롤</h3>
+          <p>가볍고 즉각적인 재생/스크럽/제스처. 방해 요소는 덜고 재생 경험은 살렸습니다.</p>
+        </article>
+        <article class="card" aria-label="백그라운드 오디오">
+          <h3 style="margin:0 0 4px; font-size:18px">백그라운드 오디오</h3>
+          <p>화면을 잠궈도, 앱을 전환해도 소리는 계속. 팟캐스트·강의 시청에 탁월합니다.</p>
+        </article>
+        <article class="card" aria-label="개인/광고 없음">
+          <h3 style="margin:0 0 4px; font-size:18px">Private · Ad‑free · Paid</h3>
+          <p>추적/광고 없이 유료로만 제공합니다. 내 영상은 내 기기 안에서.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-title">
+      <h2 id="how-title">시작하기</h2>
+      <div class="steps" style="margin-top:12px">
+        <div class="step">
+          <div class="no">1</div>
+          <div>
+            <strong>다운로드</strong><br />
+            출시 알림을 신청하고 App Store에서 1air를 설치하세요.
+          </div>
+        </div>
+        <div class="step">
+          <div class="no">2</div>
+          <div>
+            <strong>파일 열기</strong><br />
+            "파일" 앱에서 MP4를 공유하기로 열거나, 1air 안에서 탐색해 재생하세요.
+          </div>
+        </div>
+        <div class="step">
+          <div class="no">3</div>
+          <div>
+            <strong>PiP + 백그라운드</strong><br />
+            홈으로 나가거나 화면을 잠궈도 재생은 계속됩니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" aria-labelledby="download-title">
+      <h2 id="download-title">다운로드</h2>
+      <p style="margin-top:8px">App Store 출시 준비 중입니다. TestFlight 초대 링크와 출시 소식을 곧 안내드릴게요.</p>
+      <div class="cta" style="justify-content:flex-start; margin-top:12px">
+        <a class="btn primary" href="#" role="button" aria-disabled="true">TestFlight (Soon)</a>
+        <a class="btn" href="#" role="button" aria-disabled="true">App Store (Soon)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="y"></span> 1air. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">개인정보보호</a>
+        <span aria-hidden="true"> · </span>
+        <a href="#top">맨 위로</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small niceties
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
