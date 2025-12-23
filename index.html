@@ -3,187 +3,263 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>1air — A crisp MP4 player</title>
-  <meta name="description" content="1air is a clean, private MP4 player with Picture‑in‑Picture, smooth controls, and background audio. No ads." />
-  <meta property="og:title" content="1air — MP4s the way they should play" />
-  <meta property="og:description" content="PiP support, smooth controls, background audio. Private, ad‑free, and paid." />
+  <title>1Air — A crisp MP4 player</title>
+  <meta name="description" content="Clean, private MP4 player with Picture‑in‑Picture and background audio." />
+  
   <style>
     :root {
-      --bg: #0b0c0f;
-      --fg: #e7e9ee;
-      --muted: #a6adbb;
-      --card: #12131a;
-      --stroke: #262938;
-      --brand: #7aa2ff;
-      --brand-ink: #0b1020;
-      --accent: #9ae6b4;
-      --focus: 2px solid #7aa2ff88;
-      --shadow: 0 8px 30px rgb(0 0 0 / 25%);
+      /* Bright & Airy Theme */
+      --bg: #ffffff;
+      --bg-subtle: #f5f7fa;
+      --fg: #1d1d1f;
+      --muted: #86868b;
+      --card: #ffffff;
+      --stroke: #e5e7eb;
+      --brand: #007AFF;
+      --brand-hover: #0056b3;
+      --brand-ink: #ffffff;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 10px 25px rgba(0, 122, 255, 0.15);
+      --radius: 16px;
     }
-    @media (prefers-color-scheme: light) {
+
+    @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #fbfbfd;
-        --fg: #0b0c10;
-        --muted: #5b6474;
-        --card: #ffffff;
-        --stroke: #e6e8ef;
-        --brand: #2b59ff;
-        --brand-ink: #ffffff;
-        --accent: #0cab6b;
-        --shadow: 0 8px 30px rgb(40 60 120 / 10%);
+        --bg: #000000;
+        --bg-subtle: #1c1c1e;
+        --fg: #f5f5f7;
+        --muted: #a1a1a6;
+        --card: #1c1c1e;
+        --stroke: #38383a;
+        --shadow: 0 4px 20px rgba(0,0,0,0.3);
       }
     }
+
     * { box-sizing: border-box; }
-    html, body { height: 100%; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 80% -200px, color-mix(in oklab, var(--brand) 15%, transparent), transparent), var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(circle at 50% -20%, rgba(0, 122, 255, 0.12), transparent 70%);
       color: var(--fg);
-      letter-spacing: -0.2px;
+      line-height: 1.6;
+      letter-spacing: -0.02em;
     }
-    a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1040px; margin: 0 auto; padding: 20px; }
+
+    a { color: inherit; text-decoration: none; transition: all 0.2s; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+    /* Lang Switcher */
+    .lang-switch { position: absolute; top: 20px; right: 20px; font-size: 13px; z-index: 200; }
+    .lang-switch a { cursor: pointer; color: var(--muted); margin-left: 8px; }
+    .lang-switch a.active { color: var(--brand); font-weight: bold; }
 
     /* Header */
-    header { position: sticky; top: 0; backdrop-filter: saturate(150%) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--stroke); z-index: 5; }
-    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
-    .badge { font-size: 12px; padding: 3px 8px; border: 1px solid var(--stroke); border-radius: 999px; color: var(--muted); }
-    .links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    @media (prefers-color-scheme: dark) {
+      header { background: rgba(28, 28, 30, 0.8); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    }
 
-    .btn { display: inline-flex; gap: 8px; align-items: center; justify-content: center; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--stroke); background: linear-gradient(180deg, color-mix(in oklab, var(--card) 85%, transparent), var(--card)); box-shadow: var(--shadow); transition: transform .08s ease, background .2s ease; }
-    .btn:hover { transform: translateY(-1px); }
-    .btn:focus-visible { outline: var(--focus); outline-offset: 2px; }
-    .btn.primary { background: linear-gradient(180deg, color-mix(in oklab, var(--brand) 25%, var(--card)), var(--brand)); color: var(--brand-ink); border-color: color-mix(in oklab, var(--brand) 50%, var(--stroke)); font-weight: 700; }
-    .btn.ghost { background: transparent; }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; }
+    .brand span { color: var(--brand); }
+    
+    .links { display: flex; gap: 24px; align-items: center; font-size: 15px; font-weight: 500; }
+    .links a:not(.btn):hover { color: var(--brand); }
+    .mobile-hide { display: none; }
+    @media(min-width: 600px) { .mobile-hide { display: inline-block; } }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 22px; border-radius: 99px;
+      font-weight: 600; font-size: 15px;
+    }
+    .btn.primary {
+      background: var(--brand); color: var(--brand-ink);
+      box-shadow: 0 4px 10px rgba(0, 122, 255, 0.2);
+    }
+    .btn.primary:hover { background: var(--brand-hover); transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0, 122, 255, 0.3); }
+    
+    .btn.secondary { 
+        background: var(--bg-subtle); color: var(--fg); border: 1px solid var(--stroke);
+        padding: 8px 18px; font-size: 14px; /* 조금 작게 */
+    }
+    .btn.secondary:hover { background: #e5e5ea; transform: translateY(-1px); }
 
     /* Hero */
-    .hero { padding: 72px 0 28px; display: grid; gap: 18px; text-align: center; }
-    .eyebrow { color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
-    h1 { margin: 0; font-size: clamp(28px, 5vw, 44px); line-height: 1.15; letter-spacing: -0.02em; }
-    .sub { color: var(--muted); font-size: 18px; }
-    .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
-
-    /* Sections */
-    section { padding: 36px 0; border-top: 1px dashed var(--stroke); }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .card { grid-column: span 12; padding: 18px; border: 1px solid var(--stroke); border-radius: 16px; background: var(--card); }
-    @media (min-width: 760px) {
-      .card { grid-column: span 6; }
+    .hero { text-align: center; padding: 110px 0 70px; animation: fadeIn 0.8s ease-out; }
+    .badge {
+      display: inline-block; padding: 6px 14px;
+      background: rgba(0, 122, 255, 0.1); color: var(--brand);
+      border-radius: 99px; font-size: 13px; font-weight: 700;
+      margin-bottom: 24px;
     }
-    h2 { margin: 0 0 6px; font-size: 20px; }
-    p { margin: 0; color: var(--muted); }
+    h1 {
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 1.05; margin: 0 0 24px;
+      background: linear-gradient(135deg, var(--fg) 30%, #999);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.03em;
+    }
+    .sub {
+      font-size: clamp(18px, 4vw, 22px); color: var(--muted);
+      max-width: 640px; margin: 0 auto 40px;
+    }
 
-    .steps { display: grid; gap: 10px; }
-    .step { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: center; border: 1px dashed var(--stroke); border-radius: 12px; padding: 12px; }
-    .step .no { width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; background: color-mix(in oklab, var(--accent) 15%, var(--card)); border: 1px solid var(--stroke); font-weight: 700; }
+    /* Features */
+    section { padding: 90px 0; }
+    h2 { font-size: 36px; text-align: center; margin-bottom: 60px; letter-spacing: -0.02em; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+    
+    .card {
+      background: var(--card); border: 1px solid var(--stroke);
+      border-radius: var(--radius); padding: 36px 30px;
+      transition: all 0.3s ease;
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column; /* 버튼 위치 정렬을 위해 */
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--brand); }
+    .icon { font-size: 42px; margin-bottom: 24px; display: block; }
+    .card h3 { margin: 0 0 12px; font-size: 20px; font-weight: 700; }
+    .card p { color: var(--muted); font-size: 16px; margin: 0 0 24px 0; line-height: 1.6; flex-grow: 1; }
+    
+    /* 카드 내부 버튼 정렬 */
+    .card-footer { margin-top: auto; }
 
     /* Footer */
-    footer { border-top: 1px solid var(--stroke); padding: 22px 0 48px; color: var(--muted); }
-    .foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
-    .foot a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+    footer { border-top: 1px solid var(--stroke); padding: 50px 0; text-align: center; color: var(--muted); font-size: 14px; }
+    .foot-links { margin-bottom: 24px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .foot-links a:hover { color: var(--brand); text-decoration: underline; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
+
+  <div class="lang-switch wrap" style="position:relative; text-align:right;">
+    <a onclick="setLandingLanguage('en')" id="lang-en" class="active">English</a>
+    <span style="color:#ddd">|</span>
+    <a onclick="setLandingLanguage('ko')" id="lang-ko">한국어</a>
+  </div>
+
   <header>
-    <div class="wrap nav" role="navigation" aria-label="Primary">
-      <div class="brand" aria-label="1air">
-        <span style="font-weight:800; font-size: 18px">1air</span>
-        <span class="badge">MP4 Player</span>
-      </div>
+    <div class="wrap nav">
+      <a href="#" class="brand">1Air<span>.</span></a>
       <nav class="links">
-        <a class="btn ghost" href="#features">Features</a>
-        <a class="btn ghost" href="#getting-started">Get started</a>
-        <a class="btn" href="policy.html" aria-label="Privacy Policy">Privacy Policy</a>
+        <a href="#features" class="mobile-hide" data-i18n="nav_features"></a>
+        <a href="policy.html" class="mobile-hide" data-i18n="nav_privacy"></a>
+        <a href="#" class="btn primary" data-i18n="nav_download"></a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap" id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="eyebrow">Minimal • Private • Fast</div>
-      <h1 id="hero-title">MP4s the way they should play.</h1>
-      <p class="sub">PiP support, smooth controls, and background audio. Private, ad‑free, and paid.</p>
-      <div class="cta">
-        <a class="btn primary" href="#download" aria-label="Download">Download</a>
-        <a class="btn" href="policy.html" aria-label="Go to Privacy Policy">Privacy Policy</a>
+  <main>
+    <section class="wrap hero">
+      <span class="badge" data-i18n="hero_badge"></span>
+      <h1 data-i18n="hero_title"></h1>
+      <p class="sub" data-i18n="hero_sub"></p>
+      <div>
+        <a href="#" class="btn primary" data-i18n="btn_download"></a>
       </div>
     </section>
 
-    <section id="features" aria-labelledby="features-title">
-      <h2 id="features-title">Highlights</h2>
-      <div class="grid" style="margin-top:12px">
-        <article class="card" aria-label="Picture in Picture">
-          <h3 style="margin:0 0 4px; font-size:18px">Picture‑in‑Picture</h3>
-          <p>Keep watching while you multitask. Native PiP on iOS, iPadOS, and macOS.</p>
+    <section id="features" class="wrap">
+      <h2 data-i18n="feat_title"></h2>
+      <div class="grid">
+        <article class="card">
+          <span class="icon">🖼️</span>
+          <h3 data-i18n="feat_1_title"></h3>
+          <p data-i18n="feat_1_desc"></p>
         </article>
-        <article class="card" aria-label="Smooth controls">
-          <h3 style="margin:0 0 4px; font-size:18px">Smooth controls</h3>
-          <p>Lightweight playback, snappy scrubbing, and distraction‑free gestures.</p>
+
+        <article class="card">
+          <span class="icon">🎧</span>
+          <h3 data-i18n="feat_2_title"></h3>
+          <p data-i18n="feat_2_desc"></p>
         </article>
-        <article class="card" aria-label="Background audio">
-          <h3 style="margin:0 0 4px; font-size:18px">Background audio</h3>
-          <p>Audio continues when the screen locks or you switch apps—perfect for lectures and podcasts.</p>
+
+        <article class="card">
+          <span class="icon">👆</span>
+          <h3 data-i18n="feat_3_title"></h3>
+          <p data-i18n="feat_3_desc"></p>
         </article>
-        <article class="card" aria-label="Private and ad-free">
-          <h3 style="margin:0 0 4px; font-size:18px">Private · Ad‑free · Paid</h3>
-          <p>No tracking, no ads. Your videos stay on your device.</p>
+
+        <article class="card">
+          <span class="icon">🔒</span>
+          <h3 data-i18n="feat_4_title"></h3>
+          <p data-i18n="feat_4_desc"></p>
+        </article>
+
+        <article class="card" style="border-color: var(--brand); background: var(--bg-subtle);">
+            <span class="icon">🦙</span>
+            <h3 data-i18n="feat_5_title"></h3>
+            <p data-i18n="feat_5_desc"></p>
+            <div class="card-footer">
+                <a href="ollamatutorial.html" class="btn secondary" data-i18n="feat_5_btn"></a>
+            </div>
         </article>
       </div>
     </section>
-
-    <section id="getting-started" aria-labelledby="getting-started-title">
-      <h2 id="getting-started-title">Get started</h2>
-      <div class="steps" style="margin-top:12px">
-        <div class="step">
-          <div class="no">1</div>
-          <div>
-            <strong>Install</strong><br />
-            Join the launch list and install 1air from the App Store when available.
-          </div>
-        </div>
-        <div class="step">
-          <div class="no">2</div>
-          <div>
-            <strong>Open files</strong><br />
-            Use the Files app’s Share action to open MP4s in 1air, or browse them in‑app.
-          </div>
-        </div>
-        <div class="step">
-          <div class="no">3</div>
-          <div>
-            <strong>PiP + background</strong><br />
-            Keep playing while you go Home or lock the screen.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="download" aria-labelledby="download-title">
-      <h2 id="download-title">Download</h2>
-      <p style="margin-top:8px">App Store release is in progress. TestFlight and launch updates are coming soon.</p>
-      <div class="cta" style="justify-content:flex-start; margin-top:12px">
-        <a class="btn primary" href="#" role="button" aria-disabled="true">TestFlight (Soon)</a>
-        <a class="btn" href="#" role="button" aria-disabled="true">App Store (Soon)</a>
-      </div>
-    </section> -->
   </main>
 
   <footer>
-    <div class="wrap foot">
-      <div>© <span id="y"></span> 1air. All rights reserved.</div>
-      <div>
-        <a href="policy.html">Privacy Policy</a>
-        <span aria-hidden="true"> · </span>
-        <a href="#top">Back to top</a>
+    <div class="wrap">
+      <div class="foot-links">
+        <a href="policy.html" data-i18n="footer_privacy"></a>
+        <span style="color:#ddd">·</span>
+        <a href="#" data-i18n="footer_contact"></a>
       </div>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer_copy"></span></p>
     </div>
   </footer>
 
+  <script src="landing_lang.js"></script>
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function setLandingLanguage(lang) {
+        if (!LANDING_I18N[lang]) return;
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (LANDING_I18N[lang][key]) {
+                el.innerHTML = LANDING_I18N[lang][key];
+            }
+        });
+
+        // Toggle Switcher UI
+        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+        document.getElementById('lang-ko').classList.toggle('active', lang === 'ko');
+        
+        // Update Document Lang & Title
+        document.documentElement.lang = lang;
+        document.title = LANDING_I18N[lang]['title'];
+        document.querySelector('meta[name="description"]').setAttribute("content", LANDING_I18N[lang]['meta_desc']);
+    }
+
+    // Auto Detect
+    window.onload = function() {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('ko')) {
+            setLandingLanguage('ko');
+        } else {
+            setLandingLanguage('en');
+        }
+    };
   </script>
 </body>
 </html>

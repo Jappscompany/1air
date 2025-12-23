@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Setup Guide</title>
+    <style>
+        /* 스타일은 이전과 동일합니다 */
+        :root { --primary-color: #000; --accent-color: #2563eb; --bg-color: #f8f9fa; --text-color: #333; --code-bg: #1e1e1e; --code-text: #d4d4d4; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: var(--bg-color); color: var(--text-color); }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: relative; }
+        .lang-switch { position: absolute; top: 20px; right: 20px; font-size: 14px; }
+        .lang-switch a { color: #666; text-decoration: none; cursor: pointer; margin-left: 10px; }
+        .lang-switch a.active { color: var(--accent-color); font-weight: bold; }
+        header { text-align: center; margin: 20px 0 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        h1 { margin: 0 0 10px 0; }
+        p.subtitle { color: #666; margin: 0; }
+        .tabs { display: flex; justify-content: center; margin-bottom: 30px; border-bottom: 2px solid #eee; }
+        .tab-btn { padding: 12px 24px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: #888; border-bottom: 2px solid transparent; }
+        .tab-btn:hover { color: var(--accent-color); }
+        .tab-btn.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
+        .content-section { display: none; animation: fadeIn 0.5s; }
+        .content-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: 0; } }
+        .step { margin-bottom: 25px; padding-left: 20px; border-left: 3px solid var(--accent-color); }
+        .step h3 { margin-top: 0; color: var(--primary-color); }
+        .code-block { background: var(--code-bg); color: var(--code-text); padding: 15px; border-radius: 6px; font-family: monospace; position: relative; overflow-x: auto; margin: 10px 0; }
+        .copy-btn { position: absolute; top: 5px; right: 5px; background: rgba(255,255,255,0.2); border: none; color: white; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+        .btn-download { display: inline-block; background: var(--primary-color); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
+        .note { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 10px; border-radius: 6px; font-size: 14px; margin-top: 10px; }
+        footer { text-align: center; margin-top: 50px; font-size: 13px; color: #999; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switch">
+        <a onclick="setLanguage('en')" id="lang-en" class="active">English</a> | 
+        <a onclick="setLanguage('ko')" id="lang-ko">한국어</a>
+    </div>
+
+    <header>
+        <h1 data-i18n="title"></h1>
+        <p class="subtitle" data-i18n="subtitle"></p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('windows')" data-i18n="win_tab">Windows</button>
+        <button class="tab-btn" onclick="openTab('macos')" data-i18n="mac_tab">macOS</button>
+        <button class="tab-btn" onclick="openTab('ubuntu')" data-i18n="linux_tab">Ubuntu</button>
+    </div>
+
+    <div id="windows" class="content-section active">
+        <div class="step">
+            <h3 data-i18n="win_step1_title"></h3>
+            <p data-i18n="win_step1_desc"></p>
+            <a href="https://ollama.com/download/windows" target="_blank" class="btn-download" data-i18n="win_btn"></a>
+        </div>
+        <div class="step">
+            <h3 data-i18n="win_step2_title"></h3>
+            <p data-i18n="win_step2_desc"></p>
+            <div class="note" data-i18n="win_step2_note"></div>
+        </div>
+        <div class="step">
+            <h3 data-i18n="win_step3_title"></h3>
+            <p data-i18n="win_step3_desc"></p>
+            <div class="code-block">
+                ollama --version
+                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="macos" class="content-section">
+        <div class="step">
+            <h3 data-i18n="mac_step1_title"></h3>
+            <p data-i18n="mac_step1_desc"></p>
+            <a href="https://ollama.com/download/mac" target="_blank" class="btn-download" data-i18n="mac_btn"></a>
+        </div>
+        <div class="step">
+            <h3 data-i18n="mac_step2_title"></h3>
+            <p data-i18n="mac_step2_desc"></p>
+        </div>
+        <div class="step">
+            <h3 data-i18n="mac_step3_title"></h3>
+            <p data-i18n="mac_step3_desc"></p>
+            <div class="note" data-i18n="mac_step3_note"></div>
+        </div>
+    </div>
+
+    <div id="ubuntu" class="content-section">
+        <div class="step">
+            <h3 data-i18n="linux_step1_title"></h3>
+            <p data-i18n="linux_step1_desc"></p>
+            <div class="code-block">
+                curl -fsSL https://ollama.com/install.sh | sh
+                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+            </div>
+            <div class="note" data-i18n="linux_step1_note"></div>
+        </div>
+        <div class="step">
+            <h3 data-i18n="linux_step2_title"></h3>
+            <p data-i18n="linux_step2_desc"></p>
+            <div class="code-block">
+                systemctl status ollama
+                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+    <div class="step">
+        <h3 data-i18n="final_step_title"></h3>
+        <p data-i18n="final_step_desc"></p>
+        <div class="code-block">
+            ollama pull llama3.2
+            <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+        </div>
+        <div class="note" data-i18n="final_step_note"></div>
+    </div>
+
+    <footer data-i18n="footer"></footer>
+</div>
+
+<script src="lang.js"></script>
+<script>
+    // 현재 언어 상태
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+        if (!I18N_DATA[lang]) return; // 데이터 없으면 중단
+        currentLang = lang;
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (I18N_DATA[lang][key]) {
+                el.innerHTML = I18N_DATA[lang][key];
+            }
+        });
+
+        // 언어 스위치 UI 업데이트
+        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+        document.getElementById('lang-ko').classList.toggle('active', lang === 'ko');
+        document.documentElement.lang = lang;
+    }
+
+    function detectAndApplyLanguage() {
+        // 브라우저 언어 감지 (ko-KR -> ko)
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('ko')) {
+            setLanguage('ko');
+        } else {
+            setLanguage('en');
+        }
+    }
+
+    function openTab(tabName) {
+        // 탭 UI 전환 로직
+        Array.from(document.getElementsByClassName("content-section")).forEach(el => el.classList.remove("active"));
+        Array.from(document.getElementsByClassName("tab-btn")).forEach(el => el.classList.remove("active"));
+        
+        document.getElementById(tabName).classList.add("active");
+        
+        // 클릭된 버튼을 찾아 active 추가 (이벤트 타겟이 정확하지 않을 경우 대비)
+        const buttons = document.getElementsByClassName("tab-btn");
+        for(let btn of buttons) {
+            if(btn.onclick.toString().includes(tabName)) {
+                btn.classList.add("active");
+            }
+        }
+    }
+
+    function copyText(btn) {
+        var text = btn.parentElement.innerText.replace(btn.innerText, "").trim();
+        navigator.clipboard.writeText(text).then(function() {
+            var originalText = I18N_DATA[currentLang]['copy'];
+            btn.innerText = I18N_DATA[currentLang]['copied'];
+            setTimeout(function() {
+                btn.innerText = originalText;
+            }, 2000);
+        });
+    }
+
+    // 페이지 로드 시 실행
+    window.onload = detectAndApplyLanguage;
+</script>
+
+</body>
+</html>
