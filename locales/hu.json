@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Adatvédelmi szabályzat",
+  "effectiveDateLabel": "Hatályba lépés időpontja:",
+  "effectiveDateValue": "2025. november 5.",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Gyűjtött adatok",
+    "howWeUse": "Hogyan használjuk fel az adatokat",
+    "sharing": "Adatmegosztás és adatfeldolgozók",
+    "security": "Security",
+    "retention": "Adattárolás",
+    "rights": "Jogai",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Rövid áttekintés",
+    "bullets": {
+      "noTracking": "<strong>Nincs nyomkövetés. Nincs hirdetés.</strong> A 1Air nem tartalmaz hirdetéseket vagy harmadik fél nyomkövetőit.",
+      "onDevice": "<strong>Videói a készülékén maradnak.</strong> Az alkalmazás csak az Ön által kiválasztott MP4 fájlokat olvassa be, és azokat a helyi Dokumentumok mappájában tárolhatja; a tartalom a készüléken kerül feldolgozásra.",
+      "icloud": "<strong>Opcionális iCloud Drive.</strong> Ha fájlokat választ az iCloud Drive-ról, azok az Apple feltételei szerint az iCloud fiókjában maradnak.",
+      "diagnostics": "<strong>Minimális diagnosztika.</strong> Csak anonimizált ütközési/diagnosztikai adatokat kapunk, ha beleegyezik a fejlesztőkkel való megosztásba az Apple beállításaiban."
+    }
+  },
+  "who": {
+    "title": "Ki vagyunk mi",
+    "developerLabel": "Developer:",
+    "developerValue": "[Jogi személy neve, pl. J-Apps Co.]",
+    "developerSuffix": "(“mi”, “benyünk”, vagy “a mi”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Gyűjtött adatok",
+    "contentYouChoose": {
+      "title": "1) Az Ön által választott tartalom",
+      "p1": "Amikor a Fájlok kiválasztójával videókat választ, a 1Air csak olvasási hozzáférést kap az Ön által kiválasztott elemekhez. Ha engedélyezi az alkalmazás „Mentés a Dokumentumokba” funkcióját, a kiválasztott fájlok másolata kerül mentésre az alkalmazás sandboxában.",
+      "scope": "<strong>Hatály:</strong> Csak az Ön által kiválasztott fájlok; nem végezünk háttérben szkennelést nem kapcsolódó mappákon.",
+      "processing": "<strong>Feldolgozás:</strong> A lejátszás és a fájlkezelés a készüléken történik.",
+      "sync": "<strong>Szinkronizálás:</strong> Ha az iCloud Drive-ról választ, a tárolást és a szinkronizálást az Apple iCloud kezeli az Apple szabályzatainak megfelelően."
+    },
+    "diagnostics": {
+      "title": "2) Diagnosztika (opcionális)",
+      "p1": "Ha beleegyezik az elemzések/ütközésjelentések fejlesztőkkel való megosztásába (Apple beállítások > Adatvédelem és biztonság > Elemzések és fejlesztések), a következőket kaphatjuk:",
+      "b1": "Ütközési naplók és teljesítményadatok (az Apple által anonimizálva)",
+      "b2": "Eszközmodell, operációs rendszer verziója és hasonló technikai adatok",
+      "p2": "Nem kapjuk meg az Ön személyazonosságát ezekből a jelentésekből."
+    },
+    "support": {
+      "title": "3) Ügyfélszolgálati kommunikáció",
+      "p1": "Ha e-mailt küld nekünk, megkapjuk az e-mail címét és az üzenet tartalmát a kérésére adott válasz érdekében."
+    },
+    "notCollect": {
+      "title": "Nem gyűjtünk",
+      "b1": "Személyazonosító adatok az alkalmazáson belül (név, telefonszám, kapcsolattartók)",
+      "b2": "Precíz helyadatok",
+      "b3": "Hirdetési azonosítók vagy viselkedéskövetési adatok"
+    }
+  },
+  "use": {
+    "title": "Hogyan használjuk fel az adatokat",
+    "b1": "A magfunkciók biztosítása (az Ön által kért fájlhozzáférés, videolejátszás)",
+    "b2": "Az alkalmazás minőségének karbantartása és javítása (diagnosztika, ha beleegyezett)",
+    "b3": "Az ügyfélszolgálati kérdések megválaszolása"
+  },
+  "sharing": {
+    "title": "Adatmegosztás és adatfeldolgozók",
+    "p1": "<strong>Nem adjuk el az adatait.</strong> Nem osztjuk meg a személyes adatokat harmadik felekkel hirdetési vagy marketing célokra.",
+    "p2": "<strong>Szolgáltatók:</strong> Szolgáltatókat használhatunk kizárólag az alkalmazás működtetésére és támogatására (például az Apple iCloud a fájljaihoz; az Apple hibajelentési folyamata, ha beleegyezett). Ezek a szolgáltatók saját feltételeik és biztonsági szabályaik szerint adatfeldolgozóként működnek.",
+    "apple": "<strong>Apple (iCloud és hibajelentések):</strong> A fájlokat és elemzéseket az Apple adatvédelmi szabályzata és az eszközbeállításai szerint kezeljük.",
+    "p3": "Információkat adhatunk ki, ha a törvény azt megköveteli, vagy ha jogainkat, biztonságát és védelmét kell megőriznünk."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "A 1Air a felhasználók által mentett fájlokat az alkalmazás homokozójában tárolja az eszközön. Alkalmazzuk a platform biztonsági legjobb gyakorlatait, és az iOS/iPadOS/macOS rendszer védelmire támaszkodunk. Nincs olyan elektronikus tárolási módszer, amely 100%-ban biztonságos lenne, de azért dolgozunk, hogy megvédjük az adatait.",
+    "ollama": {
+      "title": "Ollama hálózati integráció",
+      "warn": "Ha a 1Air-t Ollama szerverhez csatlakoztatja a hálózaton keresztül a <code>http://</code> használatával, a kapcsolat <strong>nem titkosított</strong> (nincs TLS). Ez azt jelenti, hogy az Ön által küldött tartalom (például szöveges kérések, metaadatok vagy egyéb hasznos adatok) a hálózaton lebukhat vagy kiszivároghat. A <code>http://</code> használatakor (különösen nyilvános hálózatokon) <strong>minden kockázatot saját maga visel</strong> és <strong>Ön felelős</strong> minden olyan kitettségért, amely egy titkosítatlan kapcsolat használatából ered. Erősen ajánljuk a <code>https://</code>, egy megbízható belső hálózat, VPN vagy más biztonságos átviteli mód használatát."
+    }
+  },
+  "retention": {
+    "title": "Adatmegőrzés",
+    "b1": "<strong>Helyi fájlok:</strong> Amíg Ön nem törli őket vagy nem távolítja el az alkalmazást.",
+    "b2": "<strong>Támogatási e-mailek:</strong> Csak addig őrizzük meg, amíg nem oldjuk meg a kérését és nem teljesítjük a jogi kötelezettségeinket.",
+    "b3": "<strong>Diagnosztika:</strong> Az Apple elemzési megőrzési szabályai szerint őrizzük meg."
+  },
+  "rights": {
+    "title": "Adatvédelmi jogai",
+    "p1": "A tartózkodási helyétől függően jogosult lehet arra, hogy hozzáférjen, javítson, törölje vagy korlátozza az Önre vonatkozó adatokat, és tiltakozzon a feldolgozás ellen vagy visszavonja a hozzájárulást, amennyiben az alkalmazható.",
+    "gdpr": "<strong>GDPR (EGA/UK):</strong> Igényelhet hozzáférést vagy törlést a személyes adatokhoz, amelyeket kezelünk (főleg a támogatási e-mailek), és kérheti az Apple adatvédelmi eszközeit az Apple által tárolt adatokhoz (például hibajelentések, iCloud fájlok).",
+    "ccpa": "<strong>CCPA/CPRA (Kalifornia):</strong> Nem adjuk el vagy osztjuk meg a személyes információkat keresztmetszeti hirdetési célokra. Igényelhet hozzáférést vagy törlést a személyes adatokhoz, amelyeket tárolunk (főleg a támogatási e-mailek).",
+    "p2": "A jogok érvényesítése érdekében vegye fel velünk a kapcsolatot a <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a> címen. Lehet, hogy ellenőriznünk kell a kérését."
+  },
+  "children": {
+    "title": "Gyermekek adatvédelme",
+    "p1": "A 1Air egy általános közönséget célzó alkalmazás, és nem elsősorban gyermekeknek szól. Nem gyűjtünk tudatosan személyes adatokat gyermekektől. Ha úgy gondolja, hogy egy gyermek személyes adatokat szolgáltatott nekünk a támogatási kommunikáció során, kérjük, vegye fel velünk a kapcsolatot, és töröljük azokat."
+  },
+  "international": {
+    "title": "Nemzetközi átutalások",
+    "p1": "Az Ön adatai az Ön tartózkodási helye szerinti országban és más országokban kerülhetnek feldolgozásra, ahol szolgáltatóink működnek (pl. az Apple infrastruktúrája). Olyan intézkedéseket vezetünk be, amelyek célja az adatainak védelme a vonatkozó jogszabályoknak megfelelően."
+  },
+  "changes": {
+    "title": "A jelen szabályzat módosításai",
+    "p1": "Időnként frissíthetjük ezt az adatvédelmi szabályzatot. A frissített verziót feltesszük az alkalmazásba vagy a weboldalunkra, és módosítjuk a fent található „Hatálybalépés dátuma” részt. A lényeges változásokat kiemeljük."
+  },
+  "contact": {
+    "title": "Lépjen kapcsolatba velünk",
+    "p1": "Ha kérdése van ezzel az adatvédelmi szabályzattal vagy a gyakorlatainkkal kapcsolatban, kérjük, vegye fel velünk a kapcsolatot:",
+    "emailLabel": "Email:",
+    "dpo": "Adatvédelmi tisztviselő (ha van): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Minden jog fenntartva."
+  },
+  "ollama": {
+    "title": "Ollama telepítési útmutató",
+    "subtitle": "Kérjük, telepítse az Ollamát az AI funkciók engedélyezéséhez.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Töltse le a telepítőt",
+    "win_step1_desc": "Töltse le a telepítőt Windowsra a hivatalos webhelyről.",
+    "win_btn": "Töltse le Windowsra",
+    "win_step2_title": "2. Telepítés",
+    "win_step2_desc": "Futtassa a <code>OllamaSetup.exe</code> fájlt, és kattintson a [Telepítés] gombra.",
+    "win_step2_note": "✅ A telepítés után látni fogja az Alpaca ikont (🦙) az eszköztárcán.",
+    "win_step3_title": "3. Telepítés ellenőrzése",
+    "win_step3_desc": "Nyissa meg a Parancssort (Win + R, írja be a <code>cmd</code>) és futtassa az alábbi parancsot:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Töltés le",
+    "mac_step1_desc": "macOS 11 Big Sur vagy újabb verzió szükséges.",
+    "mac_btn": "Töltse le macOS-re",
+    "mac_step2_title": "2. Alkalmazás telepítése",
+    "mac_step2_desc": "Csomagold ki a fájlt, és helyezze az <strong>Ollama</strong> alkalmazást a <code>Applications</code> mappába.",
+    "mac_step3_title": "3. Indítsa el és állítsa be",
+    "mac_step3_desc": "Kattintson duplán az indításhoz. Meg kell látnia az Alpaca ikont (🦙) a menüsávban.",
+    "mac_step3_note": "💡 Ha a parancssori eszközök telepítésére kéri, kattintson az \"Install\" gombra.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Telepítés terminálon keresztül",
+    "linux_step1_desc": "Nyissa meg a terminált, és futtassa a következő parancsot:",
+    "linux_step1_note": "⚠️ Az AMD videokártyákhoz további illesztőprogramok telepítése lehet szükséges.",
+    "linux_step2_title": "2. Szolgáltatás állapota ellenőrzése",
+    "linux_step2_desc": "Győződjön meg arról, hogy az Ollama fut a háttérben.",
+    "final_step_title": "🎉 Végső lépés: AI modell letöltése",
+    "final_step_desc": "A telepítés után le kell töltenie az AI modellt. Futtassa ezt a terminálban:",
+    "final_step_note": "💡 Ha az alkalmazásnak egy adott modellre van szüksége (pl. mistral), cserélje le a 'llama3.2'-t arra a névre.",
+    "copy": "Copy",
+    "copied": "Másolva!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

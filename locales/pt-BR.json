@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Política de Privacidade",
+  "effectiveDateLabel": "Data de vigência:",
+  "effectiveDateValue": "5 de novembro de 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Dados que Coletamos",
+    "howWeUse": "Como Usamos os Dados",
+    "sharing": "Compartilhamento e Processadores",
+    "security": "Security",
+    "retention": "Retenção de Dados",
+    "rights": "Seus Direitos",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Visão Geral",
+    "bullets": {
+      "noTracking": "<strong>Sem rastreamento. Sem anúncios.</strong> 1Air não inclui publicidade ou rastreadores de terceiros.",
+      "onDevice": "<strong>Seus vídeos permanecem no seu dispositivo.</strong> O aplicativo lê os arquivos MP4 que você escolher e pode armazená-los na sua pasta Documentos local; o conteúdo é processado no dispositivo.",
+      "icloud": "<strong>iCloud Drive opcional.</strong> Se você escolher arquivos do iCloud Drive, os arquivos permanecerão na sua conta iCloud sob os termos da Apple.",
+      "diagnostics": "<strong>Diagnóstico mínimo.</strong> Recebemos apenas dados de diagnóstico/travamento anônimos se você optar por compartilhar com desenvolvedores através das configurações da Apple."
+    }
+  },
+  "who": {
+    "title": "Quem Somos",
+    "developerLabel": "Developer:",
+    "developerValue": "[Seu Nome Jurídico, por exemplo, J-Apps Co.]",
+    "developerSuffix": "(“nós”, “nos” ou “nosso”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Dados que Coletamos",
+    "contentYouChoose": {
+      "title": "1) Conteúdo que Você Escolhe",
+      "p1": "Ao usar o seletor de arquivos para selecionar vídeos, o 1Air recebe apenas acesso de leitura aos itens que você selecionar. Se você habilitar o recurso “Salvar nos Documentos” do aplicativo, cópias dos arquivos selecionados são salvas localmente na sandbox do aplicativo.",
+      "scope": "<strong>Escopo:</strong> Apenas os arquivos que você selecionar; sem digitalização em segundo plano de pastas não relacionadas.",
+      "processing": "<strong>Processamento:</strong> Reprodução e gerenciamento de arquivos ocorrem no dispositivo.",
+      "sync": "<strong>Sincronização:</strong> Se você selecionar do iCloud Drive, o armazenamento e a sincronização são gerenciados pelo Apple iCloud sob as políticas da Apple."
+    },
+    "diagnostics": {
+      "title": "2) Diagnóstico (Opcional)",
+      "p1": "Se você optar por compartilhar análises/relatórios de travamento com desenvolvedores (Configurações da Apple > Privacidade e Segurança > Análise e Melhorias), podemos receber:",
+      "b1": "Logs de travamento e métricas de desempenho (anônimos pela Apple)",
+      "b2": "Modelo do dispositivo, versão do sistema operacional e metadados técnicos semelhantes",
+      "p2": "Não recebemos sua identidade desses relatórios."
+    },
+    "support": {
+      "title": "3) Comunicações de Suporte",
+      "p1": "Se você nos enviar um e-mail, receberemos seu endereço de e-mail e o conteúdo da sua mensagem para responder ao seu pedido."
+    },
+    "notCollect": {
+      "title": "Não Coletamos",
+      "b1": "Identificadores pessoais dentro do aplicativo (nome, número de telefone, contatos)",
+      "b2": "Dados de localização precisos",
+      "b3": "Identificadores de publicidade ou dados de rastreamento comportamental"
+    }
+  },
+  "use": {
+    "title": "Como Usamos os Dados",
+    "b1": "Para fornecer a funcionalidade principal (acesso a arquivos que você solicita, reprodução de vídeo)",
+    "b2": "Para manter e melhorar a qualidade do aplicativo (diagnóstico, se você optou por participar)",
+    "b3": "Para responder às dúvidas de suporte"
+  },
+  "sharing": {
+    "title": "Compartilhamento e Processadores",
+    "p1": "<strong>Não vendemos seus dados.</strong> Não compartilhamos dados pessoais com terceiros para publicidade ou marketing.",
+    "p2": "<strong>Provedores de serviço:</strong> Podemos usar provedores de serviço apenas para operar e dar suporte ao aplicativo (por exemplo, Apple iCloud para arquivos que você armazena lá; pipeline de relatórios de falhas da Apple se você optar por participar). Esses provedores atuam como processadores sob seus próprios termos e controles de segurança.",
+    "apple": "<strong>Apple (iCloud &amp; Relatórios de falhas):</strong> Arquivos e análises tratados de acordo com a política de privacidade da Apple e as configurações do seu dispositivo.",
+    "p3": "Podemos divulgar informações se exigido por lei ou para proteger direitos, segurança e integridade."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air armazena arquivos salvos pelo usuário na sandbox do aplicativo em seu dispositivo. Aplicamos as melhores práticas de segurança da plataforma e confiamos nas proteções do sistema da Apple para iOS/iPadOS/macOS. Nenhum método de armazenamento eletrônico é 100% seguro, mas trabalhamos para proteger suas informações.",
+    "ollama": {
+      "title": "Integração de Rede Ollama",
+      "warn": "Se você conectar o 1Air a um servidor Ollama pela rede usando <code>http://</code>, a conexão <strong>não será criptografada durante a transmissão</strong> (sem TLS). Isso significa que o conteúdo que você enviar (como prompts de texto, metadados ou outros payloads) pode estar exposto a interceptação ou vazamento na rede. Ao usar <code>http://</code> (especialmente em redes públicas), <strong>você assume todos os riscos</strong> e <strong>você é responsável</strong> por qualquer exposição resultante do uso de uma conexão não criptografada. Recomendamos fortemente o uso de <code>https://</code>, uma rede interna confiável, VPN ou outro transporte seguro."
+    }
+  },
+  "retention": {
+    "title": "Retenção de Dados",
+    "b1": "<strong>Arquivos no dispositivo:</strong> Permanecem até que você os exclua ou desinstale o aplicativo.",
+    "b2": "<strong>E-mails de suporte:</strong> Retidos apenas pelo tempo necessário para resolver sua solicitação e cumprir as obrigações legais.",
+    "b3": "<strong>Diagnósticos:</strong> Retidos de acordo com as políticas de retenção de análises da Apple."
+  },
+  "rights": {
+    "title": "Seus Direitos de Privacidade",
+    "p1": "Dependendo da sua região, você pode ter direitos de acessar, corrigir, excluir ou restringir determinados dados que possuímos sobre você e de se opor ou retirar o consentimento para o processamento, quando aplicável.",
+    "gdpr": "<strong>RGPD (EEE/Reino Unido):</strong> Você pode solicitar acesso ou exclusão de dados pessoais que controlamos (principalmente e-mails de suporte). Para dados mantidos pela Apple (por exemplo, logs de falhas, arquivos do iCloud), use as ferramentas de privacidade da Apple.",
+    "ccpa": "<strong>CCPA/CPRA (Califórnia):</strong> Não vendemos ou compartilhamos informações pessoais para publicidade entre contextos. Você pode solicitar acesso ou exclusão de informações pessoais que mantemos (principalmente e-mails de suporte).",
+    "p2": "Para exercer seus direitos, entre em contato conosco em <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Podemos precisar verificar sua solicitação."
+  },
+  "children": {
+    "title": "Privacidade das Crianças",
+    "p1": "1Air é um aplicativo para público em geral e não é especificamente direcionado a crianças. Não coletamos intencionalmente informações pessoais de crianças. Se você acredita que uma criança forneceu informações pessoais a nós por meio de comunicações de suporte, entre em contato conosco e as excluiremos."
+  },
+  "international": {
+    "title": "Transferências Internacionais",
+    "p1": "Suas informações podem ser processadas no país onde você reside e em outros países onde nossos provedores de serviços operam (por exemplo, a infraestrutura da Apple). Implementamos medidas projetadas para proteger suas informações de acordo com a lei aplicável."
+  },
+  "changes": {
+    "title": "Alterações Nesta Política",
+    "p1": "Podemos atualizar esta Política de Privacidade de tempos em tempos. Publicaremos a versão atualizada no aplicativo ou em nosso site e revisaremos a “Data de vigência” acima. Alterações significativas serão destacadas."
+  },
+  "contact": {
+    "title": "Entre em Contato Conosco",
+    "p1": "Se você tiver dúvidas sobre esta Política de Privacidade ou nossas práticas, entre em contato conosco:",
+    "emailLabel": "Email:",
+    "dpo": "Contato de Proteção de Dados (se aplicável): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Todos os direitos reservados."
+  },
+  "ollama": {
+    "title": "Guia de Configuração do Ollama",
+    "subtitle": "Instale o Ollama para habilitar os recursos de IA.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Baixe o Instalador",
+    "win_step1_desc": "Baixe o instalador para Windows do site oficial.",
+    "win_btn": "Baixar para Windows",
+    "win_step2_title": "2. Instale",
+    "win_step2_desc": "Execute o arquivo <code>OllamaSetup.exe</code> e clique em [Instalar].",
+    "win_step2_note": "✅ Uma vez instalado, você verá o ícone Alpaca (🦙) na bandeja de tarefas.",
+    "win_step3_title": "3. Verifique a Instalação",
+    "win_step3_desc": "Abra o Prompt de Comando (Win + R, digite <code>cmd</code>) e execute o comando abaixo:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Baixar",
+    "mac_step1_desc": "Requer macOS 11 Big Sur ou posterior.",
+    "mac_btn": "Baixar para macOS",
+    "mac_step2_title": "2. Instalar Aplicativo",
+    "mac_step2_desc": "Descompacte o arquivo e mova o aplicativo <strong>Ollama</strong> para a pasta <code>Applications</code>.",
+    "mac_step3_title": "3. Executar e Configurar",
+    "mac_step3_desc": "Clique duas vezes para executar. Você deverá ver o ícone da Alpaca (🦙) na barra de menu.",
+    "mac_step3_note": "💡 Se solicitado a instalar ferramentas de linha de comando, clique em 'Instalar'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Instalar via Terminal",
+    "linux_step1_desc": "Abra seu terminal e execute o seguinte comando:",
+    "linux_step1_note": "⚠️ Placas de vídeo AMD podem exigir instalação adicional de driver.",
+    "linux_step2_title": "2. Verificar Status do Serviço",
+    "linux_step2_desc": "Certifique-se de que o Ollama está rodando em segundo plano.",
+    "final_step_title": "🎉 Etapa Final: Baixar Modelo de IA",
+    "final_step_desc": "Após a instalação, você deve baixar o modelo de IA. Execute isto no seu terminal:",
+    "final_step_note": "💡 Se o seu aplicativo requer um modelo específico (por exemplo, mistral), substitua 'llama3.2' por esse nome.",
+    "copy": "Copy",
+    "copied": "Copiado!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

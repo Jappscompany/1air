@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Politica de confidențialitate",
+  "effectiveDateLabel": "Data efectivă:",
+  "effectiveDateValue": "5 noiembrie 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Date pe care le colectăm",
+    "howWeUse": "Cum utilizăm datele",
+    "sharing": "Partajare și procesatori",
+    "security": "Security",
+    "retention": "Păstrarea datelor",
+    "rights": "Drepturile tale",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Dintr-o privire",
+    "bullets": {
+      "noTracking": "<strong>Fără urmărire. Fără reclame.</strong> 1Air nu include publicitate sau trackere terțe.",
+      "onDevice": "<strong>Videoclipurile tale rămân pe dispozitivul tău.</strong> Aplicația citește fișierele MP4 pe care le selectezi și le poate stoca în folderul Documents local; conținutul este procesat pe dispozitiv.",
+      "icloud": "<strong>iCloud Drive opțional.</strong> Dacă alegi fișiere din iCloud Drive, acestea rămân în contul tău iCloud în conformitate cu termenii Apple.",
+      "diagnostics": "<strong>Diagnosticare minimă.</strong> Primim doar date de diagnosticare/blocare anonimizate dacă alegi să partajezi cu dezvoltatorii prin setările Apple."
+    }
+  },
+  "who": {
+    "title": "Cine suntem",
+    "developerLabel": "Developer:",
+    "developerValue": "[Numele entității tale juridice, de exemplu, J-Apps Co.]",
+    "developerSuffix": "(“noi”, “nos” sau “al nostru”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Date pe care le colectăm",
+    "contentYouChoose": {
+      "title": "1) Conținut pe care îl alegi",
+      "p1": "Când utilizezi instrumentul Files pentru a selecta videoclipuri, 1Air primește doar acces de citire la elementele pe care le selectezi. Dacă activezi funcția „Salvare în Documents” a aplicației, copiile fișierelor selectate sunt salvate local în sandbox-ul aplicației.",
+      "scope": "<strong>Domeniu:</strong> Numai fișierele pe care le selectezi; fără scanare în fundal a folderelor necorelate.",
+      "processing": "<strong>Procesare:</strong> Redarea și gestionarea fișierelor au loc pe dispozitiv.",
+      "sync": "<strong>Sincronizare:</strong> Dacă selectezi din iCloud Drive, stocarea și sincronizarea sunt gestionate de Apple iCloud în conformitate cu politicile Apple."
+    },
+    "diagnostics": {
+      "title": "2) Diagnosticare (Opțional)",
+      "p1": "Dacă alegi să partajezi analize/rapoarte de blocare cu dezvoltatorii (Setări Apple > Confidențialitate și securitate > Analize și îmbunătățiri), putem primi:",
+      "b1": "Jurnale de blocare și metrici de performanță (anonimizate de Apple)",
+      "b2": "Modelul dispozitivului, versiunea sistemului de operare și metadate tehnice similare",
+      "p2": "Nu primim identitatea ta din aceste rapoarte."
+    },
+    "support": {
+      "title": "3) Comunicări de asistență",
+      "p1": "Dacă ne trimiți un e-mail, vom primi adresa ta de e-mail și conținutul mesajului tău pentru a răspunde cererii tale."
+    },
+    "notCollect": {
+      "title": "Nu colectăm",
+      "b1": "Identificatori personali în aplicație (nume, număr de telefon, contacte)",
+      "b2": "Date precise despre locație",
+      "b3": "Identificatori de publicitate sau date de urmărire a comportamentului"
+    }
+  },
+  "use": {
+    "title": "Cum utilizăm datele",
+    "b1": "Pentru a oferi funcționalitatea de bază (acces la fișierele solicitate, redare video)",
+    "b2": "Pentru a menține și îmbunătăți calitatea aplicației (diagnosticare dacă ai ales)",
+    "b3": "Pentru a răspunde la solicitările de asistență"
+  },
+  "sharing": {
+    "title": "Partajare și procesatori",
+    "p1": "<strong>Nu vindem datele dumneavoastră.</strong> Nu împărtășim date personale cu terțe părți în scopuri publicitare sau de marketing.",
+    "p2": "<strong>Furnizori de servicii:</strong> Putem utiliza furnizori de servicii doar pentru a opera și a sprijini aplicația (de exemplu, Apple iCloud pentru fișierele pe care le stocați acolo; linia de raportare a erorilor Apple dacă ați optat pentru aceasta). Acești furnizori acționează ca procesori în baza propriilor condiții și controale de securitate.",
+    "apple": "<strong>Apple (iCloud &amp; Rapoarte de erori):</strong> Fișierele și analizele sunt tratate conform politicii de confidențialitate Apple și a setărilor dispozitivului dvs.",
+    "p3": "Putem dezvălui informații dacă este cerut de lege sau pentru a proteja drepturile, siguranța și securitatea."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air stochează fișierele salvate de utilizator în sandbox-ul aplicației pe dispozitivul dvs. Aplicăm cele mai bune practici de securitate ale platformei și ne bazăm pe protecțiile de sistem Apple pentru iOS/iPadOS/macOS. Nicio metodă de stocare electronică nu este 100% sigură, dar depunem eforturi pentru a vă proteja informațiile.",
+    "ollama": {
+      "title": "Integrare rețea Ollama",
+      "warn": "Dacă conectați 1Air la un server Ollama prin rețea folosind <code>http://</code>, conexiunea <strong>nu este criptată în tranzit</strong> (nu există TLS). Aceasta înseamnă că conținutul pe care îl trimiteți (cum ar fi solicitări de text, metadate sau alte încărcături) poate fi expus la interceptare sau scurgere în rețea. Atunci când utilizați <code>http://</code> (în special pe rețelele publice), <strong>își asumați toate riscurile</strong> și <strong>sunteți responsabil</strong> pentru orice expunere rezultată din utilizarea unei conexiuni necriptate. Vă recomandăm cu insistență să utilizați <code>https://</code>, o rețea internă de încredere, VPN sau alt transport sigur."
+    }
+  },
+  "retention": {
+    "title": "Păstrarea datelor",
+    "b1": "<strong>Fișiere de pe dispozitiv:</strong> Rămân până când le ștergeți sau dezinstalați aplicația.",
+    "b2": "<strong>E-mailuri de asistență:</strong> Sunt păstrate doar atât timp cât este necesar pentru a rezolva solicitarea dvs. și pentru a îndeplini obligațiile legale.",
+    "b3": "<strong>Diagnostic:</strong> Sunt păstrate în conformitate cu politicile de păstrare a analizei Apple."
+  },
+  "rights": {
+    "title": "Drepturile dvs. la confidențialitate",
+    "p1": "În funcție de regiunea dvs., puteți avea dreptul de a accesa, corecta, șterge sau restricționa anumite date pe care le deținem despre dvs. și de a vă opune sau retrage consimțământul pentru prelucrare, acolo unde este aplicabil.",
+    "gdpr": "<strong>GDPR (SEE/Regatul Unit):</strong> Puteți solicita acces sau ștergerea datelor personale pe care le controlăm (în principal e-mailuri de asistență). Pentru datele stocate de Apple (de exemplu, jurnalele de erori, fișierele iCloud), vă rugăm să utilizați instrumentele de confidențialitate Apple.",
+    "ccpa": "<strong>CCPA/CPRA (California):</strong> Nu vindem și nu împărtășim informații personale pentru publicitate încrucișată. Puteți solicita acces sau ștergerea informațiilor personale pe care le deținem (în principal e-mailuri de asistență).",
+    "p2": "Pentru a exercita drepturile, contactați-ne la <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Este posibil să fie nevoie să verificăm solicitarea dvs."
+  },
+  "children": {
+    "title": "Confidențialitatea copiilor",
+    "p1": "1Air este o aplicație cu public general și nu este special concepută pentru copii. Nu colectăm în mod intenționat informații personale de la copii. Dacă considerați că un copil a furnizat informații personale către noi prin comunicații de asistență, vă rugăm să ne contactați și le vom șterge."
+  },
+  "international": {
+    "title": "Transferuri internaționale",
+    "p1": "Informațiile dvs. pot fi procesate în țara în care locuiți și în alte țări în care operează furnizorii noștri de servicii (de exemplu, infrastructura Apple). Implementăm măsuri concepute pentru a vă proteja informațiile în conformitate cu legea aplicabilă."
+  },
+  "changes": {
+    "title": "Modificări ale acestei politici",
+    "p1": "Putem actualiza această Politică de confidențialitate din când în când. Vom posta versiunea actualizată în aplicație sau pe site-ul nostru web și vom revizui „Data efectivă” de mai sus. Modificările semnificative vor fi evidențiate."
+  },
+  "contact": {
+    "title": "Contactați-ne",
+    "p1": "Dacă aveți întrebări despre această Politică de confidențialitate sau despre practicile noastre, contactați-ne:",
+    "emailLabel": "Email:",
+    "dpo": "Contact pentru protecția datelor (dacă este cazul): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Toate drepturile rezervate."
+  },
+  "ollama": {
+    "title": "Ghid de configurare Ollama",
+    "subtitle": "Vă rugăm să instalați Ollama pentru a activa funcțiile AI.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Descărcați programul de instalare",
+    "win_step1_desc": "Descărcați programul de instalare pentru Windows de pe site-ul oficial.",
+    "win_btn": "Descărcați pentru Windows",
+    "win_step2_title": "2. Instalați",
+    "win_step2_desc": "Rulați fișierul <code>OllamaSetup.exe</code> și faceți clic pe [Instalați].",
+    "win_step2_note": "✅ După instalare, veți vedea pictograma Alpaca (🦙) în bara de activități.",
+    "win_step3_title": "3. Verificați instalarea",
+    "win_step3_desc": "Deschideți Promptul de comandă (Win + R, tastați <code>cmd</code>) și rulați comanda de mai jos:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Descărcați",
+    "mac_step1_desc": "Necesită macOS 11 Big Sur sau o versiune ulterioară.",
+    "mac_btn": "Descărcați pentru macOS",
+    "mac_step2_title": "2. Instalați aplicația",
+    "mac_step2_desc": "Dezarhivează fișierul și mută aplicația <strong>Ollama</strong> în folderul <code>Applications</code>.",
+    "mac_step3_title": "3. Rulează și Configurează",
+    "mac_step3_desc": "Dă dublu-clic pentru a rula. Ar trebui să vezi pictograma Alpaca (🦙) în bara de meniu.",
+    "mac_step3_note": "💡 Dacă ți se solicită să instalezi instrumente de linie de comandă, dă clic pe 'Instalează'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Instalează prin Terminal",
+    "linux_step1_desc": "Deschide terminalul și rulează următoarea comandă:",
+    "linux_step1_note": "⚠️ Plăcile grafice AMD pot necesita instalarea de drivere suplimentare.",
+    "linux_step2_title": "2. Verifică Starea Serviciului",
+    "linux_step2_desc": "Asigură-te că Ollama rulează în fundal.",
+    "final_step_title": "🎉 Pasul Final: Descarcă Modelul AI",
+    "final_step_desc": "După instalare, trebuie să descarci modelul AI. Rulează acest lucru în terminalul tău:",
+    "final_step_note": "💡 Dacă aplicația ta necesită un model specific (de exemplu, mistral), înlocuiește 'llama3.2' cu acel nume.",
+    "copy": "Copy",
+    "copied": "Copiat!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

@@ -12,6 +12,60 @@
         .lang-switch { position: absolute; top: 20px; right: 20px; font-size: 14px; }
         .lang-switch a { color: #666; text-decoration: none; cursor: pointer; margin-left: 10px; }
         .lang-switch a.active { color: var(--accent-color); font-weight: bold; }
+        
+        /* Language Dropdown */
+        .lang-dropdown { position: relative; display: inline-block; }
+        .lang-dropdown-btn {
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 6px 12px;
+          font-size: 14px;
+          cursor: pointer;
+          color: #333;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          transition: all 0.2s;
+        }
+        .lang-dropdown-btn:hover {
+          background: #f5f5f5;
+          border-color: var(--accent-color);
+        }
+        .lang-dropdown-menu {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          margin-top: 4px;
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          max-height: 400px;
+          overflow-y: auto;
+          min-width: 180px;
+          display: none;
+          z-index: 1000;
+        }
+        .lang-dropdown-menu.show { display: block; }
+        .lang-dropdown-item {
+          padding: 8px 16px;
+          cursor: pointer;
+          color: #333;
+          font-size: 14px;
+          transition: background 0.2s;
+          border-bottom: 1px solid #eee;
+        }
+        .lang-dropdown-item:last-child { border-bottom: none; }
+        .lang-dropdown-item:hover {
+          background: #f5f5f5;
+          color: var(--accent-color);
+        }
+        .lang-dropdown-item.active {
+          background: #f5f5f5;
+          color: var(--accent-color);
+          font-weight: 600;
+        }
         header { text-align: center; margin: 20px 0 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
         h1 { margin: 0 0 10px 0; }
         p.subtitle { color: #666; margin: 0; }
@@ -35,13 +89,18 @@
 
 <div class="container">
     <div class="lang-switch">
-        <a onclick="setLanguage('en')" id="lang-en" class="active">English</a> | 
-        <a onclick="setLanguage('ko')" id="lang-ko">한국어</a>
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" onclick="toggleLangDropdown()">
+            <span id="current-lang-name">English</span>
+            <span>▼</span>
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu"></div>
+        </div>
     </div>
 
     <header>
-        <h1 data-i18n="title"></h1>
-        <p class="subtitle" data-i18n="subtitle"></p>
+        <h1 data-i18n="title">Ollama Setup Guide</h1>
+        <p class="subtitle" data-i18n="subtitle">Please install Ollama to enable AI features.</p>
     </header>
 
     <div class="tabs">
@@ -52,107 +111,256 @@
 
     <div id="windows" class="content-section active">
         <div class="step">
-            <h3 data-i18n="win_step1_title"></h3>
-            <p data-i18n="win_step1_desc"></p>
-            <a href="https://ollama.com/download/windows" target="_blank" class="btn-download" data-i18n="win_btn"></a>
+            <h3 data-i18n="win_step1_title">1. Download Installer</h3>
+            <p data-i18n="win_step1_desc">Download the installer for Windows from the official website.</p>
+            <a href="https://ollama.com/download/windows" target="_blank" class="btn-download" data-i18n="win_btn">Download for Windows</a>
         </div>
         <div class="step">
-            <h3 data-i18n="win_step2_title"></h3>
-            <p data-i18n="win_step2_desc"></p>
-            <div class="note" data-i18n="win_step2_note"></div>
+            <h3 data-i18n="win_step2_title">2. Install</h3>
+            <p data-i18n="win_step2_desc">Run the <code>OllamaSetup.exe</code> file and click [Install].</p>
+            <div class="note" data-i18n="win_step2_note">✅ Once installed, you will see the Alpaca icon (🦙) in the taskbar tray.</div>
         </div>
         <div class="step">
-            <h3 data-i18n="win_step3_title"></h3>
-            <p data-i18n="win_step3_desc"></p>
+            <h3 data-i18n="win_step3_title">3. Verify Installation</h3>
+            <p data-i18n="win_step3_desc">Open Command Prompt (Win + R, type <code>cmd</code>) and run the command below:</p>
             <div class="code-block">
                 ollama --version
-                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy">Copy</button>
             </div>
         </div>
     </div>
 
     <div id="macos" class="content-section">
         <div class="step">
-            <h3 data-i18n="mac_step1_title"></h3>
-            <p data-i18n="mac_step1_desc"></p>
-            <a href="https://ollama.com/download/mac" target="_blank" class="btn-download" data-i18n="mac_btn"></a>
+            <h3 data-i18n="mac_step1_title">1. Download</h3>
+            <p data-i18n="mac_step1_desc">Requires macOS 11 Big Sur or later.</p>
+            <a href="https://ollama.com/download/mac" target="_blank" class="btn-download" data-i18n="mac_btn">Download for macOS</a>
         </div>
         <div class="step">
-            <h3 data-i18n="mac_step2_title"></h3>
-            <p data-i18n="mac_step2_desc"></p>
+            <h3 data-i18n="mac_step2_title">2. Install Application</h3>
+            <p data-i18n="mac_step2_desc">Unzip the file and move the <strong>Ollama</strong> app to the <code>Applications</code> folder.</p>
         </div>
         <div class="step">
-            <h3 data-i18n="mac_step3_title"></h3>
-            <p data-i18n="mac_step3_desc"></p>
-            <div class="note" data-i18n="mac_step3_note"></div>
+            <h3 data-i18n="mac_step3_title">3. Run & Setup</h3>
+            <p data-i18n="mac_step3_desc">Double-click to run. You should see the Alpaca icon (🦙) in the menu bar.</p>
+            <div class="note" data-i18n="mac_step3_note">💡 If prompted to install command line tools, click 'Install'.</div>
         </div>
     </div>
 
     <div id="ubuntu" class="content-section">
         <div class="step">
-            <h3 data-i18n="linux_step1_title"></h3>
-            <p data-i18n="linux_step1_desc"></p>
+            <h3 data-i18n="linux_step1_title">1. Install via Terminal</h3>
+            <p data-i18n="linux_step1_desc">Open your terminal and run the following command:</p>
             <div class="code-block">
                 curl -fsSL https://ollama.com/install.sh | sh
-                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy">Copy</button>
             </div>
-            <div class="note" data-i18n="linux_step1_note"></div>
+            <div class="note" data-i18n="linux_step1_note">⚠️ AMD graphics cards may require additional driver installation.</div>
         </div>
         <div class="step">
-            <h3 data-i18n="linux_step2_title"></h3>
-            <p data-i18n="linux_step2_desc"></p>
+            <h3 data-i18n="linux_step2_title">2. Check Service Status</h3>
+            <p data-i18n="linux_step2_desc">Ensure Ollama is running in the background.</p>
             <div class="code-block">
                 systemctl status ollama
-                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+                <button class="copy-btn" onclick="copyText(this)" data-i18n="copy">Copy</button>
             </div>
         </div>
     </div>
 
     <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
     <div class="step">
-        <h3 data-i18n="final_step_title"></h3>
-        <p data-i18n="final_step_desc"></p>
+        <h3 data-i18n="final_step_title">🎉 Final Step: Pull AI Model</h3>
+        <p data-i18n="final_step_desc">After installation, you must download the AI model. Run this in your terminal:</p>
         <div class="code-block">
             ollama pull llama3.2
-            <button class="copy-btn" onclick="copyText(this)" data-i18n="copy"></button>
+            <button class="copy-btn" onclick="copyText(this)" data-i18n="copy">Copy</button>
         </div>
-        <div class="note" data-i18n="final_step_note"></div>
+        <div class="note" data-i18n="final_step_note">💡 If your app requires a specific model (e.g., mistral), replace 'llama3.2' with that name.</div>
     </div>
 
-    <footer data-i18n="footer"></footer>
+    <footer data-i18n="footer">&copy; 2025 Powered by Ollama.</footer>
 </div>
 
-<script src="lang.js"></script>
 <script>
-    // 현재 언어 상태
+    // Language configuration
+    const LANGUAGES = [
+      { code: 'ar', name: 'العربية' },
+      { code: 'ca', name: 'Català' },
+      { code: 'cs', name: 'Čeština' },
+      { code: 'da', name: 'Dansk' },
+      { code: 'de', name: 'Deutsch' },
+      { code: 'el', name: 'Ελληνικά' },
+      { code: 'en', name: 'English' },
+      { code: 'es', name: 'Español' },
+      { code: 'es-MX', name: 'Español (México)' },
+      { code: 'fi', name: 'Suomi' },
+      { code: 'fr', name: 'Français' },
+      { code: 'fr-CA', name: 'Français (Canada)' },
+      { code: 'he', name: 'עברית' },
+      { code: 'hi', name: 'हिन्दी' },
+      { code: 'hr', name: 'Hrvatski' },
+      { code: 'hu', name: 'Magyar' },
+      { code: 'id', name: 'Bahasa Indonesia' },
+      { code: 'it', name: 'Italiano' },
+      { code: 'ja', name: '日本語' },
+      { code: 'ko', name: '한국어' },
+      { code: 'ms', name: 'Bahasa Melayu' },
+      { code: 'nb', name: 'Norsk Bokmål' },
+      { code: 'pl', name: 'Polski' },
+      { code: 'pt-BR', name: 'Português (Brasil)' },
+      { code: 'pt-PT', name: 'Português (Portugal)' },
+      { code: 'ro', name: 'Română' },
+      { code: 'ru', name: 'Русский' },
+      { code: 'sk', name: 'Slovenčina' },
+      { code: 'sv', name: 'Svenska' },
+      { code: 'th', name: 'ไทย' },
+      { code: 'tr', name: 'Türkçe' },
+      { code: 'uk', name: 'Українська' },
+      { code: 'vi', name: 'Tiếng Việt' },
+      { code: 'zh-Hans', name: '简体中文' },
+      { code: 'zh-Hant', name: '繁體中文' }
+    ];
+
     let currentLang = 'en';
+    let translations = {};
 
-    function setLanguage(lang) {
-        if (!I18N_DATA[lang]) return; // 데이터 없으면 중단
-        currentLang = lang;
-
-        const elements = document.querySelectorAll('[data-i18n]');
-        elements.forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (I18N_DATA[lang][key]) {
-                el.innerHTML = I18N_DATA[lang][key];
-            }
-        });
-
-        // 언어 스위치 UI 업데이트
-        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-        document.getElementById('lang-ko').classList.toggle('active', lang === 'ko');
-        document.documentElement.lang = lang;
+    // Initialize language dropdown
+    function initLangDropdown() {
+      const menu = document.getElementById('lang-dropdown-menu');
+      LANGUAGES.forEach(lang => {
+        const item = document.createElement('div');
+        item.className = 'lang-dropdown-item';
+        item.textContent = lang.name;
+        item.onclick = () => setLanguage(lang.code);
+        menu.appendChild(item);
+      });
     }
 
-    function detectAndApplyLanguage() {
-        // 브라우저 언어 감지 (ko-KR -> ko)
-        const userLang = navigator.language || navigator.userLanguage;
-        if (userLang.startsWith('ko')) {
-            setLanguage('ko');
-        } else {
-            setLanguage('en');
+    function toggleLangDropdown() {
+      const menu = document.getElementById('lang-dropdown-menu');
+      menu.classList.toggle('show');
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      const dropdown = document.querySelector('.lang-dropdown');
+      if (dropdown && !dropdown.contains(e.target)) {
+        document.getElementById('lang-dropdown-menu').classList.remove('show');
+      }
+    });
+
+    async function loadLocale(lang) {
+      try {
+        const res = await fetch(`./locales/${lang}.json`, { cache: "no-store" });
+        if (!res.ok) throw new Error("Failed to load locale: " + lang);
+        return await res.json();
+      } catch (error) {
+        console.warn(`Failed to load ${lang}.json, falling back to en.json`);
+        try {
+          const res = await fetch(`./locales/en.json`, { cache: "no-store" });
+          if (!res.ok) return null;
+          return await res.json();
+        } catch (e) {
+          return null;
         }
+      }
+    }
+
+    async function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('ollama_lang', lang);
+
+      // Load translations
+      const dict = await loadLocale(lang);
+      if (!dict) {
+        console.error('Failed to load locale:', lang);
+        return;
+      }
+      translations[lang] = dict;
+
+      // Apply translations - use ollama namespace
+      const ollamaDict = dict.ollama;
+      if (!ollamaDict) {
+        console.error('ollama namespace not found in locale:', lang);
+        console.error('Available keys in dict:', Object.keys(dict));
+        return;
+      }
+      
+      console.log('Loading ollama translations, available keys:', Object.keys(ollamaDict).slice(0, 10));
+      
+      const elements = document.querySelectorAll('[data-i18n]');
+      let appliedCount = 0;
+      let missingCount = 0;
+      
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (!key) return;
+        
+        // Get value from ollama namespace
+        let value = ollamaDict[key];
+        
+        // If not found, try nested path
+        if (value == null || value === undefined) {
+          const keys = key.split('.');
+          let temp = ollamaDict;
+          for (const k of keys) {
+            if (temp && typeof temp === 'object' && temp[k] != null) {
+              temp = temp[k];
+            } else {
+              temp = null;
+              break;
+            }
+          }
+          value = temp;
+        }
+        
+        if (value != null && value !== undefined) {
+          el.innerHTML = value;
+          appliedCount++;
+        } else {
+          console.warn('Translation not found for key:', key);
+          missingCount++;
+        }
+      });
+      
+      console.log(`Applied ${appliedCount} translations, ${missingCount} missing`);
+
+      // Update dropdown UI
+      const langInfo = LANGUAGES.find(l => l.code === lang);
+      if (langInfo) {
+        document.getElementById('current-lang-name').textContent = langInfo.name;
+      }
+      
+      // Update active state in dropdown
+      document.querySelectorAll('.lang-dropdown-item').forEach(item => {
+        item.classList.remove('active');
+        if (item.textContent === langInfo.name) {
+          item.classList.add('active');
+        }
+      });
+
+      document.documentElement.lang = dict._meta?.htmlLang || lang;
+      
+      // Close dropdown
+      document.getElementById('lang-dropdown-menu').classList.remove('show');
+    }
+
+    async function detectAndApplyLanguage() {
+      const saved = localStorage.getItem('ollama_lang');
+      if (saved && LANGUAGES.find(l => l.code === saved)) {
+        await setLanguage(saved);
+        return;
+      }
+
+      const nav = (navigator.language || "en").toLowerCase();
+      // Try to match language
+      for (const lang of LANGUAGES) {
+        if (nav.startsWith(lang.code.split('-')[0])) {
+          await setLanguage(lang.code);
+          return;
+        }
+      }
+      await setLanguage('en');
     }
 
     function openTab(tabName) {
@@ -174,16 +382,27 @@
     function copyText(btn) {
         var text = btn.parentElement.innerText.replace(btn.innerText, "").trim();
         navigator.clipboard.writeText(text).then(function() {
-            var originalText = I18N_DATA[currentLang]['copy'];
-            btn.innerText = I18N_DATA[currentLang]['copied'];
+            const dict = translations[currentLang] || {};
+            const ollamaDict = dict.ollama || {};
+            const originalText = ollamaDict.copy || dict.copy || 'Copy';
+            btn.innerText = ollamaDict.copied || dict.copied || 'Copied!';
             setTimeout(function() {
                 btn.innerText = originalText;
             }, 2000);
         });
     }
 
+    // Initialize
+    initLangDropdown();
+    
     // 페이지 로드 시 실행
-    window.onload = detectAndApplyLanguage;
+    window.onload = function() {
+      detectAndApplyLanguage().catch(err => {
+        console.error('Error loading language:', err);
+        // Fallback: try to load English directly
+        setLanguage('en');
+      });
+    };
 </script>
 
 </body>

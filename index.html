@@ -54,6 +54,60 @@
     .lang-switch { position: absolute; top: 20px; right: 20px; font-size: 13px; z-index: 200; }
     .lang-switch a { cursor: pointer; color: var(--muted); margin-left: 8px; }
     .lang-switch a.active { color: var(--brand); font-weight: bold; }
+    
+    /* Language Dropdown */
+    .lang-dropdown { position: relative; display: inline-block; }
+    .lang-dropdown-btn {
+      background: var(--bg-subtle);
+      border: 1px solid var(--stroke);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--fg);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .lang-dropdown-btn:hover {
+      background: var(--stroke);
+      border-color: var(--brand);
+    }
+    .lang-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 4px;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      max-height: 400px;
+      overflow-y: auto;
+      min-width: 180px;
+      display: none;
+      z-index: 1000;
+    }
+    .lang-dropdown-menu.show { display: block; }
+    .lang-dropdown-item {
+      padding: 8px 16px;
+      cursor: pointer;
+      color: var(--fg);
+      font-size: 13px;
+      transition: background 0.2s;
+      border-bottom: 1px solid var(--stroke);
+    }
+    .lang-dropdown-item:last-child { border-bottom: none; }
+    .lang-dropdown-item:hover {
+      background: var(--bg-subtle);
+      color: var(--brand);
+    }
+    .lang-dropdown-item.active {
+      background: var(--bg-subtle);
+      color: var(--brand);
+      font-weight: 600;
+    }
 
     /* Header */
     header {
@@ -150,65 +204,69 @@
 <body>
 
   <div class="lang-switch wrap" style="position:relative; text-align:right;">
-    <a onclick="setLandingLanguage('en')" id="lang-en" class="active">English</a>
-    <span style="color:#ddd">|</span>
-    <a onclick="setLandingLanguage('ko')" id="lang-ko">한국어</a>
+    <div class="lang-dropdown">
+      <button class="lang-dropdown-btn" onclick="toggleLangDropdown()">
+        <span id="current-lang-name">English</span>
+        <span>▼</span>
+      </button>
+      <div class="lang-dropdown-menu" id="lang-dropdown-menu"></div>
+    </div>
   </div>
 
   <header>
     <div class="wrap nav">
       <a href="#" class="brand">1Air<span>.</span></a>
       <nav class="links">
-        <a href="#features" class="mobile-hide" data-i18n="nav_features"></a>
-        <a href="policy.html" class="mobile-hide" data-i18n="nav_privacy"></a>
-        <a href="https://apps.apple.com/kr/app/1air-player/id6754903042" class="btn primary" data-i18n="nav_download"></a>
+        <a href="#features" class="mobile-hide" data-i18n="nav_features">Features</a>
+        <a href="policy.html" class="mobile-hide" data-i18n="nav_privacy">Privacy</a>
+        <a href="https://apps.apple.com/kr/app/1air-player/id6754903042" class="btn primary" data-i18n="nav_download">Download</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="wrap hero">
-      <span class="badge" data-i18n="hero_badge"></span>
-      <h1 data-i18n="hero_title"></h1>
-      <p class="sub" data-i18n="hero_sub"></p>
+      <span class="badge" data-i18n="hero_badge">✨ New Release</span>
+      <h1 data-i18n="hero_title">MP4s, the way<br>they should play.</h1>
+      <p class="sub" data-i18n="hero_sub">Experience the intuitive and lightweight 1Air Player.<br>No ads, just clean playback with background audio.</p>
       <div>
-        <a href="https://apps.apple.com/kr/app/1air-player/id6754903042" class="btn primary" data-i18n="btn_download"></a>
+        <a href="https://apps.apple.com/kr/app/1air-player/id6754903042" class="btn primary" data-i18n="btn_download">Download on App Store</a>
       </div>
     </section>
 
     <section id="features" class="wrap">
-      <h2 data-i18n="feat_title"></h2>
+      <h2 data-i18n="feat_title">Why 1Air?</h2>
       <div class="grid">
         <article class="card">
           <span class="icon">🖼️</span>
-          <h3 data-i18n="feat_1_title"></h3>
-          <p data-i18n="feat_1_desc"></p>
+          <h3 data-i18n="feat_1_title">Picture-in-Picture</h3>
+          <p data-i18n="feat_1_desc">Keep watching while you multitask. Native PiP support.</p>
         </article>
 
         <article class="card">
           <span class="icon">🎧</span>
-          <h3 data-i18n="feat_2_title"></h3>
-          <p data-i18n="feat_2_desc"></p>
+          <h3 data-i18n="feat_2_title">Background Audio</h3>
+          <p data-i18n="feat_2_desc">Audio continues when screen locks. Perfect for podcasts.</p>
         </article>
 
         <article class="card">
           <span class="icon">👆</span>
-          <h3 data-i18n="feat_3_title"></h3>
-          <p data-i18n="feat_3_desc"></p>
+          <h3 data-i18n="feat_3_title">Smooth Controls</h3>
+          <p data-i18n="feat_3_desc">Gestures for volume and seeking. Fast and snappy.</p>
         </article>
 
         <article class="card">
           <span class="icon">🔒</span>
-          <h3 data-i18n="feat_4_title"></h3>
-          <p data-i18n="feat_4_desc"></p>
+          <h3 data-i18n="feat_4_title">Private & Ad-free</h3>
+          <p data-i18n="feat_4_desc">No tracking, no ads. Your videos stay on your device.</p>
         </article>
 
         <article class="card" style="border-color: var(--brand); background: var(--bg-subtle);">
             <span class="icon">🦙</span>
-            <h3 data-i18n="feat_5_title"></h3>
-            <p data-i18n="feat_5_desc"></p>
+            <h3 data-i18n="feat_5_title">AI Integration</h3>
+            <p data-i18n="feat_5_desc">Connect with local AI models via Ollama for smart features.</p>
             <div class="card-footer">
-                <a href="ollamatutorial.html" class="btn secondary" data-i18n="feat_5_btn"></a>
+                <a href="ollamatutorial.html" class="btn secondary" data-i18n="feat_5_btn">Setup Guide</a>
             </div>
         </article>
       </div>
@@ -218,48 +276,213 @@
   <footer>
     <div class="wrap">
       <div class="foot-links">
-        <a href="policy.html" data-i18n="footer_privacy"></a>
+        <a href="policy.html" data-i18n="footer_privacy">Privacy Policy</a>
         <span style="color:#ddd">·</span>
-        <a href="#" data-i18n="footer_contact"></a>
+        <a href="#" data-i18n="footer_contact">Contact Support</a>
       </div>
-      <p>&copy; <span id="year"></span> <span data-i18n="footer_copy"></span></p>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer_copy">1Air Player. All rights reserved.</span></p>
     </div>
   </footer>
 
+  <!-- 기존 랜딩 텍스트 데이터 사용 (fallback) -->
   <script src="landing_lang.js"></script>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    /**
+     * ✅ Fix summary
+     * - 기존 코드는 LANGUAGE_MAP 때문에 (ko 제외) 전부 en으로 강제되어, 국가코드별 JSON이 있어도 절대 적용되지 않았습니다.
+     * - navigator.language를 toLowerCase()로 바꾸면서 "zh-Hans" 같은 코드는 "zh-hans"가 되어 매칭 실패했습니다.
+     * - 이제 "정확한 코드 → 상위 코드(예: pt) → en" 순으로 JSON을 로드하고, 실패하면 landing_lang.js의 en/ko를 fallback으로 씁니다.
+     */
 
-    function setLandingLanguage(lang) {
-        if (!LANDING_I18N[lang]) return;
+    // 1) 드롭다운 표시용 언어 목록
+    const LANGUAGES = [
+      { code: 'ar', name: 'العربية' },
+      { code: 'ca', name: 'Català' },
+      { code: 'cs', name: 'Čeština' },
+      { code: 'da', name: 'Dansk' },
+      { code: 'de', name: 'Deutsch' },
+      { code: 'el', name: 'Ελληνικά' },
+      { code: 'en', name: 'English' },
+      { code: 'es', name: 'Español' },
+      { code: 'es-MX', name: 'Español (México)' },
+      { code: 'fi', name: 'Suomi' },
+      { code: 'fr', name: 'Français' },
+      { code: 'fr-CA', name: 'Français (Canada)' },
+      { code: 'he', name: 'עברית' },
+      { code: 'hi', name: 'हिन्दी' },
+      { code: 'hr', name: 'Hrvatski' },
+      { code: 'hu', name: 'Magyar' },
+      { code: 'id', name: 'Bahasa Indonesia' },
+      { code: 'it', name: 'Italiano' },
+      { code: 'ja', name: '日本語' },
+      { code: 'ko', name: '한국어' },
+      { code: 'ms', name: 'Bahasa Melayu' },
+      { code: 'nb', name: 'Norsk Bokmål' },
+      { code: 'nl', name: 'Nederlands' },
+      { code: 'pl', name: 'Polski' },
+      { code: 'pt-BR', name: 'Português (Brasil)' },
+      { code: 'pt-PT', name: 'Português (Portugal)' },
+      { code: 'ro', name: 'Română' },
+      { code: 'ru', name: 'Русский' },
+      { code: 'sk', name: 'Slovenčina' },
+      { code: 'sv', name: 'Svenska' },
+      { code: 'th', name: 'ไทย' },
+      { code: 'tr', name: 'Türkçe' },
+      { code: 'uk', name: 'Українська' },
+      { code: 'vi', name: 'Tiếng Việt' },
+      { code: 'zh-Hans', name: '简体中文' },
+      { code: 'zh-Hant', name: '繁體中文' }
+    ];
 
-        const elements = document.querySelectorAll('[data-i18n]');
-        elements.forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (LANDING_I18N[lang][key]) {
-                el.innerHTML = LANDING_I18N[lang][key];
-            }
-        });
+    // 2) JSON 파일 경로 (필요하면 여기만 바꾸면 됨)
+    // 예: ./i18n/pt-BR.json
+    const I18N_DIR = './i18n';
 
-        // Toggle Switcher UI
-        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-        document.getElementById('lang-ko').classList.toggle('active', lang === 'ko');
-        
-        // Update Document Lang & Title
-        document.documentElement.lang = lang;
-        document.title = LANDING_I18N[lang]['title'];
-        document.querySelector('meta[name="description"]').setAttribute("content", LANDING_I18N[lang]['meta_desc']);
+    function initLangDropdown() {
+      const menu = document.getElementById('lang-dropdown-menu');
+      menu.innerHTML = '';
+      LANGUAGES.forEach(lang => {
+        const item = document.createElement('div');
+        item.className = 'lang-dropdown-item';
+        item.textContent = lang.name;
+        item.onclick = () => setLandingLanguageByCode(lang.code);
+        menu.appendChild(item);
+      });
     }
 
-    // Auto Detect
-    window.onload = function() {
-        const userLang = navigator.language || navigator.userLanguage;
-        if (userLang.startsWith('ko')) {
-            setLandingLanguage('ko');
-        } else {
-            setLandingLanguage('en');
+    function toggleLangDropdown() {
+      const menu = document.getElementById('lang-dropdown-menu');
+      menu.classList.toggle('show');
+    }
+
+    // 드롭다운 바깥 클릭 시 닫기
+    document.addEventListener('click', (e) => {
+      const dropdown = document.querySelector('.lang-dropdown');
+      if (dropdown && !dropdown.contains(e.target)) {
+        document.getElementById('lang-dropdown-menu').classList.remove('show');
+      }
+    });
+
+    function canonicalizeLangCode(input) {
+      if (!input) return 'en';
+      const raw = String(input).replace('_', '-');   // pt_BR -> pt-BR
+      const lower = raw.toLowerCase();
+
+      // LANGUAGES에 있는 코드들과 case-insensitive로 매칭해서 "원래 코드"를 반환 (zh-Hans 같은 대소문자 유지)
+      const match = LANGUAGES.find(l => l.code.toLowerCase() === lower);
+      return match ? match.code : raw;
+    }
+
+    function fallbackChain(code) {
+      // "pt-BR" → ["pt-BR", "pt", "en"]
+      const c = canonicalizeLangCode(code);
+      const parts = c.split('-');
+      const base = parts[0];
+      const chain = [c];
+      if (base && base !== c) chain.push(base);
+      if (!chain.includes('en')) chain.push('en');
+      return chain;
+    }
+
+    async function fetchJson(path) {
+      const res = await fetch(path, { cache: 'no-cache' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return await res.json();
+    }
+
+    async function loadI18nDictByCode(code) {
+      // 1) JSON을 먼저 시도 (정확한 코드 → 상위 코드 → en)
+      for (const c of fallbackChain(code)) {
+        try {
+          const jsonPath = `${I18N_DIR}/${c}.json`;
+          const dict = await fetchJson(jsonPath);
+          if (dict && typeof dict === 'object') return { dict, resolved: c, source: 'json' };
+        } catch (_) {}
+      }
+
+      // 2) JSON이 없으면 landing_lang.js fallback 사용 (en/ko만 있음)
+      const c = canonicalizeLangCode(code);
+      if (window.LANDING_I18N) {
+        if (LANDING_I18N[c]) return { dict: LANDING_I18N[c], resolved: c, source: 'fallback' };
+        if (LANDING_I18N.en) return { dict: LANDING_I18N.en, resolved: 'en', source: 'fallback' };
+      }
+
+      return { dict: {}, resolved: 'en', source: 'none' };
+    }
+
+    function applyLandingDict(dict) {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key] != null) {
+          // 문자열/숫자만 허용 (안전)
+          el.innerHTML = String(dict[key]);
         }
-    };
+      });
+
+      // title / meta
+      if (dict['title']) document.title = String(dict['title']);
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta && dict['meta_desc']) meta.setAttribute('content', String(dict['meta_desc']));
+    }
+
+    function updateLangUI(code) {
+      const c = canonicalizeLangCode(code);
+      const langInfo = LANGUAGES.find(l => l.code === c) || LANGUAGES.find(l => l.code === 'en');
+
+      if (langInfo) {
+        document.getElementById('current-lang-name').textContent = langInfo.name;
+
+        document.querySelectorAll('.lang-dropdown-item').forEach(item => {
+          item.classList.toggle('active', item.textContent === langInfo.name);
+        });
+      }
+      document.getElementById('lang-dropdown-menu').classList.remove('show');
+    }
+
+    async function setLandingLanguageByCode(code) {
+      const c = canonicalizeLangCode(code);
+
+      // 저장은 "사용자가 선택한 코드" 그대로 저장 (국가코드별 JSON이면 그대로 쓰게)
+      localStorage.setItem('landing_lang', c);
+
+      // 문서 lang은 실제 코드로
+      document.documentElement.lang = c;
+
+      const { dict } = await loadI18nDictByCode(c);
+      applyLandingDict(dict);
+      updateLangUI(c);
+    }
+
+    function guessLangCode() {
+      const saved = localStorage.getItem('landing_lang');
+      if (saved) {
+        const canonical = canonicalizeLangCode(saved);
+        if (LANGUAGES.find(l => l.code === canonical)) return canonical;
+      }
+
+      // navigator.language 예: "pt-BR", "zh-Hans", "ko-KR"
+      const nav = canonicalizeLangCode(navigator.language || 'en');
+
+      // exact match 우선
+      if (LANGUAGES.find(l => l.code === nav)) return nav;
+
+      // base match (예: pt-BR → pt)
+      const base = nav.split('-')[0];
+      const baseMatch = LANGUAGES.find(l => l.code.toLowerCase() === base.toLowerCase());
+      if (baseMatch) return baseMatch.code;
+
+      return 'en';
+    }
+
+    // 초기화
+    document.getElementById('year').textContent = new Date().getFullYear();
+    initLangDropdown();
+
+    window.addEventListener('load', () => {
+      const code = guessLangCode();
+      setLandingLanguageByCode(code);
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Privatlivspolitik",
+  "effectiveDateLabel": "Gældende dato:",
+  "effectiveDateValue": "5. november 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Data vi indsamler",
+    "howWeUse": "Sådan bruger vi data",
+    "sharing": "Deling &amp; Behandlere",
+    "security": "Security",
+    "retention": "Dataopbevaring",
+    "rights": "Dine rettigheder",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Kort sagt",
+    "bullets": {
+      "noTracking": "<strong>Ingen sporing. Ingen reklamer.</strong> 1Air inkluderer ikke reklamer eller tredjeparts trackere.",
+      "onDevice": "<strong>Dine videoer forbliver på din enhed.</strong> Appen læser MP4-filer, du vælger, og kan gemme dem i din lokale Documents-mappe; indholdet behandles på enheden.",
+      "icloud": "<strong>Valgfri iCloud Drive.</strong> Hvis du vælger filer fra iCloud Drive, forbliver filerne i din iCloud-konto under Apples betingelser.",
+      "diagnostics": "<strong>Minimal diagnostik.</strong> Vi modtager kun anonymiserede nedbruds-/diagnostiske data, hvis du tilmelder dig deling med udviklere via Apple-indstillinger."
+    }
+  },
+  "who": {
+    "title": "Hvem vi er",
+    "developerLabel": "Developer:",
+    "developerValue": "[Dit juridiske firmanavn, f.eks. J-Apps Co.]",
+    "developerSuffix": "(“vi”, “os” eller “vores”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Data vi indsamler",
+    "contentYouChoose": {
+      "title": "1) Indhold du vælger",
+      "p1": "Når du bruger Files-vælgeren til at vælge videoer, gives 1Air kun læseadgang til de elementer, du vælger. Hvis du aktiverer appens funktion “Gem til Dokumenter”, gemmes kopier af de valgte filer lokalt i appens sandbox.",
+      "scope": "<strong>Omfang:</strong> Kun filer, du vælger; ingen baggrundsscanning af irrelevante mapper.",
+      "processing": "<strong>Behandling:</strong> Afspilning og filhåndtering sker på enheden.",
+      "sync": "<strong>Synkronisering:</strong> Hvis du vælger fra iCloud Drive, administreres lagring og synkronisering af Apple iCloud i henhold til Apples politikker."
+    },
+    "diagnostics": {
+      "title": "2) Diagnostik (Valgfrit)",
+      "p1": "Hvis du tilmelder dig deling af analyser/nedbrudsrapporter med udviklere (Apple Indstillinger &gt; Privatliv &amp; Sikkerhed &gt; Analyse &amp; Forbedringer), kan vi modtage:",
+      "b1": "Nedbrudslogfiler og ydeevnemålinger (anonymiseret af Apple)",
+      "b2": "Enhedsmodel, OS-version og lignende tekniske metadata",
+      "p2": "Vi modtager ikke din identitet fra disse rapporter."
+    },
+    "support": {
+      "title": "3) Supportkommunikation",
+      "p1": "Hvis du sender os en e-mail, modtager vi din e-mailadresse og indholdet af din besked for at svare på din anmodning."
+    },
+    "notCollect": {
+      "title": "Vi indsamler <em>ikke</em>",
+      "b1": "Personlige identifikatorer i appen (navn, telefonnummer, kontakter)",
+      "b2": "Præcise lokaliseringsdata",
+      "b3": "Reklameidentifikatorer eller adfærdsmæssige sporingsdata"
+    }
+  },
+  "use": {
+    "title": "Sådan bruger vi data",
+    "b1": "For at levere kernefunktionalitet (filadgang, du anmoder om, videoafspilning)",
+    "b2": "For at vedligeholde og forbedre appkvaliteten (diagnostik, hvis du har tilmeldt dig)",
+    "b3": "For at svare på supportforespørgsler"
+  },
+  "sharing": {
+    "title": "Deling &amp; Behandlere",
+    "p1": "<strong>Vi sælger ikke dine data.</strong> Vi deler ikke personlige data med tredjeparter til reklame eller marketing.",
+    "p2": "<strong>Serviceudbydere:</strong> Vi kan bruge serviceudbydere udelukkende til at drive og understøtte appen (f.eks. Apple iCloud til filer, du gemmer der; Apples crash-rapporteringspipeline, hvis du har tilmeldt dig). Disse udbydere fungerer som databehandlere under deres egne betingelser og sikkerhedskontroller.",
+    "apple": "<strong>Apple (iCloud &amp; Crash Reports):</strong> Filer og analyse håndteres i henhold til Apples privatlivspolitik og dine enhedsindstillinger.",
+    "p3": "Vi kan videregive oplysninger, hvis det kræves ved lov eller for at beskytte rettigheder, sikkerhed og sikkerhed."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air gemmer brugersparede filer i appens sandbox på din enhed. Vi anvender bedste praksis for platformsikkerhed og er afhængige af Apples systembeskyttelse til iOS/iPadOS/macOS. Ingen metode til elektronisk lagring er 100 % sikker, men vi arbejder på at beskytte dine oplysninger.",
+    "ollama": {
+      "title": "Ollama Netværksintegration",
+      "warn": "Hvis du forbinder 1Air til en Ollama-server over netværket ved hjælp af <code>http://</code>, er forbindelsen <strong>ikke krypteret under overførslen</strong> (ingen TLS). Det betyder, at det indhold, du sender (f.eks. tekstprompter, metadata eller andre payloads), kan være udsat for aflytning eller lækage på netværket. Når du bruger <code>http://</code> (især på offentlige netværk), <strong>påtager du dig alle risici</strong> og <strong>du er ansvarlig</strong> for enhver eksponering som følge af brugen af en ukrypteret forbindelse. Vi anbefaler kraftigt at bruge <code>https://</code>, et betroet internt netværk, VPN eller anden sikker transport."
+    }
+  },
+  "retention": {
+    "title": "Dataopbevaring",
+    "b1": "<strong>Filer på enheden:</strong> Forbliver, indtil du sletter dem eller afinstallerer appen.",
+    "b2": "<strong>Supportmails:</strong> Opbevares kun, så længe det er nødvendigt for at løse din anmodning og opfylde juridiske forpligtelser.",
+    "b3": "<strong>Diagnostik:</strong> Opbevares i henhold til Apples analyseopbevaringspolitikker."
+  },
+  "rights": {
+    "title": "Dine privatlivsrettigheder",
+    "p1": "Afhængigt af din region kan du have ret til at få adgang til, rette, slette eller begrænse visse data, vi har om dig, og til at gøre indsigelse mod eller tilbagekalde samtykke til behandling, hvor det er relevant.",
+    "gdpr": "<strong>GDPR (EØS/Storbritannien):</strong> Du kan anmode om adgang til eller sletning af personlige data, vi styrer (primært supportmails). For data, der opbevares af Apple (f.eks. crash-logs, iCloud-filer), bedes du bruge Apples privatlivsværktøjer.",
+    "ccpa": "<strong>CCPA/CPRA (Californien):</strong> Vi sælger eller deler ikke personlige oplysninger til kryds-kontekstuel reklame. Du kan anmode om adgang til eller sletning af personlige oplysninger, vi har (primært supportmails).",
+    "p2": "For at udøve rettighederne bedes du kontakte os på <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Vi kan være nødt til at verificere din anmodning."
+  },
+  "children": {
+    "title": "Børns privatliv",
+    "p1": "1Air er en app til generelt brug og er ikke specifikt rettet mod børn. Vi indsamler ikke bevidst personlige oplysninger fra børn. Hvis du mener, at et barn har givet os personlige oplysninger via supportkommunikation, bedes du kontakte os, og vi sletter det."
+  },
+  "international": {
+    "title": "Internationale overførsler",
+    "p1": "Dine oplysninger kan behandles i det land, hvor du bor, og i andre lande, hvor vores serviceudbydere opererer (f.eks. Apples infrastruktur). Vi implementerer foranstaltninger, der er designet til at beskytte dine oplysninger i overensstemmelse med gældende lov."
+  },
+  "changes": {
+    "title": "Ændringer i denne politik",
+    "p1": "Vi kan fra tid til anden opdatere denne privatlivspolitik. Vi vil offentliggøre den opdaterede version i appen eller på vores websted og revidere \"Effektiv dato\" ovenfor. Væsentlige ændringer vil blive fremhævet."
+  },
+  "contact": {
+    "title": "Kontakt os",
+    "p1": "Hvis du har spørgsmål om denne privatlivspolitik eller vores praksis, kan du kontakte os:",
+    "emailLabel": "Email:",
+    "dpo": "Dataansvarlig kontaktperson (hvis relevant): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Alle rettigheder forbeholdes."
+  },
+  "ollama": {
+    "title": "Ollama Opsætningsguide",
+    "subtitle": "Installer Ollama for at aktivere AI-funktioner.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Download Installeren",
+    "win_step1_desc": "Download installeren til Windows fra den officielle hjemmeside.",
+    "win_btn": "Download til Windows",
+    "win_step2_title": "2. Installer",
+    "win_step2_desc": "Kør <code>OllamaSetup.exe</code> filen, og klik på [Installer].",
+    "win_step2_note": "✅ Når den er installeret, ser du Alpaca-ikonet (🦙) i proceslinjen.",
+    "win_step3_title": "3. Verificer installationen",
+    "win_step3_desc": "Åbn Kommandoprompt (Win + R, skriv <code>cmd</code>) og kør følgende kommando:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Download",
+    "mac_step1_desc": "Kræver macOS 11 Big Sur eller nyere.",
+    "mac_btn": "Download til macOS",
+    "mac_step2_title": "2. Installer programmet",
+    "mac_step2_desc": "Udpak filen, og flyt <strong>Ollama</strong>-appen til mappen <code>Applications</code>.",
+    "mac_step3_title": "3. Kør & Konfigurer",
+    "mac_step3_desc": "Dobbeltklik for at køre. Du bør se Alpaca-ikonet (🦙) i menulinjen.",
+    "mac_step3_note": "💡 Hvis du bliver bedt om at installere kommandolinjeværktøjer, skal du klikke på 'Installer'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Installer via Terminal",
+    "linux_step1_desc": "Åbn din terminal, og kør følgende kommando:",
+    "linux_step1_note": "⚠️ AMD-grafikkort kan kræve yderligere driverinstallation.",
+    "linux_step2_title": "2. Tjek Servicestatus",
+    "linux_step2_desc": "Sørg for, at Ollama kører i baggrunden.",
+    "final_step_title": "🎉 Sidste Trin: Hent AI-model",
+    "final_step_desc": "Efter installationen skal du downloade AI-modellen. Kør dette i din terminal:",
+    "final_step_note": "💡 Hvis din app kræver en specifik model (f.eks. mistral), skal du erstatte 'llama3.2' med det navn.",
+    "copy": "Copy",
+    "copied": "Kopieret!",
+    "footer": "&copy; 2025 Drevet af Ollama."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Kebijakan Privasi",
+  "effectiveDateLabel": "Tanggal berlaku:",
+  "effectiveDateValue": "5 November 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Data yang Kami Kumpulkan",
+    "howWeUse": "Cara Kami Menggunakan Data",
+    "sharing": "Berbagi & Prosesor",
+    "security": "Security",
+    "retention": "Retensi Data",
+    "rights": "Hak Anda",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Sekilas",
+    "bullets": {
+      "noTracking": "<strong>Tidak ada pelacakan. Tidak ada iklan.</strong> 1Air tidak menyertakan iklan atau pelacak pihak ketiga.",
+      "onDevice": "<strong>Video Anda tetap ada di perangkat Anda.</strong> Aplikasi membaca file MP4 yang Anda pilih dan dapat menyimpannya di folder Dokumen lokal Anda; konten diproses di perangkat.",
+      "icloud": "<strong>iCloud Drive Opsional.</strong> Jika Anda memilih file dari iCloud Drive, file tetap berada di akun iCloud Anda di bawah ketentuan Apple.",
+      "diagnostics": "<strong>Diagnostik Minimal.</strong> Kami hanya menerima data diagnostik/crash anonim jika Anda memilih untuk berbagi dengan pengembang melalui pengaturan Apple."
+    }
+  },
+  "who": {
+    "title": "Siapa Kami",
+    "developerLabel": "Developer:",
+    "developerValue": "[Nama Entitas Hukum Anda, contoh: J-Apps Co.]",
+    "developerSuffix": "(“kami”, “kita”, atau “milik kami”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Data yang Kami Kumpulkan",
+    "contentYouChoose": {
+      "title": "1) Konten yang Anda Pilih",
+      "p1": "Saat Anda menggunakan pemilih File untuk memilih video, 1Air hanya diberi akses baca ke item yang Anda pilih. Jika Anda mengaktifkan fitur “Simpan ke Dokumen” aplikasi, salinan file yang dipilih disimpan secara lokal di sandbox aplikasi.",
+      "scope": "<strong>Cakupan:</strong> Hanya file yang Anda pilih; tidak ada pemindaian latar belakang folder yang tidak terkait.",
+      "processing": "<strong>Pemrosesan:</strong> Pemutaran dan manajemen file terjadi di perangkat.",
+      "sync": "<strong>Sinkronisasi:</strong> Jika Anda memilih dari iCloud Drive, penyimpanan dan sinkronisasi dikelola oleh Apple iCloud di bawah kebijakan Apple."
+    },
+    "diagnostics": {
+      "title": "2) Diagnostik (Opsional)",
+      "p1": "Jika Anda memilih untuk berbagi analisis/laporan kerusakan dengan pengembang (Pengaturan Apple > Privasi & Keamanan > Analisis & Peningkatan), kami mungkin menerima:",
+      "b1": "Log kerusakan dan metrik kinerja (dianonimkan oleh Apple)",
+      "b2": "Model perangkat, versi OS, dan metadata teknis serupa",
+      "p2": "Kami tidak menerima identitas Anda dari laporan ini."
+    },
+    "support": {
+      "title": "3) Komunikasi Dukungan",
+      "p1": "Jika Anda mengirim email kepada kami, kami akan menerima alamat email Anda dan isi pesan Anda untuk menanggapi permintaan Anda."
+    },
+    "notCollect": {
+      "title": "Kami Tidak Mengumpulkan",
+      "b1": "Pengidentifikasi pribadi dalam aplikasi (nama, nomor telepon, kontak)",
+      "b2": "Data lokasi yang tepat",
+      "b3": "Pengidentifikasi iklan atau data pelacakan perilaku"
+    }
+  },
+  "use": {
+    "title": "Cara Kami Menggunakan Data",
+    "b1": "Untuk menyediakan fungsionalitas inti (akses file yang Anda minta, pemutaran video)",
+    "b2": "Untuk memelihara dan meningkatkan kualitas aplikasi (diagnostik jika Anda memilih masuk)",
+    "b3": "Untuk menanggapi pertanyaan dukungan"
+  },
+  "sharing": {
+    "title": "Berbagi & Prosesor",
+    "p1": "<strong>Kami tidak menjual data Anda.</strong> Kami tidak membagikan data pribadi kepada pihak ketiga untuk tujuan periklanan atau pemasaran.",
+    "p2": "<strong>Penyedia Layanan:</strong> Kami dapat menggunakan penyedia layanan hanya untuk mengoperasikan dan mendukung aplikasi (misalnya, Apple iCloud untuk file yang Anda simpan di sana; saluran pelaporan kerusakan Apple jika Anda memilih ikut serta). Penyedia ini bertindak sebagai pemroses di bawah persyaratan dan kontrol keamanan mereka sendiri.",
+    "apple": "<strong>Apple (iCloud &amp; Laporan Kerusakan):</strong> File dan analitik ditangani sesuai dengan kebijakan privasi Apple dan pengaturan perangkat Anda.",
+    "p3": "Kami dapat mengungkapkan informasi jika diwajibkan oleh hukum atau untuk melindungi hak, keselamatan, dan keamanan."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air menyimpan file yang disimpan pengguna dalam kotak pasir aplikasi di perangkat Anda. Kami menerapkan praktik terbaik keamanan platform dan bergantung pada perlindungan sistem Apple untuk iOS/iPadOS/macOS. Tidak ada metode penyimpanan elektronik yang 100% aman, tetapi kami berupaya melindungi informasi Anda.",
+    "ollama": {
+      "title": "Integrasi Jaringan Ollama",
+      "warn": "Jika Anda menghubungkan 1Air ke server Ollama melalui jaringan menggunakan <code>http://</code>, koneksi tersebut <strong>tidak dienkripsi saat transit</strong> (tanpa TLS). Ini berarti konten yang Anda kirim (seperti perintah teks, metadata, atau muatan lainnya) dapat terpapar penyadapan atau kebocoran di jaringan. Saat menggunakan <code>http://</code> (terutama di jaringan publik), <strong>Anda menanggung semua risiko</strong> dan <strong>Anda bertanggung jawab</strong> atas segala paparan yang diakibatkan oleh penggunaan koneksi yang tidak terenkripsi. Kami sangat menyarankan untuk menggunakan <code>https://</code>, jaringan internal yang tepercaya, VPN, atau transportasi aman lainnya."
+    }
+  },
+  "retention": {
+    "title": "Retensi Data",
+    "b1": "<strong>File di perangkat:</strong> Tetap ada hingga Anda menghapusnya atau mencopot pemasangan aplikasi.",
+    "b2": "<strong>Email dukungan:</strong> Disimpan hanya selama diperlukan untuk menyelesaikan permintaan Anda dan memenuhi kewajiban hukum.",
+    "b3": "<strong>Diagnostik:</strong> Disimpan sesuai dengan kebijakan retensi analitik Apple."
+  },
+  "rights": {
+    "title": "Hak Privasi Anda",
+    "p1": "Tergantung pada wilayah Anda, Anda mungkin memiliki hak untuk mengakses, memperbaiki, menghapus, atau membatasi data tertentu yang kami simpan tentang Anda, dan untuk menolak atau menarik persetujuan untuk pemrosesan jika berlaku.",
+    "gdpr": "<strong>GDPR (EEA/UK):</strong> Anda dapat meminta akses atau penghapusan data pribadi yang kami kendalikan (terutama email dukungan). Untuk data yang disimpan oleh Apple (misalnya, log kerusakan, file iCloud), silakan gunakan alat privasi Apple.",
+    "ccpa": "<strong>CCPA/CPRA (California):</strong> Kami tidak menjual atau membagikan informasi pribadi untuk periklanan lintas konteks. Anda dapat meminta akses atau penghapusan informasi pribadi yang kami simpan (terutama email dukungan).",
+    "p2": "Untuk menggunakan hak-hak tersebut, hubungi kami di <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Kami mungkin perlu memverifikasi permintaan Anda."
+  },
+  "children": {
+    "title": "Privasi Anak-anak",
+    "p1": "1Air adalah aplikasi untuk khalayak umum dan tidak secara khusus ditujukan untuk anak-anak. Kami tidak secara sadar mengumpulkan informasi pribadi dari anak-anak. Jika Anda yakin seorang anak telah memberikan informasi pribadi kepada kami melalui komunikasi dukungan, silakan hubungi kami dan kami akan menghapusnya."
+  },
+  "international": {
+    "title": "Transfer Internasional",
+    "p1": "Informasi Anda dapat diproses di negara tempat Anda tinggal dan di negara lain tempat penyedia layanan kami beroperasi (misalnya, infrastruktur Apple). Kami menerapkan langkah-langkah yang dirancang untuk melindungi informasi Anda sesuai dengan hukum yang berlaku."
+  },
+  "changes": {
+    "title": "Perubahan pada Kebijakan Ini",
+    "p1": "Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Kami akan memposting versi yang diperbarui dalam aplikasi atau di situs web kami dan merevisi “Tanggal Efektif” di atas. Perubahan material akan disorot."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "p1": "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini atau praktik kami, hubungi kami:",
+    "emailLabel": "Email:",
+    "dpo": "Kontak Perlindungan Data (jika ada): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Semua hak dilindungi."
+  },
+  "ollama": {
+    "title": "Panduan Penyiapan Ollama",
+    "subtitle": "Harap instal Ollama untuk mengaktifkan fitur AI.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Unduh Pemasang",
+    "win_step1_desc": "Unduh pemasang untuk Windows dari situs web resmi.",
+    "win_btn": "Unduh untuk Windows",
+    "win_step2_title": "2. Instal",
+    "win_step2_desc": "Jalankan file <code>OllamaSetup.exe</code> dan klik [Instal].",
+    "win_step2_note": "✅ Setelah diinstal, Anda akan melihat ikon Alpaka (🦙) di baki tugas.",
+    "win_step3_title": "3. Verifikasi Instalasi",
+    "win_step3_desc": "Buka Command Prompt (Win + R, ketik <code>cmd</code>) dan jalankan perintah di bawah:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Unduh",
+    "mac_step1_desc": "Memerlukan macOS 11 Big Sur atau lebih baru.",
+    "mac_btn": "Unduh untuk macOS",
+    "mac_step2_title": "2. Instal Aplikasi",
+    "mac_step2_desc": "Buka ritsleting file dan pindahkan aplikasi <strong>Ollama</strong> ke folder <code>Applications</code>.",
+    "mac_step3_title": "3. Jalankan & Siapkan",
+    "mac_step3_desc": "Klik dua kali untuk menjalankan. Anda akan melihat ikon Alpaca (🦙) di bilah menu.",
+    "mac_step3_note": "💡 Jika diminta untuk menginstal alat baris perintah, klik 'Install'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Instal melalui Terminal",
+    "linux_step1_desc": "Buka terminal Anda dan jalankan perintah berikut:",
+    "linux_step1_note": "⚠️ Kartu grafis AMD mungkin memerlukan instalasi driver tambahan.",
+    "linux_step2_title": "2. Periksa Status Layanan",
+    "linux_step2_desc": "Pastikan Ollama berjalan di latar belakang.",
+    "final_step_title": "🎉 Langkah Terakhir: Tarik Model AI",
+    "final_step_desc": "Setelah instalasi, Anda harus mengunduh model AI. Jalankan ini di terminal Anda:",
+    "final_step_note": "💡 Jika aplikasi Anda memerlukan model tertentu (misalnya, mistral), ganti 'llama3.2' dengan nama itu.",
+    "copy": "Copy",
+    "copied": "Tersalin!",
+    "footer": "&copy; 2025 Ditenagai oleh Ollama."
+  }
+}

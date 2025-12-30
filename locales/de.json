@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Datenschutzrichtlinie",
+  "effectiveDateLabel": "Datum des Inkrafttretens:",
+  "effectiveDateValue": "5. November 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Erhobene Daten",
+    "howWeUse": "Wie wir Daten verwenden",
+    "sharing": "Weitergabe &amp; Bearbeiter",
+    "security": "Security",
+    "retention": "Datenaufbewahrung",
+    "rights": "Ihre Rechte",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Auf einen Blick",
+    "bullets": {
+      "noTracking": "<strong>Kein Tracking. Keine Werbung.</strong> 1Air enthält keine Werbung oder Tracker von Drittanbietern.",
+      "onDevice": "<strong>Ihre Videos bleiben auf Ihrem Gerät.</strong> Die App liest die von Ihnen ausgewählten MP4-Dateien und kann diese in Ihrem lokalen Ordner „Dokumente“ speichern; die Verarbeitung erfolgt auf dem Gerät.",
+      "icloud": "<strong>Optionaler iCloud-Laufwerk.</strong> Wenn Sie Dateien von iCloud Drive auswählen, verbleiben diese unter den Bedingungen von Apple in Ihrem iCloud-Konto.",
+      "diagnostics": "<strong>Minimale Diagnosedaten.</strong> Wir erhalten anonymisierte Crash-/Diagnosedaten nur, wenn Sie sich über die Apple-Einstellungen für die Freigabe mit Entwicklern entscheiden."
+    }
+  },
+  "who": {
+    "title": "Wer wir sind",
+    "developerLabel": "Developer:",
+    "developerValue": "[Ihr juristisches Firmenname, z. B. J-Apps Co.]",
+    "developerSuffix": "(“wir”, “uns” oder “unser”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Erhobene Daten",
+    "contentYouChoose": {
+      "title": "1) Inhalte, die Sie auswählen",
+      "p1": "Wenn Sie den Dateiauswahldialog verwenden, um Videos auszuwählen, erhält 1Air nur Lesezugriff auf die von Ihnen ausgewählten Elemente. Wenn Sie die Funktion „In Dokumente speichern“ der App aktivieren, werden Kopien der ausgewählten Dateien lokal im Sandbox der App gespeichert.",
+      "scope": "<strong>Geltungsbereich:</strong> Nur von Ihnen ausgewählte Dateien; keine Hintergrundsuche in nicht verwandten Ordnern.",
+      "processing": "<strong>Verarbeitung:</strong> Wiedergabe und Dateiverwaltung erfolgen auf dem Gerät.",
+      "sync": "<strong>Synchronisierung:</strong> Wenn Sie von iCloud Drive auswählen, werden die Speicherung und Synchronisierung von Apple iCloud gemäß den Richtlinien von Apple verwaltet."
+    },
+    "diagnostics": {
+      "title": "2) Diagnosedaten (Optional)",
+      "p1": "Wenn Sie sich für die Freigabe von Analyse-/Crash-Berichten an Entwickler entscheiden (Apple-Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Analyse &amp; Verbesserungen), können wir Folgendes erhalten:",
+      "b1": "Crash-Protokolle und Leistungsmetriken (anonymisiert von Apple)",
+      "b2": "Gerätemodell, Betriebssystemversion und ähnliche technische Metadaten",
+      "p2": "Wir erhalten aus diesen Berichten keine Informationen zu Ihrer Identität."
+    },
+    "support": {
+      "title": "3) Support-Kommunikation",
+      "p1": "Wenn Sie uns eine E-Mail senden, erhalten wir Ihre E-Mail-Adresse und den Inhalt Ihrer Nachricht, um auf Ihre Anfrage zu antworten."
+    },
+    "notCollect": {
+      "title": "Wir erheben <em>keine</em> Daten",
+      "b1": "Persönliche Kennungen innerhalb der App (Name, Telefonnummer, Kontakte)",
+      "b2": "Genaue Standortdaten",
+      "b3": "Werbeidentifikatoren oder Verhaltensdaten zum Tracking"
+    }
+  },
+  "use": {
+    "title": "Wie wir Daten verwenden",
+    "b1": "Um Kernfunktionen bereitzustellen (Dateizugriff, den Sie anfordern, Videowiedergabe)",
+    "b2": "Um die Qualität der App zu erhalten und zu verbessern (Diagnosedaten, wenn Sie dies aktiviert haben)",
+    "b3": "Um auf Support-Anfragen zu antworten"
+  },
+  "sharing": {
+    "title": "Weitergabe &amp; Bearbeiter",
+    "p1": "<strong>Wir verkaufen Ihre Daten nicht.</strong> Wir geben keine personenbezogenen Daten an Dritte für Werbe- oder Marketingzwecke weiter.",
+    "p2": "<strong>Dienstleister:</strong> Wir können Dienstleister nur zur Bedienung und Unterstützung der App nutzen (z. B. Apple iCloud für dort gespeicherte Dateien; Apples Crash-Reporting-Pipeline, falls Sie dies aktiviert haben). Diese Anbieter fungieren als Auftragsverarbeiter unter ihren eigenen Bedingungen und Sicherheitsvorkehrungen.",
+    "apple": "<strong>Apple (iCloud &amp; Crash Reports):</strong> Dateien und Analysen werden gemäß Apples Datenschutzrichtlinie und Ihren Geräteeinstellungen behandelt.",
+    "p3": "Wir können Informationen offenlegen, wenn dies gesetzlich vorgeschrieben ist oder zum Schutz von Rechten, Sicherheit und Schutz."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air speichert benutzergespeicherte Dateien innerhalb der Sandbox der App auf Ihrem Gerät. Wir wenden die besten Sicherheitspraktiken der Plattform an und verlassen uns auf die Systemsicherheitsvorkehrungen von Apple für iOS/iPadOS/macOS. Keine Methode der elektronischen Speicherung ist zu 100 % sicher, aber wir arbeiten daran, Ihre Informationen zu schützen.",
+    "ollama": {
+      "title": "Ollama-Netzwerkintegration",
+      "warn": "Wenn Sie 1Air über das Netzwerk mit einem Ollama-Server unter Verwendung von <code>http://</code> verbinden, ist die Verbindung <strong>während der Übertragung nicht verschlüsselt</strong> (kein TLS). Das bedeutet, dass der Inhalt, den Sie senden (z. B. Textaufforderungen, Metadaten oder andere Nutzdaten), auf dem Netzwerk abgefangen oder preisgegeben werden kann. Bei der Verwendung von <code>http://</code> (insbesondere in öffentlichen Netzwerken) <strong>übernehmen Sie alle Risiken</strong> und <strong>Sie sind verantwortlich</strong> für jegliche Preisgabe, die sich aus der Verwendung einer unverschlüsselten Verbindung ergibt. Wir empfehlen dringend die Verwendung von <code>https://</code>, einem vertrauenswürdigen internen Netzwerk, VPN oder anderer sicherer Übertragung."
+    }
+  },
+  "retention": {
+    "title": "Datenaufbewahrung",
+    "b1": "<strong>Dateien auf dem Gerät:</strong> Verbleiben, bis Sie sie löschen oder die App deinstallieren.",
+    "b2": "<strong>Support-E-Mails:</strong> Werden nur so lange aufbewahrt, wie es zur Lösung Ihrer Anfrage und zur Erfüllung gesetzlicher Verpflichtungen erforderlich ist.",
+    "b3": "<strong>Diagnostik:</strong> Werden gemäß den Aufbewahrungsrichtlinien von Apple für Analysen aufbewahrt."
+  },
+  "rights": {
+    "title": "Ihre Datenschutzrechte",
+    "p1": "Je nach Ihrer Region haben Sie möglicherweise das Recht, auf bestimmte von uns gespeicherte Daten zuzugreifen, sie zu korrigieren, zu löschen oder ihre Verarbeitung einzuschränken sowie der Verarbeitung zu widersprechen oder Ihre Einwilligung zu widerrufen.",
+    "gdpr": "<strong>DSGVO (EWR/Vereinigtes Königreich):</strong> Sie können die Auskunft oder Löschung personenbezogener Daten verlangen, die wir kontrollieren (hauptsächlich Support-E-Mails). Für Daten, die von Apple gespeichert werden (z. B. Crash-Protokolle, iCloud-Dateien), verwenden Sie bitte die Datenschutztools von Apple.",
+    "ccpa": "<strong>CCPA/CPRA (Kalifornien):</strong> Wir verkaufen oder geben keine personenbezogenen Informationen für standortübergreifende Werbung weiter. Sie können die Auskunft oder Löschung personenbezogener Informationen verlangen, die wir speichern (hauptsächlich Support-E-Mails).",
+    "p2": "Um Ihre Rechte auszuüben, kontaktieren Sie uns unter <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Wir müssen Ihre Anfrage möglicherweise überprüfen."
+  },
+  "children": {
+    "title": "Datenschutz für Kinder",
+    "p1": "1Air ist eine App für allgemeines Publikum und richtet sich nicht speziell an Kinder. Wir erheben keine personenbezogenen Daten von Kindern. Wenn Sie der Meinung sind, dass ein Kind uns über Support-Kommunikation personenbezogene Daten mitgeteilt hat, kontaktieren Sie uns bitte, damit wir diese löschen können."
+  },
+  "international": {
+    "title": "Internationale Übertragungen",
+    "p1": "Ihre Informationen können im Land, in dem Sie sich befinden, und in anderen Ländern, in denen unsere Dienstleister tätig sind (z. B. Apples Infrastruktur), verarbeitet werden. Wir implementieren Maßnahmen, die darauf ausgelegt sind, Ihre Informationen in Übereinstimmung mit den geltenden Gesetzen zu schützen."
+  },
+  "changes": {
+    "title": "Änderungen dieser Richtlinie",
+    "p1": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden die aktualisierte Version in der App oder auf unserer Website veröffentlichen und das oben genannte „Datum des Inkrafttretens“ ändern. Wesentliche Änderungen werden hervorgehoben."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "p1": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder unseren Praktiken haben, kontaktieren Sie uns:",
+    "emailLabel": "Email:",
+    "dpo": "Datenschutzbeauftragter (falls zutreffend): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Alle Rechte vorbehalten."
+  },
+  "ollama": {
+    "title": "Ollama-Einrichtungsanleitung",
+    "subtitle": "Bitte installieren Sie Ollama, um KI-Funktionen zu aktivieren.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Installer herunterladen",
+    "win_step1_desc": "Laden Sie den Installer für Windows von der offiziellen Website herunter.",
+    "win_btn": "Für Windows herunterladen",
+    "win_step2_title": "2. Installieren",
+    "win_step2_desc": "Führen Sie die Datei <code>OllamaSetup.exe</code> aus und klicken Sie auf [Installieren].",
+    "win_step2_note": "✅ Nach der Installation sehen Sie das Alpaka-Symbol (🦙) in der Taskleiste.",
+    "win_step3_title": "3. Installation überprüfen",
+    "win_step3_desc": "Öffnen Sie die Eingabeaufforderung (Win + R, geben Sie <code>cmd</code> ein) und führen Sie den folgenden Befehl aus:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Herunterladen",
+    "mac_step1_desc": "Erfordert macOS 11 Big Sur oder neuer.",
+    "mac_btn": "Für macOS herunterladen",
+    "mac_step2_title": "2. Anwendung installieren",
+    "mac_step2_desc": "Entpacke die Datei und verschiebe die <strong>Ollama</strong>-App in den <code>Programme</code>-Ordner.",
+    "mac_step3_title": "3. Ausführen & Einrichten",
+    "mac_step3_desc": "Doppelklicke, um auszuführen. Du solltest das Alpaka-Symbol (🦙) in der Menüleiste sehen.",
+    "mac_step3_note": "💡 Wenn du aufgefordert wirst, Befehlszeilenwerkzeuge zu installieren, klicke auf 'Installieren'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Installation über Terminal",
+    "linux_step1_desc": "Öffne dein Terminal und führe den folgenden Befehl aus:",
+    "linux_step1_note": "⚠️ AMD-Grafikkarten benötigen möglicherweise eine zusätzliche Treiberinstallation.",
+    "linux_step2_title": "2. Service-Status überprüfen",
+    "linux_step2_desc": "Stelle sicher, dass Ollama im Hintergrund ausgeführt wird.",
+    "final_step_title": "🎉 Letzter Schritt: KI-Modell herunterladen",
+    "final_step_desc": "Nach der Installation musst du das KI-Modell herunterladen. Führe dies in deinem Terminal aus:",
+    "final_step_note": "💡 Wenn deine App ein bestimmtes Modell benötigt (z. B. mistral), ersetze 'llama3.2' durch diesen Namen.",
+    "copy": "Copy",
+    "copied": "Kopiert!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

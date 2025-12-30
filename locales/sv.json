@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Integritetspolicy",
+  "effectiveDateLabel": "Gäller från:",
+  "effectiveDateValue": "5 november 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Data vi samlar in",
+    "howWeUse": "Hur vi använder data",
+    "sharing": "Delning &amp; Bearbetare",
+    "security": "Security",
+    "retention": "Databevaring",
+    "rights": "Dina rättigheter",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Överblick",
+    "bullets": {
+      "noTracking": "<strong>Ingen spårning. Inga annonser.</strong> 1Air innehåller inte reklam eller spårare från tredje part.",
+      "onDevice": "<strong>Dina videor stannar på din enhet.</strong> Appen läser MP4-filer du väljer och kan lagra dem i din lokala Documents-mapp; innehållet bearbetas på enheten.",
+      "icloud": "<strong>Valfri iCloud Drive.</strong> Om du väljer filer från iCloud Drive förblir filerna i ditt iCloud-konto under Apples villkor.",
+      "diagnostics": "<strong>Minimal diagnostik.</strong> Vi tar bara emot anonymiserad krasch-/diagnostikdata om du väljer att dela med utvecklare via Apples inställningar."
+    }
+  },
+  "who": {
+    "title": "Vem vi är",
+    "developerLabel": "Developer:",
+    "developerValue": "[Ditt juridiska företagsnamn, t.ex. J-Apps Co.]",
+    "developerSuffix": "(“vi”, “oss” eller “vår”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Data vi samlar in",
+    "contentYouChoose": {
+      "title": "1) Innehåll du väljer",
+      "p1": "När du använder filväljaren för att välja videor får 1Air endast läsbehörighet till de objekt du väljer. Om du aktiverar appens funktion \"Spara till Dokument\" sparas kopior av de valda filerna lokalt i appens sandbox.",
+      "scope": "<strong>Omfattning:</strong> Endast filer du väljer; ingen bakgrundsskanning av orelaterade mappar.",
+      "processing": "<strong>Bearbetning:</strong> Uppspelning och filhantering sker på enheten.",
+      "sync": "<strong>Synkronisering:</strong> Om du väljer från iCloud Drive hanteras lagring och synkronisering av Apple iCloud enligt Apples policyer."
+    },
+    "diagnostics": {
+      "title": "2) Diagnostik (Valfritt)",
+      "p1": "Om du väljer att dela analys-/kraschrapporter med utvecklare (Apple Inställningar &gt; Integritet &amp; Säkerhet &gt; Analys &amp; Förbättringar) kan vi ta emot:",
+      "b1": "Kraschloggar och prestandamätvärden (anonymiserade av Apple)",
+      "b2": "Enhetsmodell, OS-version och liknande teknisk metadata",
+      "p2": "Vi tar inte emot din identitet från dessa rapporter."
+    },
+    "support": {
+      "title": "3) Supportkommunikation",
+      "p1": "Om du mejlar oss får vi din e-postadress och innehållet i ditt meddelande för att svara på din förfrågan."
+    },
+    "notCollect": {
+      "title": "Vi samlar <em>inte</em> in",
+      "b1": "Personliga identifierare inom appen (namn, telefonnummer, kontakter)",
+      "b2": "Exakt platsdata",
+      "b3": "Annonsidentifierare eller beteendespårningsdata"
+    }
+  },
+  "use": {
+    "title": "Hur vi använder data",
+    "b1": "För att tillhandahålla kärnfunktionalitet (filåtkomst du begär, videouppspelning)",
+    "b2": "För att underhålla och förbättra appkvaliteten (diagnostik om du har valt att delta)",
+    "b3": "För att svara på supportförfrågningar"
+  },
+  "sharing": {
+    "title": "Delning &amp; Bearbetare",
+    "p1": "<strong>Vi säljer inte dina data.</strong> Vi delar inte personuppgifter med tredje parter för reklam eller marknadsföring.",
+    "p2": "<strong>Serviceleverantörer:</strong> Vi kan använda serviceleverantörer enbart för att driva och stödja appen (t.ex. Apple iCloud för filer du lagrar där; Apples kraschrapporteringspipeline om du har valt det). Dessa leverantörer agerar som databehandlare under sina egna villkor och säkerhetskontroller.",
+    "apple": "<strong>Apple (iCloud &amp; Kraschrapporter):</strong> Filer och analyser hanteras i enlighet med Apples integritetspolicy och dina enhetsinställningar.",
+    "p3": "Vi kan lämna ut information om det krävs enligt lag eller för att skydda rättigheter, säkerhet och trygghet."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air lagrar användarsparade filer i appens sandbox på din enhet. Vi tillämpar bästa praxis för plattformssäkerhet och förlitar oss på Apples systemskydd för iOS/iPadOS/macOS. Ingen metod för elektronisk lagring är 100 % säker, men vi arbetar för att skydda din information.",
+    "ollama": {
+      "title": "Ollama-nätverksintegration",
+      "warn": "Om du ansluter 1Air till en Ollama-server över nätverket med <code>http://</code> är anslutningen <strong>inte krypterad under överföringen</strong> (ingen TLS). Det innebär att innehållet du skickar (t.ex. textprompter, metadata eller andra nyttolaster) kan utsättas för avlyssning eller läckage på nätverket. När du använder <code>http://</code> (särskilt på offentliga nätverk) <strong>tar du alla risker</strong> och <strong>du är ansvarig</strong> för eventuell exponering som uppstår vid användning av en okrypterad anslutning. Vi rekommenderar starkt att du använder <code>https://</code>, ett betrott internt nätverk, VPN eller annan säker transport."
+    }
+  },
+  "retention": {
+    "title": "Lagring av data",
+    "b1": "<strong>Filer på enheten:</strong> Förblir tills du raderar dem eller avinstallerar appen.",
+    "b2": "<strong>Supportmejl:</strong> Behålls endast så länge som det behövs för att lösa din begäran och uppfylla lagliga skyldigheter.",
+    "b3": "<strong>Diagnostik:</strong> Behålls i enlighet med Apples policy för analyslagring."
+  },
+  "rights": {
+    "title": "Dina integritetsrättigheter",
+    "p1": "Beroende på din region kan du ha rätt att få tillgång till, korrigera, radera eller begränsa vissa data som vi har om dig, och att invända mot eller återkalla samtycke till behandling där det är tillämpligt.",
+    "gdpr": "<strong>GDPR (EES/Storbritannien):</strong> Du kan begära tillgång till eller radering av personuppgifter som vi hanterar (främst supportmejl). För data som innehas av Apple (t.ex. kraschloggar, iCloud-filer) använder du Apples integritetsverktyg.",
+    "ccpa": "<strong>CCPA/CPRA (Kalifornien):</strong> Vi säljer eller delar inte personlig information för korskontextuell reklam. Du kan begära tillgång till eller radering av personlig information som vi har (främst supportmejl).",
+    "p2": "För att utöva dina rättigheter, kontakta oss på <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Vi kan behöva verifiera din begäran."
+  },
+  "children": {
+    "title": "Integritet för barn",
+    "p1": "1Air är en app för allmänheten och är inte specifikt riktad till barn. Vi samlar inte in personlig information från barn. Om du tror att ett barn har lämnat personlig information till oss via supportkommunikation, vänligen kontakta oss så raderar vi den."
+  },
+  "international": {
+    "title": "Internationella överföringar",
+    "p1": "Din information kan behandlas i det land där du bor och i andra länder där våra tjänsteleverantörer är verksamma (t.ex. Apples infrastruktur). Vi implementerar åtgärder som är utformade för att skydda din information i enlighet med gällande lag."
+  },
+  "changes": {
+    "title": "Ändringar i denna policy",
+    "p1": "Vi kan uppdatera denna integritetspolicy från tid till annan. Vi kommer att publicera den uppdaterade versionen i appen eller på vår webbplats och revidera “Giltig från”-datumet ovan. Väsentliga ändringar kommer att markeras."
+  },
+  "contact": {
+    "title": "Kontakta oss",
+    "p1": "Om du har frågor om denna integritetspolicy eller våra metoder, kontakta oss:",
+    "emailLabel": "Email:",
+    "dpo": "Dataskyddsansvarig (om tillämpligt): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Alla rättigheter förbehållna."
+  },
+  "ollama": {
+    "title": "Ollama Installationsguide",
+    "subtitle": "Installera Ollama för att aktivera AI-funktioner.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Ladda ner installationsprogram",
+    "win_step1_desc": "Ladda ner installationsprogrammet för Windows från den officiella webbplatsen.",
+    "win_btn": "Ladda ner för Windows",
+    "win_step2_title": "2. Installera",
+    "win_step2_desc": "Kör filen <code>OllamaSetup.exe</code> och klicka på [Installera].",
+    "win_step2_note": "✅ När det är installerat ser du Alpaca-ikonen (🦙) i aktivitetsfältet.",
+    "win_step3_title": "3. Verifiera installationen",
+    "win_step3_desc": "Öppna Kommandotolken (Win + R, skriv <code>cmd</code>) och kör kommandot nedan:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Ladda ner",
+    "mac_step1_desc": "Kräver macOS 11 Big Sur eller senare.",
+    "mac_btn": "Ladda ner för macOS",
+    "mac_step2_title": "2. Installera applikationen",
+    "mac_step2_desc": "Packa upp filen och flytta <strong>Ollama</strong>-appen till mappen <code>Applications</code>.",
+    "mac_step3_title": "3. Kör och Konfigurera",
+    "mac_step3_desc": "Dubbelklicka för att köra. Du bör se Alpaca-ikonen (🦙) i menyraden.",
+    "mac_step3_note": "💡 Om du blir uppmanad att installera kommandoradsverktyg, klicka på 'Installera'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Installera via Terminal",
+    "linux_step1_desc": "Öppna din terminal och kör följande kommando:",
+    "linux_step1_note": "⚠️ AMD-grafikkort kan kräva ytterligare drivrutinsinstallation.",
+    "linux_step2_title": "2. Kontrollera Tjänstestatus",
+    "linux_step2_desc": "Se till att Ollama körs i bakgrunden.",
+    "final_step_title": "🎉 Slutligt Steg: Ladda Ner AI-modell",
+    "final_step_desc": "Efter installationen måste du ladda ner AI-modellen. Kör detta i din terminal:",
+    "final_step_note": "💡 Om din app kräver en specifik modell (t.ex. mistral), byt ut 'llama3.2' mot det namnet.",
+    "copy": "Copy",
+    "copied": "Kopierat!",
+    "footer": "&copy; 2025 Drivs av Ollama."
+  }
+}

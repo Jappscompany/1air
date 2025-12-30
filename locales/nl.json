@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Privacybeleid",
+  "effectiveDateLabel": "Van kracht vanaf:",
+  "effectiveDateValue": "5 november 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Gegevens die we verzamelen",
+    "howWeUse": "Hoe we gegevens gebruiken",
+    "sharing": "Delen & Verwerkers",
+    "security": "Security",
+    "retention": "Gegevensbewaring",
+    "rights": "Uw rechten",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "In een oogopslag",
+    "bullets": {
+      "noTracking": "<strong>Geen tracking. Geen advertenties.</strong> 1Air bevat geen advertenties of tracking van derden.",
+      "onDevice": "<strong>Uw video's blijven op uw apparaat.</strong> De app leest MP4-bestanden die u kiest en kan deze opslaan in uw lokale Documentenmap; de inhoud wordt op het apparaat verwerkt.",
+      "icloud": "<strong>Optionele iCloud Drive.</strong> Als u bestanden kiest van iCloud Drive, blijven de bestanden in uw iCloud-account onder de voorwaarden van Apple.",
+      "diagnostics": "<strong>Minimale diagnostische gegevens.</strong> We ontvangen alleen geanonimiseerde crash-/diagnostische gegevens als u ervoor kiest om te delen met ontwikkelaars via de Apple-instellingen."
+    }
+  },
+  "who": {
+    "title": "Wie we zijn",
+    "developerLabel": "Developer:",
+    "developerValue": "[Uw wettelijke entiteit, bijv. J-Apps Co.]",
+    "developerSuffix": "(“we”, “ons”, of “onze”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Gegevens die we verzamelen",
+    "contentYouChoose": {
+      "title": "1) Inhoud die u kiest",
+      "p1": "Wanneer u de bestandenkiezer gebruikt om video's te selecteren, krijgt 1Air alleen leesrechten voor de items die u selecteert. Als u de functie “Opslaan in Documenten” van de app inschakelt, worden kopieën van de geselecteerde bestanden lokaal opgeslagen in de sandbox van de app.",
+      "scope": "<strong>Bereik:</strong> Alleen bestanden die u selecteert; geen achtergrondscanning van niet-gerelateerde mappen.",
+      "processing": "<strong>Verwerking:</strong> Afspelen en bestandsbeheer gebeuren op het apparaat.",
+      "sync": "<strong>Synchronisatie:</strong> Als u vanuit iCloud Drive selecteert, worden opslag en synchronisatie beheerd door Apple iCloud onder het beleid van Apple."
+    },
+    "diagnostics": {
+      "title": "2) Diagnostische gegevens (Optioneel)",
+      "p1": "Als u ervoor kiest om analyses/crashrapporten met ontwikkelaars te delen (Apple Instellingen > Privacy & Beveiliging > Analyse & Verbeteringen), kunnen we ontvangen:",
+      "b1": "Crashlogs en prestatiemetingen (geanonimiseerd door Apple)",
+      "b2": "Apparaatmodel, besturingssysteemversie en vergelijkbare technische metadata",
+      "p2": "We ontvangen uw identiteit niet uit deze rapporten."
+    },
+    "support": {
+      "title": "3) Ondersteuningscommunicatie",
+      "p1": "Als u ons een e-mail stuurt, ontvangen we uw e-mailadres en de inhoud van uw bericht om uw verzoek te beantwoorden."
+    },
+    "notCollect": {
+      "title": "We verzamelen *niet* ",
+      "b1": "Persoonlijke identificatiegegevens binnen de app (naam, telefoonnummer, contacten)",
+      "b2": "Precieze locatiegegevens",
+      "b3": "Advertentie-identificatiegegevens of gedragstrackingsgegevens"
+    }
+  },
+  "use": {
+    "title": "Hoe we gegevens gebruiken",
+    "b1": "Om de kernfunctionaliteit te leveren (bestaandstoegang die u aanvraagt, videoweergave)",
+    "b2": "Om de kwaliteit van de app te onderhouden en te verbeteren (diagnostische gegevens als u ervoor hebt gekozen)",
+    "b3": "Om te reageren op ondersteuningsaanvragen"
+  },
+  "sharing": {
+    "title": "Delen & Verwerkers",
+    "p1": "<strong>We verkopen uw gegevens niet.</strong> We delen geen persoonlijke gegevens met derden voor advertenties of marketing.",
+    "p2": "<strong>Dienstverleners:</strong> We kunnen dienstverleners gebruiken om de app te gebruiken en te ondersteunen (bijv. Apple iCloud voor bestanden die u daar opslaat; de crashrapportagepipeline van Apple als u ervoor hebt gekozen). Deze providers fungeren als verwerkers onder hun eigen voorwaarden en beveiligingsmaatregelen.",
+    "apple": "<strong>Apple (iCloud &amp; Crash Reports):</strong> Bestanden en analyses worden behandeld in overeenstemming met het privacybeleid van Apple en de instellingen van uw apparaat.",
+    "p3": "We kunnen informatie vrijgeven indien wettelijk vereist of om rechten, veiligheid en beveiliging te beschermen."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air slaat door de gebruiker opgeslagen bestanden op in de sandbox van de app op uw apparaat. We passen platformbeveiligingsbest practices toe en vertrouwen op de systeembeveiliging van Apple voor iOS/iPadOS/macOS. Geen enkele methode voor elektronische opslag is 100% veilig, maar we werken aan de bescherming van uw informatie.",
+    "ollama": {
+      "title": "Ollama Network Integratie",
+      "warn": "Als u 1Air via het netwerk met een Ollama-server verbindt met <code>http://</code>, is de verbinding <strong>niet versleuteld tijdens het transport</strong> (geen TLS). Dit betekent dat de inhoud die u verzendt (zoals tekstprompts, metadata of andere payloads) kan worden onderschept of gelekt op het netwerk. Bij het gebruik van <code>http://</code> (vooral op openbare netwerken) <strong>neemt u alle risico's voor uw rekening</strong> en <strong>bent u verantwoordelijk</strong> voor blootstelling die voortvloeit uit het gebruik van een onversleutelde verbinding. We raden ten zeerste aan om <code>https://</code>, een vertrouwd intern netwerk, VPN of een ander beveiligd transport te gebruiken."
+    }
+  },
+  "retention": {
+    "title": "Gegevensbewaring",
+    "b1": "<strong>Bestanden op het apparaat:</strong> Blijven bestaan totdat u ze verwijdert of de app verwijdert.",
+    "b2": "<strong>E-mails voor ondersteuning:</strong> Worden alleen bewaard zolang als nodig is om uw verzoek op te lossen en aan wettelijke verplichtingen te voldoen.",
+    "b3": "<strong>Diagnostiek:</strong> Worden bewaard in overeenstemming met het beleid inzake gegevensbewaring van Apple."
+  },
+  "rights": {
+    "title": "Uw privacyrechten",
+    "p1": "Afhankelijk van uw regio heeft u mogelijk het recht om bepaalde gegevens die we over u hebben, in te zien, te corrigeren, te verwijderen of de verwerking ervan te beperken, en om bezwaar te maken tegen of toestemming in te trekken voor de verwerking, indien van toepassing.",
+    "gdpr": "<strong>GDPR (EER/VK):</strong> U kunt toegang vragen tot of verwijdering van persoonlijke gegevens die we controleren (voornamelijk e-mails voor ondersteuning). Voor gegevens die door Apple worden aangehouden (bijv. crashlogs, iCloud-bestanden) kunt u de privacytools van Apple gebruiken.",
+    "ccpa": "<strong>CCPA/CPRA (Californië):</strong> We verkopen of delen geen persoonlijke informatie voor cross-contextuele advertenties. U kunt toegang vragen tot of verwijdering van persoonlijke informatie die we aanhouden (voornamelijk e-mails voor ondersteuning).",
+    "p2": "Om uw rechten uit te oefenen, neem contact met ons op via <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. We moeten mogelijk uw verzoek verifiëren."
+  },
+  "children": {
+    "title": "Privacy van kinderen",
+    "p1": "1Air is een app voor een algemeen publiek en is niet specifiek gericht op kinderen. We verzamelen niet bewust persoonlijke informatie van kinderen. Als u denkt dat een kind persoonlijke informatie aan ons heeft verstrekt via supportcommunicatie, neem dan contact met ons op en we verwijderen deze."
+  },
+  "international": {
+    "title": "Internationale overdrachten",
+    "p1": "Uw informatie kan worden verwerkt in het land waar u zich bevindt en in andere landen waar onze dienstverleners actief zijn (bijv. de infrastructuur van Apple). We implementeren maatregelen om uw informatie te beschermen in overeenstemming met de toepasselijke wetgeving."
+  },
+  "changes": {
+    "title": "Wijzigingen in dit beleid",
+    "p1": "We kunnen dit Privacybeleid van tijd tot tijd bijwerken. We plaatsen de bijgewerkte versie in de app of op onze website en herzien de \"Effectieve datum\" hierboven. Materiële wijzigingen worden gemarkeerd."
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "p1": "Als u vragen heeft over dit Privacybeleid of onze praktijken, neem dan contact met ons op:",
+    "emailLabel": "Email:",
+    "dpo": "Contactpersoon voor gegevensbescherming (indien van toepassing): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Alle rechten voorbehouden."
+  },
+  "ollama": {
+    "title": "Ollama Installatiegids",
+    "subtitle": "Installeer Ollama om AI-functies in te schakelen.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Download Installer",
+    "win_step1_desc": "Download de installer voor Windows vanaf de officiële website.",
+    "win_btn": "Download voor Windows",
+    "win_step2_title": "2. Installeren",
+    "win_step2_desc": "Voer het <code>OllamaSetup.exe</code> bestand uit en klik op [Installeren].",
+    "win_step2_note": "✅ Zodra het is geïnstalleerd, ziet u het Alpaca-pictogram (🦙) in de taakbalk.",
+    "win_step3_title": "3. Installatie verifiëren",
+    "win_step3_desc": "Open Opdrachtprompt (Win + R, typ <code>cmd</code>) en voer het volgende commando uit:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Downloaden",
+    "mac_step1_desc": "Vereist macOS 11 Big Sur of nieuwer.",
+    "mac_btn": "Download voor macOS",
+    "mac_step2_title": "2. Applicatie installeren",
+    "mac_step2_desc": "Pak het bestand uit en verplaats de <strong>Ollama</strong> app naar de <code>Applications</code> map.",
+    "mac_step3_title": "3. Uitvoeren & Instellen",
+    "mac_step3_desc": "Dubbelklik om uit te voeren. Je zou het Alpaca-icoon (🦙) in de menubalk moeten zien.",
+    "mac_step3_note": "💡 Als je wordt gevraagd om command line tools te installeren, klik dan op 'Installeren'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Installeren via Terminal",
+    "linux_step1_desc": "Open je terminal en voer het volgende commando uit:",
+    "linux_step1_note": "⚠️ AMD-videokaarten vereisen mogelijk extra driver-installatie.",
+    "linux_step2_title": "2. Controleer Servicestatus",
+    "linux_step2_desc": "Zorg ervoor dat Ollama op de achtergrond draait.",
+    "final_step_title": "🎉 Laatste Stap: AI-model ophalen",
+    "final_step_desc": "Na de installatie moet je het AI-model downloaden. Voer dit uit in je terminal:",
+    "final_step_note": "💡 Als je app een specifiek model vereist (bijv. mistral), vervang 'llama3.2' dan door die naam.",
+    "copy": "Copy",
+    "copied": "Gekopieerd!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

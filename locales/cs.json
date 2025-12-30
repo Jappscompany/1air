@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Zásady ochrany osobních údajů",
+  "effectiveDateLabel": "Datum účinnosti:",
+  "effectiveDateValue": "5. listopadu 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Shromažďovaná data",
+    "howWeUse": "Jak používáme data",
+    "sharing": "Sdílení a zpracovatelé",
+    "security": "Security",
+    "retention": "Uchovávání dat",
+    "rights": "Vaše práva",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Na první pohled",
+    "bullets": {
+      "noTracking": "<strong>Žádné sledování. Žádná reklama.</strong> 1Air neobsahuje reklamy ani sledovače třetích stran.",
+      "onDevice": "<strong>Vaše videa zůstávají na vašem zařízení.</strong> Aplikace čte soubory MP4, které vyberete, a může je uložit do vaší lokální složky Dokumenty; obsah je zpracován na zařízení.",
+      "icloud": "<strong>Volitelné iCloud Drive.</strong> Pokud vyberete soubory z iCloud Drive, zůstanou ve vašem účtu iCloud podle podmínek společnosti Apple.",
+      "diagnostics": "<strong>Minimální diagnostika.</strong> Obdržíme pouze anonymizovaná data o pádech/diagnostice, pokud se rozhodnete sdílet s vývojáři prostřednictvím nastavení Apple."
+    }
+  },
+  "who": {
+    "title": "Kdo jsme",
+    "developerLabel": "Developer:",
+    "developerValue": "[Název vaší právnické osoby, např. J-Apps Co.]",
+    "developerSuffix": "(„my“, „nás“ nebo „naše“)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Shromažďovaná data",
+    "contentYouChoose": {
+      "title": "1) Obsah, který si vyberete",
+      "p1": "Při používání výběru souborů k výběru videí má 1Air pouze přístup ke čtení k položkám, které vyberete. Pokud povolíte funkci „Uložit do Dokumentů“ aplikace, budou kopie vybraných souborů uloženy lokálně v sandboxu aplikace.",
+      "scope": "<strong>Rozsah:</strong> Pouze soubory, které vyberete; žádné skenování nesouvisejících složek na pozadí.",
+      "processing": "<strong>Zpracování:</strong> Přehrávání a správa souborů probíhá na zařízení.",
+      "sync": "<strong>Synchronizace:</strong> Pokud vyberete z iCloud Drive, úložiště a synchronizace jsou spravovány společností Apple iCloud podle zásad společnosti Apple."
+    },
+    "diagnostics": {
+      "title": "2) Diagnostika (Volitelné)",
+      "p1": "Pokud se rozhodnete sdílet analytické údaje/zprávy o pádech s vývojáři (Nastavení Apple &gt; Soukromí a zabezpečení &gt; Analytika a vylepšení), můžeme obdržet:",
+      "b1": "Protokoly o pádech a metriky výkonu (anonymizované společností Apple)",
+      "b2": "Model zařízení, verze operačního systému a podobné technické metadata",
+      "p2": "Z těchto zpráv neobdržíme vaši identitu."
+    },
+    "support": {
+      "title": "3) Podpora a komunikace",
+      "p1": "Pokud nám pošlete e-mail, obdržíme vaši e-mailovou adresu a obsah vaší zprávy, abychom mohli odpovědět na vaši žádost."
+    },
+    "notCollect": {
+      "title": "Neshromažďujeme",
+      "b1": "Osobní identifikátory v aplikaci (jméno, telefonní číslo, kontakty)",
+      "b2": "Přesná data o poloze",
+      "b3": "Reklamní identifikátory nebo data o sledování chování"
+    }
+  },
+  "use": {
+    "title": "Jak používáme data",
+    "b1": "K poskytování základní funkčnosti (přístup k souborům, které požadujete, přehrávání videa)",
+    "b2": "K údržbě a zlepšování kvality aplikace (diagnostika, pokud jste souhlasili)",
+    "b3": "Pro odpovědi na dotazy podpory"
+  },
+  "sharing": {
+    "title": "Sdílení a zpracovatelé",
+    "p1": "<strong>Nenek prodáváme vaše data.</strong> Nesdílíme osobní údaje se třetími stranami pro účely reklamy nebo marketingu.",
+    "p2": "<strong>Poskytovatelé služeb:</strong> Můžeme používat poskytovatele služeb výhradně k provozu a podpoře aplikace (např. Apple iCloud pro soubory, které v ní ukládáte; pipeline pro hlášení chyb Apple, pokud jste se přihlásili k účasti). Tito poskytovatelé fungují jako zpracovatelé v rámci svých vlastních podmínek a bezpečnostních opatření.",
+    "apple": "<strong>Apple (iCloud &amp; Hlášení chyb):</strong> Soubory a analýzy jsou zpracovávány v souladu se zásadami ochrany osobních údajů společnosti Apple a nastavením vašeho zařízení.",
+    "p3": "Můžeme zveřejnit informace, pokud to vyžaduje zákon, nebo k ochraně práv, bezpečnosti a zabezpečení."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air ukládá uživatelsky uložené soubory v sandboxu aplikace ve vašem zařízení. Používáme osvědčené postupy zabezpečení platformy a spoléháme se na systémová bezpečnostní opatření společnosti Apple pro iOS/iPadOS/macOS. Žádná metoda elektronického ukládání dat není 100% zabezpečená, ale pracujeme na ochraně vašich informací.",
+    "ollama": {
+      "title": "Integrace s Ollama sítí",
+      "warn": "Pokud připojíte 1Air k serveru Ollama přes síť pomocí <code>http://</code>, připojení <strong>není šifrováno během přenosu</strong> (žádný TLS). To znamená, že obsah, který odešlete (například textové výzvy, metadata nebo jiné užitečné zatížení), může být vystaven odposlouchávání nebo úniku v síti. Při používání <code>http://</code> (zejména ve veřejných sítích) <strong>přebíráte všechna rizika</strong> a <strong>nesete odpovědnost</strong> za jakékoli vystavení v důsledku používání nešifrovaného připojení. Důrazně doporučujeme používat <code>https://</code>, důvěryhodnou interní síť, VPN nebo jiný zabezpečený přenos."
+    }
+  },
+  "retention": {
+    "title": "Uchovávání dat",
+    "b1": "<strong>Soubory v zařízení:</strong> Zůstanou, dokud je nesmažete nebo neodinstalujete aplikaci.",
+    "b2": "<strong>E-maily podpory:</strong> Uchovávány pouze tak dlouho, jak je potřeba k vyřešení vašeho požadavku a splnění zákonných povinností.",
+    "b3": "<strong>Diagnostika:</strong> Uchovávána v souladu se zásadami uchovávání analytických dat společnosti Apple."
+  },
+  "rights": {
+    "title": "Vaše práva na ochranu osobních údajů",
+    "p1": "V závislosti na vaší lokalitě můžete mít právo na přístup, opravu, smazání nebo omezení určitých údajů, které o vás uchováváme, a právo vznést námitky proti zpracování nebo odvolat souhlas s ním, pokud je to možné.",
+    "gdpr": "<strong>GDPR (EHP/Spojené království):</strong> Můžete požádat o přístup nebo smazání osobních údajů, které kontrolujeme (především e-maily podpory). Pro data uložená společností Apple (např. protokoly chyb, soubory iCloud) použijte nástroje ochrany osobních údajů společnosti Apple.",
+    "ccpa": "<strong>CCPA/CPRA (Kalifornie):</strong> Neprodáváme ani nesdílíme osobní údaje pro účely reklamy v různých kontextech. Můžete požádat o přístup nebo smazání osobních údajů, které o vás uchováváme (především e-maily podpory).",
+    "p2": "Pro uplatnění práv nás kontaktujte na adrese <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Můžeme potřebovat ověřit váš požadavek."
+  },
+  "children": {
+    "title": "Ochrana osobních údajů dětí",
+    "p1": "1Air je aplikace pro široké publikum a není speciálně zaměřena na děti. Nevyžadujeme vědomě osobní údaje od dětí. Pokud věříte, že dítě nám poskytlo osobní údaje prostřednictvím podpůrné komunikace, kontaktujte nás a my je smažeme."
+  },
+  "international": {
+    "title": "Mezinárodní převody",
+    "p1": "Vaše informace mohou být zpracovávány v zemi vašeho bydliště a v dalších zemích, kde působí naši poskytovatelé služeb (např. infrastruktura společnosti Apple). Implementujeme opatření navržená tak, aby chránila vaše informace v souladu s platnými právními předpisy."
+  },
+  "changes": {
+    "title": "Změny tohoto zásad",
+    "p1": "Můžeme čas od času aktualizovat toto Zásady ochrany osobních údajů. Zveřejníme aktualizovanou verzi v aplikaci nebo na našich webových stránkách a změníme výše uvedené “Datum účinnosti”. Zásadní změny budou zvýrazněny."
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "p1": "Pokud máte dotazy k tomuto Zásadám ochrany osobních údajů nebo našim postupům, kontaktujte nás:",
+    "emailLabel": "Email:",
+    "dpo": "Kontakt pro ochranu osobních údajů (pokud se na něj vztahuje): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Všechna práva vyhrazena."
+  },
+  "ollama": {
+    "title": "Průvodce nastavením Ollama",
+    "subtitle": "Nainstalujte si Ollama pro aktivaci funkcí AI.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Stáhněte instalační program",
+    "win_step1_desc": "Stáhněte si instalační program pro Windows z oficiálních webových stránek.",
+    "win_btn": "Stáhnout pro Windows",
+    "win_step2_title": "2. Nainstalujte",
+    "win_step2_desc": "Spusťte soubor <code>OllamaSetup.exe</code> a klikněte na [Install].",
+    "win_step2_note": "✅ Po instalaci uvidíte ikonu Alpaka (🦙) na panelu úloh.",
+    "win_step3_title": "3. Ověřte instalaci",
+    "win_step3_desc": "Otevřete příkazový řádek (Win + R, zadejte <code>cmd</code>) a spusťte následující příkaz:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Stáhněte",
+    "mac_step1_desc": "Vyžaduje macOS 11 Big Sur nebo novější.",
+    "mac_btn": "Stáhnout pro macOS",
+    "mac_step2_title": "2. Nainstalujte aplikaci",
+    "mac_step2_desc": "Rozbalte soubor a přesuňte aplikaci <strong>Ollama</strong> do složky <code>Applications</code>.",
+    "mac_step3_title": "3. Spusťte a nastavte",
+    "mac_step3_desc": "Dvakrát klikněte pro spuštění. V nabídce by se měla zobrazit ikona Alpaka (🦙).",
+    "mac_step3_note": "💡 Pokud se zobrazí výzva k instalaci nástrojů příkazového řádku, klikněte na „Instalovat“.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Instalace přes Terminál",
+    "linux_step1_desc": "Otevřete svůj terminál a spusťte následující příkaz:",
+    "linux_step1_note": "⚠️ Grafické karty AMD mohou vyžadovat další instalaci ovladačů.",
+    "linux_step2_title": "2. Zkontrolujte stav služby",
+    "linux_step2_desc": "Ujistěte se, že Ollama běží na pozadí.",
+    "final_step_title": "🎉 Poslední krok: Stáhněte AI model",
+    "final_step_desc": "Po instalaci musíte stáhnout AI model. Spusťte toto ve svém terminálu:",
+    "final_step_note": "💡 Pokud vaše aplikace vyžaduje konkrétní model (např. mistral), nahraďte „llama3.2“ tímto názvem.",
+    "copy": "Copy",
+    "copied": "Zkopírováno!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

@@ -32,7 +32,7 @@
     "title": "Who We Are",
     "developerLabel": "Developer:",
     "developerValue": "[Your Legal Entity Name, e.g., J-Apps Co.]",
-    "developerSuffix": "(\u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d)",
+    "developerSuffix": "(“we”, “us”, or “our”)",
     "appLabel": "App:",
     "appValue": "1Air (iOS/iPadOS/macOS)",
     "contactLabel": "Contact:"
@@ -118,5 +118,39 @@
   },
   "footer": {
     "copyright": "© [2025] J-Apps. All rights reserved."
+  },
+  "ollama": {
+    "title": "Ollama Setup Guide",
+    "subtitle": "Please install Ollama to enable AI features.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Download Installer",
+    "win_step1_desc": "Download the installer for Windows from the official website.",
+    "win_btn": "Download for Windows",
+    "win_step2_title": "2. Install",
+    "win_step2_desc": "Run the <code>OllamaSetup.exe</code> file and click [Install].",
+    "win_step2_note": "✅ Once installed, you will see the Alpaca icon (🦙) in the taskbar tray.",
+    "win_step3_title": "3. Verify Installation",
+    "win_step3_desc": "Open Command Prompt (Win + R, type <code>cmd</code>) and run the command below:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Download",
+    "mac_step1_desc": "Requires macOS 11 Big Sur or later.",
+    "mac_btn": "Download for macOS",
+    "mac_step2_title": "2. Install Application",
+    "mac_step2_desc": "Unzip the file and move the <strong>Ollama</strong> app to the <code>Applications</code> folder.",
+    "mac_step3_title": "3. Run & Setup",
+    "mac_step3_desc": "Double-click to run. You should see the Alpaca icon (🦙) in the menu bar.",
+    "mac_step3_note": "💡 If prompted to install command line tools, click 'Install'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Install via Terminal",
+    "linux_step1_desc": "Open your terminal and run the following command:",
+    "linux_step1_note": "⚠️ AMD graphics cards may require additional driver installation.",
+    "linux_step2_title": "2. Check Service Status",
+    "linux_step2_desc": "Ensure Ollama is running in the background.",
+    "final_step_title": "🎉 Final Step: Pull AI Model",
+    "final_step_desc": "After installation, you must download the AI model. Run this in your terminal:",
+    "final_step_note": "💡 If your app requires a specific model (e.g., mistral), replace 'llama3.2' with that name.",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "footer": "&copy; 2025 Powered by Ollama."
   }
 }

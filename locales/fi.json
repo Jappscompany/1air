@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Tietosuojakäytäntö",
+  "effectiveDateLabel": "Voimassaoloaika:",
+  "effectiveDateValue": "5. marraskuuta 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Keräämämme tiedot",
+    "howWeUse": "Kuinka käytämme tietoja",
+    "sharing": "Jakaminen ja käsittelijät",
+    "security": "Security",
+    "retention": "Tietojen säilytys",
+    "rights": "Oikeutesi",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "Yhteenveto",
+    "bullets": {
+      "noTracking": "<strong>Ei seurantaa, ei mainoksia.</strong> 1Air ei sisällä mainoksia tai kolmannen osapuolen seurantalaitteita.",
+      "onDevice": "<strong>Videosi pysyvät laitteellasi.</strong> Sovellus lukee valitsemasi MP4-tiedostot ja voi tallentaa ne paikalliseen Documents-kansioon; sisältöä käsitellään laitteella.",
+      "icloud": "<strong>Valinnainen iCloud Drive.</strong> Jos valitset tiedostoja iCloud Drivesta, tiedostot pysyvät iCloud-tililläsi Applen ehtojen mukaisesti.",
+      "diagnostics": "<strong>Minimaalinen diagnostiikka.</strong> Vastaanotamme ainoastaan anonyymejä kaatumis- / diagnostiikkatietoja, jos valitset niiden jakamisen kehittäjille Apple-asetuksissa."
+    }
+  },
+  "who": {
+    "title": "Keitä me olemme",
+    "developerLabel": "Developer:",
+    "developerValue": "[Yrityksesi oikeudellinen nimi, esim. J-Apps Co.]",
+    "developerSuffix": "(”me”, ”meitä” tai ”meidän”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Keräämämme tiedot",
+    "contentYouChoose": {
+      "title": "1) Valitsemasi sisältö",
+      "p1": "Kun käytät Tiedostojen valitsinta videoiden valitsemiseen, 1Air saa ainoastaan lukuoikeuden valitsemiisi kohteisiin. Jos otat käyttöön sovelluksen ”Tallenna Dokumentteihin” -ominaisuuden, valittujen tiedostojen kopiot tallennetaan paikallisesti sovelluksen suojattuun ympäristöön.",
+      "scope": "<strong>Laajuus:</strong> Ainoastaan valitsemasi tiedostot; asiaankuulumattomien kansioiden taustaskannausta ei tehdä.",
+      "processing": "<strong>Käsittely:</strong> Toisto ja tiedostojen hallinta tapahtuvat laitteella.",
+      "sync": "<strong>Synkronointi:</strong> Jos valitset iCloud Drivesta, tallennusta ja synkronointia hallinnoi Apple iCloud Applen käytäntöjen mukaisesti."
+    },
+    "diagnostics": {
+      "title": "2) Diagnostiikka (Valinnainen)",
+      "p1": "Jos valitset analytiikka- / kaatumisraporttien jakamisen kehittäjille (Apple Asetukset > Yksityisyys ja turvallisuus > Analytiikka ja parannukset), voimme vastaanottaa:",
+      "b1": "Kaatumislokit ja suorituskykymittarit (Applen anonymisoimia)",
+      "b2": "Laitteen malli, käyttöjärjestelmän versio ja vastaavat tekniset metatiedot",
+      "p2": "Emme vastaanota henkilöllisyyttäsi näistä raporteista."
+    },
+    "support": {
+      "title": "3) Tukiviestintä",
+      "p1": "Jos lähetät meille sähköpostia, vastaanotamme sähköpostiosoitteesi ja viestisi sisällön vastataksemme pyyntöösi."
+    },
+    "notCollect": {
+      "title": "Emme kerää",
+      "b1": "Henkilökohtaiset tunnistetiedot sovelluksen sisällä (nimi, puhelinnumero, yhteystiedot)",
+      "b2": "Tarkat sijaintitiedot",
+      "b3": "Mainostunnisteet tai käyttäytymisen seurantaan liittyvät tiedot"
+    }
+  },
+  "use": {
+    "title": "Kuinka käytämme tietoja",
+    "b1": "Ydinominaisuuksien tarjoamiseen (pyytämäsi tiedostojen käyttö, videoiden toisto)",
+    "b2": "Sovelluksen laadun ylläpitoon ja parantamiseen (diagnostiikka, jos olet valinnut sen)",
+    "b3": "Tukipyyntöihin vastaamiseen"
+  },
+  "sharing": {
+    "title": "Jakaminen ja käsittelijät",
+    "p1": "<strong>Emme myy tietojasi.</strong> Emme jaa henkilötietoja kolmansille osapuolille mainontaa tai markkinointia varten.",
+    "p2": "<strong>Palveluntarjoajat:</strong> Voimme käyttää palveluntarjoajia ainoastaan sovelluksen käyttämiseen ja tukemiseen (esim. Apple iCloud tallentamillesi tiedostoille; Applen kaatumisraportointiputki, jos olet valinnut sen). Nämä palveluntarjoajat toimivat prosessoreina omien ehtojensa ja tietoturvakäytäntöjensä mukaisesti.",
+    "apple": "<strong>Apple (iCloud &amp; Kaatumisraportit):</strong> Tiedostot ja analytiikka käsitellään Applen tietosuojakäytännön ja laitteesi asetusten mukaisesti.",
+    "p3": "Voimme luovuttaa tietoja, jos laki sitä edellyttää tai oikeuksien, turvallisuuden ja suojan suojaamiseksi."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air tallentaa käyttäjän tallentamat tiedostot sovelluksen hiekkalaatikkoon laitteellasi. Sovellamme alustan tietoturvakäytäntöjä ja luotamme Applen järjestelmien suojaukseen iOS/iPadOS/macOS:lle. Mikään elektroninen tallennustapa ei ole 100 % turvallinen, mutta pyrimme suojaamaan tietojasi.",
+    "ollama": {
+      "title": "Ollama-verkkoyhteyden integrointi",
+      "warn": "Jos yhdistät 1Airin Ollama-palvelimeen verkon kautta käyttämällä <code>http://</code>, yhteys <strong>ei ole salattu tiedonsiirron aikana</strong> (ei TLS:ää). Tämä tarkoittaa, että lähettämäsi sisältö (kuten tekstikehotteet, metatiedot tai muut hyötykuormat) voi olla alttiina sieppaukselle tai vuotamiselle verkossa. Kun käytät <code>http://</code> (erityisesti julkisissa verkoissa), <strong>otat kaikki riskit</strong> ja <strong>olet vastuussa</strong> kaikesta paljastumisesta, joka aiheutuu salaamattoman yhteyden käytöstä. Suosittelemme vahvasti <code>https://</code>, luotettavaa sisäverkkoa, VPN:ää tai muuta suojattua tiedonsiirtotapaa."
+    }
+  },
+  "retention": {
+    "title": "Tietojen säilytys",
+    "b1": "<strong>Laitetiedostot:</strong> Säilytetään, kunnes poistat ne tai poistat sovelluksen.",
+    "b2": "<strong>Tukisähköpostit:</strong> Säilytetään vain niin kauan kuin tarvitaan pyyntösi ratkaisemiseksi ja lakisääteisten velvoitteiden täyttämiseksi.",
+    "b3": "<strong>Diagnostiikka:</strong> Säilytetään Applen analytiikan säilytyskäytäntöjen mukaisesti."
+  },
+  "rights": {
+    "title": "Tietosuojasi oikeudet",
+    "p1": "Alueestasi riippuen sinulla voi olla oikeus käyttää, oikaista, poistaa tai rajoittaa tiettyjä tietoja, joita meillä on sinusta, ja vastustaa tai peruuttaa käsittelyyn suostumus, kun se on sovellettavaa.",
+    "gdpr": "<strong>GDPR (EET/Yhdistynyt kuningaskunta):</strong> Voit pyytää pääsyä tai poistaa hallussamme olevia henkilötietoja (pääasiassa tukisähköposteja). Applella hallussa olevien tietojen osalta (esim. kaatumislokit, iCloud-tiedostot) käytä Applen tietosuojatyökaluja.",
+    "ccpa": "<strong>CCPA/CPRA (Kalifornia):</strong> Emme myy tai jaa henkilötietoja monikontekstuaaliseen mainontaan. Voit pyytää pääsyä tai poistaa hallussamme olevia henkilötietoja (pääasiassa tukisähköposteja).",
+    "p2": "Oikeuksien käyttämiseksi ota meihin yhteyttä osoitteessa <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Saatamme tarvita pyyntösi vahvistamista."
+  },
+  "children": {
+    "title": "Lasten yksityisyys",
+    "p1": "1Air on yleisölle suunnattu sovellus, eikä se ole erityisesti suunnattu lapsille. Emme tietoisesti kerää henkilötietoja lapsilta. Jos uskot lapsen toimittaneen meille henkilötietoja tukiviestinnän kautta, ota meihin yhteyttä ja poistamme ne."
+  },
+  "international": {
+    "title": "Kansainväliset tiedonsiirrot",
+    "p1": "Tietojasi voidaan käsitellä maassa, jossa asut, ja muissa maissa, joissa palveluntarjoajamme toimivat (esim. Applen infrastruktuuri). Toteutamme toimenpiteitä, joiden tarkoituksena on suojata tietojasi sovellettavan lain mukaisesti."
+  },
+  "changes": {
+    "title": "Muutokset tähän käytäntöön",
+    "p1": "Voimme päivittää tämän tietosuojakäytännön aika ajoin. Julkaisemme päivitetyn version sovelluksessa tai verkkosivustollamme ja tarkistamme yllä olevan “Voimassaolopäivän”. Oleelliset muutokset korostetaan."
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "p1": "Jos sinulla on kysyttävää tästä tietosuojakäytännöstä tai käytännöistämme, ota meihin yhteyttä:",
+    "emailLabel": "Email:",
+    "dpo": "Tietosuojavastaava (tarvittaessa): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Kaikki oikeudet pidätetään."
+  },
+  "ollama": {
+    "title": "Ollama-asennusopas",
+    "subtitle": "Asenna Ollama, jotta AI-ominaisuudet voidaan ottaa käyttöön.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Lataa asennusohjelma",
+    "win_step1_desc": "Lataa asennusohjelma Windowsille viralliselta verkkosivustolta.",
+    "win_btn": "Lataa Windowsille",
+    "win_step2_title": "2. Asenna",
+    "win_step2_desc": "Suorita <code>OllamaSetup.exe</code> -tiedosto ja napsauta [Asenna].",
+    "win_step2_note": "✅ Asennuksen jälkeen näet Alpaca-ikonin (🦙) tehtäväpalkin ilmoitusalueella.",
+    "win_step3_title": "3. Varmista asennus",
+    "win_step3_desc": "Avaa komentokehote (Win + R, kirjoita <code>cmd</code>) ja suorita seuraava komento:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Lataa",
+    "mac_step1_desc": "Vaatii macOS 11 Big Surin tai uudemman.",
+    "mac_btn": "Lataa macOS:lle",
+    "mac_step2_title": "2. Asenna sovellus",
+    "mac_step2_desc": "Pura tiedosto ja siirrä <strong>Ollama</strong> -sovellus <code>Applications</code> -kansioon.",
+    "mac_step3_title": "3. Käynnistä ja asenna",
+    "mac_step3_desc": "Kaksoisklikkaa käynnistääksesi. Alpakan kuvakkeen (🦙) pitäisi näkyä valikkorivillä.",
+    "mac_step3_note": "💡 Jos sinua pyydetään asentamaan komentorivityökaluja, napsauta 'Asenna'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Asenna terminaalin kautta",
+    "linux_step1_desc": "Avaa terminaali ja suorita seuraava komento:",
+    "linux_step1_note": "⚠️ AMD-näytönohjinkortit saattavat vaatia lisäajurien asennuksen.",
+    "linux_step2_title": "2. Tarkista palvelun tila",
+    "linux_step2_desc": "Varmista, että Ollama toimii taustalla.",
+    "final_step_title": "🎉 Viimeinen vaihe: Lataa AI-malli",
+    "final_step_desc": "Asennuksen jälkeen sinun on ladattava AI-malli. Suorita tämä terminaalissasi:",
+    "final_step_note": "💡 Jos sovelluksesi vaatii tietyn mallin (esim. mistral), korvaa 'llama3.2' kyseisellä nimellä.",
+    "copy": "Copy",
+    "copied": "Kopioitu!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

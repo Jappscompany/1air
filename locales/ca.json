@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "Política de Privacitat",
+  "effectiveDateLabel": "Data d'entrada en vigor:",
+  "effectiveDateValue": "5 de novembre de 2025",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "Dades que recopilem",
+    "howWeUse": "Com utilitzem les dades",
+    "sharing": "Compartir i Processadors",
+    "security": "Security",
+    "retention": "Retenció de dades",
+    "rights": "Els teus drets",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "De reüll",
+    "bullets": {
+      "noTracking": "<strong>Sense seguiment. Sense anuncis.</strong> 1Air no inclou publicitat ni rastrejadors de tercers.",
+      "onDevice": "<strong>Els teus vídeos es queden al teu dispositiu.</strong> L'aplicació llegeix els fitxers MP4 que triïs i els pot desar a la carpeta Documents local; el contingut es processa al dispositiu.",
+      "icloud": "<strong>iCloud Drive opcional.</strong> Si triïs fitxers d'iCloud Drive, els fitxers romandran al teu compte d'iCloud sota les condicions d'Apple.",
+      "diagnostics": "<strong>Diagnòstics mínims.</strong> Només rebem dades anònimes de fallades/diagnòstics si acceptes compartir amb els desenvolupadors a través de la configuració d'Apple."
+    }
+  },
+  "who": {
+    "title": "Qui som",
+    "developerLabel": "Developer:",
+    "developerValue": "[El teu nom legal, per exemple, J-Apps Co.]",
+    "developerSuffix": "(“nosaltres”, “nosaltres” o “el nostre”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "Dades que recopilem",
+    "contentYouChoose": {
+      "title": "1) Contingut que triïs",
+      "p1": "Quan fas servir el selector d'arxius per seleccionar vídeos, 1Air només té accés de lectura als elements que triïs. Si actives la funció \"Desa a Documents\" de l'aplicació, es desen còpies dels fitxers seleccionats localment a l'entorn d'execució de l'aplicació.",
+      "scope": "<strong>Àmbit:</strong> Només els fitxers que triïs; sense escaneig en segon pla de carpetes no relacionades.",
+      "processing": "<strong>Processament:</strong> La reproducció i la gestió de fitxers es produeixen al dispositiu.",
+      "sync": "<strong>Sincronització:</strong> Si selecciones des d'iCloud Drive, l'emmagatzematge i la sincronització són gestionats per Apple iCloud sota les polítiques d'Apple."
+    },
+    "diagnostics": {
+      "title": "2) Diagnòstics (Opcional)",
+      "p1": "Si acceptes compartir analítiques/informes de fallades amb els desenvolupadors (Configuració d'Apple > Privacitat i seguretat > Analítiques i millores), podem rebre:",
+      "b1": "Registres de fallades i mètriques de rendiment (anonimitzades per Apple)",
+      "b2": "Model de dispositiu, versió del sistema operatiu i metadades tècniques similars",
+      "p2": "No rebem la teva identitat d'aquests informes."
+    },
+    "support": {
+      "title": "3) Comunicacions d'assistència",
+      "p1": "Si ens envies un correu electrònic, rebem la teva adreça de correu electrònic i el contingut del teu missatge per respondre a la teva petició."
+    },
+    "notCollect": {
+      "title": "No recopilem",
+      "b1": "Identificadors personals dins de l'aplicació (nom, número de telèfon, contactes)",
+      "b2": "Dades de localització precises",
+      "b3": "Identificadors de publicitat o dades de seguiment del comportament"
+    }
+  },
+  "use": {
+    "title": "Com utilitzem les dades",
+    "b1": "Per proporcionar la funcionalitat principal (accés a fitxers que sol·licites, reproducció de vídeo)",
+    "b2": "Per mantenir i millorar la qualitat de l'aplicació (diagnòstics si has acceptat)",
+    "b3": "Per respondre a les consultes d'assistència"
+  },
+  "sharing": {
+    "title": "Compartir i Processadors",
+    "p1": "<strong>No venem les vostres dades.</strong> No compartim les dades personals amb tercers per a publicitat o màrqueting.",
+    "p2": "<strong>Proveïdors de serveis:</strong> Podem utilitzar proveïdors de serveis únicament per operar i donar suport a l'aplicació (per exemple, Apple iCloud per als fitxers que emmagatzemeu allà; la línia de informes de fallades d'Apple si vau optar per participar-hi). Aquests proveïdors actuen com a processadors sota els seus propis termes i controls de seguretat.",
+    "apple": "<strong>Apple (iCloud i informes de fallades):</strong> Els fitxers i l'anàlisi es gestionen segons la política de privacitat d'Apple i la configuració del vostre dispositiu.",
+    "p3": "Podem revelar informació si ho exigeix la llei o per protegir els drets, la seguretat i la seguretat."
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air emmagatzema els fitxers desats per l'usuari dins del sandbox de l'aplicació al vostre dispositiu. Apliquem les millors pràctiques de seguretat de la plataforma i ens basem en les proteccions del sistema d'Apple per a iOS/iPadOS/macOS. Cap mètode d'emmagatzematge electrònic és 100% segur, però treballem per protegir la vostra informació.",
+    "ollama": {
+      "title": "Integració de la xarxa Ollama",
+      "warn": "Si connecteu 1Air a un servidor Ollama a través de la xarxa utilitzant <code>http://</code>, la connexió <strong>no està xifrada en trànsit</strong> (no hi ha TLS). Això significa que el contingut que envieu (com ara indicacions de text, metadades o altres càrregues útils) pot estar exposat a la interceptació o la filtració a la xarxa. Quan utilitzeu <code>http://</code> (especialment a xarxes públiques), <strong>assumeix tots els riscos</strong> i <strong>sou responsable</strong> de qualsevol exposició que resulti de l'ús d'una connexió no xifrada. Recomanem fermament utilitzar <code>https://</code>, una xarxa interna de confiança, VPN o un altre transport segur."
+    }
+  },
+  "retention": {
+    "title": "Retenció de dades",
+    "b1": "<strong>Fitxers al dispositiu:</strong> Romanen fins que els suprimiu o desinstal·leu l'aplicació.",
+    "b2": "<strong>Correu electrònic de suport:</strong> Es manté només el temps necessari per resoldre la vostra sol·licitud i complir les obligacions legals.",
+    "b3": "<strong>Diagnòstics:</strong> Es manté segons les polítiques de retenció d'anàlisi d'Apple."
+  },
+  "rights": {
+    "title": "Els vostres drets de privacitat",
+    "p1": "Depenent de la vostra regió, potser teniu dret a accedir, corregir, suprimir o restringir certes dades que tenim sobre vosaltres, i a oposar-vos o retirar el consentiment per al processament, si escau.",
+    "gdpr": "<strong>RGPD (EEE/Regne Unit):</strong> Podeu sol·licitar l'accés o la supressió de les dades personals que controlem (principalment correus electrònics de suport). Per a les dades que tingui Apple (per exemple, registres de fallades, fitxers d'iCloud), utilitzeu les eines de privacitat d'Apple.",
+    "ccpa": "<strong>CCPA/CPRA (Califòrnia):</strong> No venem ni compartim informació personal per a la publicitat contextualitzada. Podeu sol·licitar l'accés o la supressió de la informació personal que tenim (principalment correus electrònics de suport).",
+    "p2": "Per exercir els drets, poseu-vos en contacte amb nosaltres a <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Potser necessitem verificar la vostra sol·licitud."
+  },
+  "children": {
+    "title": "Privacitat dels nens",
+    "p1": "1Air és una aplicació per a un públic general i no està específicament dirigida als nens. No recopilem intencionadament informació personal dels nens. Si creieu que un nen ha proporcionat informació personal a través de comunicacions de suport, poseu-vos en contacte amb nosaltres i la suprimirem."
+  },
+  "international": {
+    "title": "Transferències internacionals",
+    "p1": "La vostra informació es pot processar al país on resideixiu i en altres països on operin els nostres proveïdors de serveis (per exemple, la infraestructura d'Apple). Implementem mesures per protegir la vostra informació de manera coherent amb la llei aplicable."
+  },
+  "changes": {
+    "title": "Canvis a aquesta política",
+    "p1": "Podem actualitzar aquesta política de privacitat de tant en tant. Publicarem la versió actualitzada a l'aplicació o al nostre lloc web i revisarem la data d'entrada vigent anterior. Els canvis importants es destacaran."
+  },
+  "contact": {
+    "title": "Contacta amb nosaltres",
+    "p1": "Si teniu preguntes sobre aquesta política de privacitat o les nostres pràctiques, poseu-vos en contacte amb nosaltres:",
+    "emailLabel": "Email:",
+    "dpo": "Contacte de protecció de dades (si escau): [Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps. Tots els drets reservats."
+  },
+  "ollama": {
+    "title": "Guia de configuració d'Ollama",
+    "subtitle": "Si us plau, instal·leu Ollama per habilitar les funcions d'IA.",
+    "win_tab": "Windows",
+    "win_step1_title": "1. Descarrega l'instal·lador",
+    "win_step1_desc": "Descarregueu l'instal·lador per a Windows des del lloc web oficial.",
+    "win_btn": "Descarrega per a Windows",
+    "win_step2_title": "2. Instal·la",
+    "win_step2_desc": "Executeu el fitxer <code>OllamaSetup.exe</code> i feu clic a [Instal·la].",
+    "win_step2_note": "✅ Un cop instal·lat, veureu la icona d'Alpaca (🦙) a la safata de tasques.",
+    "win_step3_title": "3. Verifica la instal·lació",
+    "win_step3_desc": "Obriu l'indicador d'ordres (Win + R, escriviu <code>cmd</code>) i executeu l'ordre següent:",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. Descarrega",
+    "mac_step1_desc": "Requereix macOS 11 Big Sur o posterior.",
+    "mac_btn": "Descarrega per a macOS",
+    "mac_step2_title": "2. Instal·la l'aplicació",
+    "mac_step2_desc": "Descomprimeu el fitxer i moveu l'aplicació <strong>Ollama</strong> a la carpeta <code>Aplicacions</code>.",
+    "mac_step3_title": "3. Executa i configura",
+    "mac_step3_desc": "Feu doble clic per executar-la. Hauríeu de veure la icona d'alpaca (🦙) a la barra de menú.",
+    "mac_step3_note": "💡 Si se us demana que instal·leu eines de línia de comandament, feu clic a 'Instal·lar'.",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. Instal·la a través del terminal",
+    "linux_step1_desc": "Obriu el vostre terminal i executeu l'ordre següent:",
+    "linux_step1_note": "⚠️ Les targetes gràfiques AMD poden requerir la instal·lació addicional de controladors.",
+    "linux_step2_title": "2. Comprova l'estat del servei",
+    "linux_step2_desc": "Assegureu-vos que Ollama s'està executant en segon pla.",
+    "final_step_title": "🎉 Pas final: Desa el model d'IA",
+    "final_step_desc": "Després de la instal·lació, heu de baixar el model d'IA. Executeu això al vostre terminal:",
+    "final_step_note": "💡 Si la vostra aplicació requereix un model específic (per exemple, mistral), substituïu 'llama3.2' per aquest nom.",
+    "copy": "Copy",
+    "copied": "Copiat!",
+    "footer": "&copy; 2025 Powered by Ollama."
+  }
+}

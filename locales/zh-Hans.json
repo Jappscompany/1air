@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "htmlLang": "en",
+    "contactEmail": "[jappscompany@gmail.com]"
+  },
+  "title": "隐私政策",
+  "effectiveDateLabel": "生效日期：",
+  "effectiveDateValue": "2025年11月5日",
+  "languageLabel": "Language:",
+  "nav": {
+    "summary": "Summary",
+    "dataWeCollect": "我们收集的数据",
+    "howWeUse": "我们如何使用数据",
+    "sharing": "共享和处理者",
+    "security": "Security",
+    "retention": "数据保留",
+    "rights": "您的权利",
+    "children": "Children",
+    "changes": "Changes",
+    "contact": "Contact"
+  },
+  "summary": {
+    "title": "一览",
+    "bullets": {
+      "noTracking": "<strong>没有跟踪。没有广告。</strong> 1Air 不包含广告或第三方跟踪器。",
+      "onDevice": "<strong>您的视频保留在您的设备上。</strong> 该应用程序读取您选择的 MP4 文件，并将它们存储在本地文档文件夹中；内容在设备上处理。",
+      "icloud": "<strong>可选的 iCloud Drive。</strong> 如果您选择来自 iCloud Drive 的文件，这些文件将保留在您的 iCloud 帐户中，受 Apple 条款约束。",
+      "diagnostics": "<strong>最少的诊断信息。</strong> 如果您选择通过 Apple 设置与开发者共享，我们只会收到匿名崩溃/诊断数据。"
+    }
+  },
+  "who": {
+    "title": "我们是谁",
+    "developerLabel": "Developer:",
+    "developerValue": "[您的法律实体名称，例如 J-Apps Co.]",
+    "developerSuffix": "(“我们”、“我们”或“我们的”)",
+    "appLabel": "App:",
+    "appValue": "1Air (iOS/iPadOS/macOS)",
+    "contactLabel": "Contact:"
+  },
+  "collect": {
+    "title": "我们收集的数据",
+    "contentYouChoose": {
+      "title": "1) 您选择的内容",
+      "p1": "当您使用文件选择器选择视频时，1Air 仅被授予对您选择的项目进行读取访问权限。如果您启用应用程序的“保存到文档”功能，则所选文件的副本将保存在应用程序沙盒中的本地。",
+      "scope": "<strong>范围：</strong> 仅您选择的文件；不扫描无关文件夹。",
+      "processing": "<strong>处理：</strong> 播放和文件管理在设备上进行。",
+      "sync": "<strong>同步：</strong> 如果您从 iCloud Drive 选择，存储和同步由 Apple iCloud 根据 Apple 的策略管理。"
+    },
+    "diagnostics": {
+      "title": "2) 诊断信息（可选）",
+      "p1": "如果您选择与开发者共享分析/崩溃报告（Apple 设置 &gt; 隐私与安全性 &gt; 分析与改进），我们可能会收到：",
+      "b1": "崩溃日志和性能指标（Apple 匿名化）",
+      "b2": "设备型号、操作系统版本和类似的技术元数据",
+      "p2": "我们不会从这些报告中收到您的身份信息。"
+    },
+    "support": {
+      "title": "3) 支持沟通",
+      "p1": "如果您给我们发送电子邮件，我们将收到您的电子邮件地址和消息内容，以回复您的请求。"
+    },
+    "notCollect": {
+      "title": "我们<em >不</em>收集",
+      "b1": "应用程序内的个人标识符（姓名、电话号码、联系人）",
+      "b2": "精确的位置数据",
+      "b3": "广告标识符或行为跟踪数据"
+    }
+  },
+  "use": {
+    "title": "我们如何使用数据",
+    "b1": "提供核心功能（您请求的文件访问、视频播放）",
+    "b2": "维护和改进应用程序质量（如果您选择加入诊断信息）",
+    "b3": "回复支持请求"
+  },
+  "sharing": {
+    "title": "共享和处理者",
+    "p1": "<strong>我们不会出售您的数据。</strong> 我们不会与第三方共享个人数据用于广告或营销。",
+    "p2": "<strong>服务提供商：</strong> 我们可能仅使用服务提供商来运营和支持该应用程序（例如，您在那里存储文件的 Apple iCloud；如果您选择加入，Apple 的崩溃报告流水线）。这些提供商在其自己的条款和安全控制下充当数据处理者。",
+    "apple": "<strong>Apple（iCloud 和崩溃报告）：</strong> 文件和分析按照 Apple 的隐私政策和您的设备设置处理。",
+    "p3": "如果我们被法律要求或为了保护权利、安全和保障，我们可能会披露信息。"
+  },
+  "security": {
+    "title": "Security",
+    "p1": "1Air 在您的设备上的应用程序沙箱内存储用户保存的文件。我们应用平台安全最佳实践，并依赖 Apple 的 iOS/iPadOS/macOS 系统保护。没有一种电子存储方法是 100% 安全的，但我们致力于保护您的信息。",
+    "ollama": {
+      "title": "Ollama 网络集成",
+      "warn": "如果您使用 <code>http://</code> 通过网络将 1Air 连接到 Ollama 服务器，则连接在传输过程中<strong>未加密</strong>（没有 TLS）。这意味着您发送的内容（例如，文本提示、元数据或其他有效负载）可能会在网络上受到拦截或泄露。在使用 <code>http://</code>（尤其是在公共网络上）时，<strong>您承担所有风险</strong>，并且<strong>您对</strong>因使用未加密连接而造成的任何暴露负责。我们强烈建议使用 <code>https://</code>、受信任的内部网络、VPN 或其他安全传输。"
+    }
+  },
+  "retention": {
+    "title": "数据保留",
+    "b1": "<strong>设备端文件：</strong> 除非您删除它们或卸载该应用程序，否则将保留。",
+    "b2": "<strong>支持电子邮件：</strong> 仅在需要解决您的请求和履行法律义务的时间内保留。",
+    "b3": "<strong>诊断：</strong> 根据 Apple 的分析保留策略保留。"
+  },
+  "rights": {
+    "title": "您的隐私权",
+    "p1": "根据您的地区，您可能拥有访问、更正、删除或限制我们掌握的某些数据，以及在适用情况下反对或撤回处理同意的权利。",
+    "gdpr": "<strong>GDPR（EEA/英国）：</strong> 您可以要求访问或删除我们控制的个人数据（主要为支持电子邮件）。对于 Apple 持有的数据（例如，崩溃日志、iCloud 文件），请使用 Apple 的隐私工具。",
+    "ccpa": "<strong>CCPA/CPRA（加利福尼亚州）：</strong> 我们不会出售或共享个人信息用于跨环境广告。您可以要求访问或删除我们持有的个人信息（主要为支持电子邮件）。",
+    "p2": "要行使这些权利，请通过 <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a> 与我们联系。我们可能需要验证您的请求。"
+  },
+  "children": {
+    "title": "儿童隐私",
+    "p1": "1Air 是一款面向大众的应用程序，并非专门针对儿童。我们不会 knowingly 从儿童处收集个人信息。如果您认为儿童已通过支持沟通向我们提供了个人信息，请与我们联系，我们将删除它。"
+  },
+  "international": {
+    "title": "国际传输",
+    "p1": "您的信息可能会在您居住的国家/地区以及我们的服务提供商运营的其他国家/地区进行处理（例如，Apple 的基础设施）。我们实施旨在根据适用法律保护您的信息的措施。"
+  },
+  "changes": {
+    "title": "本政策的变更",
+    "p1": "我们可能会不时更新本隐私政策。我们将把更新后的版本发布在应用程序或我们的网站上，并修订上面的“生效日期”。重要变更将被突出显示。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "p1": "如果您对本隐私政策或我们的惯例有任何疑问，请与我们联系：",
+    "emailLabel": "Email:",
+    "dpo": "数据保护联系人（如果适用）：[Jake / jappscompany@gmail.com]"
+  },
+  "footer": {
+    "copyright": "© [2025] J-Apps。保留所有权利。"
+  },
+  "ollama": {
+    "title": "Ollama 设置指南",
+    "subtitle": "请安装 Ollama 以启用 AI 功能。",
+    "win_tab": "Windows",
+    "win_step1_title": "1. 下载安装程序",
+    "win_step1_desc": "从官方网站下载适用于 Windows 的安装程序。",
+    "win_btn": "下载适用于 Windows",
+    "win_step2_title": "2. 安装",
+    "win_step2_desc": "运行 <code>OllamaSetup.exe</code> 文件，然后单击 [安装]。",
+    "win_step2_note": "✅ 安装完成后，您会在任务栏托盘中看到 Alpaca 图标（🦙）。",
+    "win_step3_title": "3. 验证安装",
+    "win_step3_desc": "打开命令提示符 (Win + R，输入 <code>cmd</code>) 并运行以下命令：",
+    "mac_tab": "macOS",
+    "mac_step1_title": "1. 下载",
+    "mac_step1_desc": "需要 macOS 11 Big Sur 或更高版本。",
+    "mac_btn": "下载适用于 macOS",
+    "mac_step2_title": "2. 安装应用程序",
+    "mac_step2_desc": "解压缩文件，并将 <strong>Ollama</strong> 应用程序移动到 <code>Applications</code> 文件夹。",
+    "mac_step3_title": "3. 运行和设置",
+    "mac_step3_desc": "双击运行。您应该在菜单栏中看到羊驼图标 (🦙)。",
+    "mac_step3_note": "💡 如果提示安装命令行工具，请点击“安装”。",
+    "linux_tab": "Ubuntu (Linux)",
+    "linux_step1_title": "1. 通过终端安装",
+    "linux_step1_desc": "打开您的终端并运行以下命令：",
+    "linux_step1_note": "⚠️ AMD 显卡可能需要额外安装驱动程序。",
+    "linux_step2_title": "2. 检查服务状态",
+    "linux_step2_desc": "确保 Ollama 在后台运行。",
+    "final_step_title": "🎉 最终步骤：拉取 AI 模型",
+    "final_step_desc": "安装完成后，您必须下载 AI 模型。在您的终端中运行以下命令：",
+    "final_step_note": "💡 如果您的应用程序需要特定的模型（例如 mistral），请将 'llama3.2' 替换为该名称。",
+    "copy": "Copy",
+    "copied": "已复制！",
+    "footer": "&copy; 2025 由 Ollama 提供支持。"
+  }
+}
