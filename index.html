@@ -8,7 +8,6 @@
   
   <style>
     :root {
-      /* Bright & Airy Theme */
       --bg: #ffffff;
       --bg-subtle: #f5f7fa;
       --fg: #1d1d1f;
@@ -144,7 +143,7 @@
     
     .btn.secondary { 
         background: var(--bg-subtle); color: var(--fg); border: 1px solid var(--stroke);
-        padding: 8px 18px; font-size: 14px; /* 조금 작게 */
+        padding: 8px 18px; font-size: 14px;
     }
     .btn.secondary:hover { background: #e5e5ea; transform: translateY(-1px); }
 
@@ -180,14 +179,13 @@
       border-radius: var(--radius); padding: 36px 30px;
       transition: all 0.3s ease;
       position: relative; overflow: hidden;
-      display: flex; flex-direction: column; /* 버튼 위치 정렬을 위해 */
+      display: flex; flex-direction: column;
     }
     .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--brand); }
     .icon { font-size: 42px; margin-bottom: 24px; display: block; }
     .card h3 { margin: 0 0 12px; font-size: 20px; font-weight: 700; }
     .card p { color: var(--muted); font-size: 16px; margin: 0 0 24px 0; line-height: 1.6; flex-grow: 1; }
     
-    /* 카드 내부 버튼 정렬 */
     .card-footer { margin-top: auto; }
 
     /* Footer */
@@ -229,9 +227,7 @@
       <span class="badge" data-i18n="hero_badge">✨ New Release</span>
       <h1 data-i18n="hero_title">MP4s, the way<br>they should play.</h1>
       <p class="sub" data-i18n="hero_sub">Experience the intuitive and lightweight 1Air Player.<br>No ads, just clean playback with background audio.</p>
-      <div>
-        <a href="https://apps.apple.com/kr/app/1air-player/id6754903042" class="btn primary" data-i18n="btn_download">Download on App Store</a>
-      </div>
+      <a href="https://apps.apple.com/kr/app/1air-player/id6754903042" class="btn primary" data-i18n="btn_download">Download on App Store</a>
     </section>
 
     <section id="features" class="wrap">
@@ -250,7 +246,7 @@
         </article>
 
         <article class="card">
-          <span class="icon">👆</span>
+          <span class="icon">✋</span>
           <h3 data-i18n="feat_3_title">Smooth Controls</h3>
           <p data-i18n="feat_3_desc">Gestures for volume and seeking. Fast and snappy.</p>
         </article>
@@ -278,23 +274,14 @@
       <div class="foot-links">
         <a href="policy.html" data-i18n="footer_privacy">Privacy Policy</a>
         <span style="color:#ddd">·</span>
-        <a href="#" data-i18n="footer_contact">Contact Support</a>
+        <a href="mailto:jappscompany@gmail.com" data-i18n="footer_contact">Contact Support</a>
       </div>
       <p>&copy; <span id="year"></span> <span data-i18n="footer_copy">1Air Player. All rights reserved.</span></p>
     </div>
   </footer>
 
-  <!-- 기존 랜딩 텍스트 데이터 사용 (fallback) -->
-  <script src="landing_lang.js"></script>
   <script>
-    /**
-     * ✅ Fix summary
-     * - 기존 코드는 LANGUAGE_MAP 때문에 (ko 제외) 전부 en으로 강제되어, 국가코드별 JSON이 있어도 절대 적용되지 않았습니다.
-     * - navigator.language를 toLowerCase()로 바꾸면서 "zh-Hans" 같은 코드는 "zh-hans"가 되어 매칭 실패했습니다.
-     * - 이제 "정확한 코드 → 상위 코드(예: pt) → en" 순으로 JSON을 로드하고, 실패하면 landing_lang.js의 en/ko를 fallback으로 씁니다.
-     */
-
-    // 1) 드롭다운 표시용 언어 목록
+    // Language configuration
     const LANGUAGES = [
       { code: 'ar', name: 'العربية' },
       { code: 'ca', name: 'Català' },
@@ -334,9 +321,9 @@
       { code: 'zh-Hant', name: '繁體中文' }
     ];
 
-    // 2) JSON 파일 경로 (필요하면 여기만 바꾸면 됨)
-    // 예: ./i18n/pt-BR.json
-    const I18N_DIR = './i18n';
+    const LOCALES_DIR = './locales';
+    const STORAGE_KEY = 'app_lang';
+    let currentDict = {};
 
     function initLangDropdown() {
       const menu = document.getElementById('lang-dropdown-menu');
@@ -345,17 +332,15 @@
         const item = document.createElement('div');
         item.className = 'lang-dropdown-item';
         item.textContent = lang.name;
-        item.onclick = () => setLandingLanguageByCode(lang.code);
+        item.onclick = () => setLanguage(lang.code);
         menu.appendChild(item);
       });
     }
 
     function toggleLangDropdown() {
-      const menu = document.getElementById('lang-dropdown-menu');
-      menu.classList.toggle('show');
+      document.getElementById('lang-dropdown-menu').classList.toggle('show');
     }
 
-    // 드롭다운 바깥 클릭 시 닫기
     document.addEventListener('click', (e) => {
       const dropdown = document.querySelector('.lang-dropdown');
       if (dropdown && !dropdown.contains(e.target)) {
@@ -365,23 +350,10 @@
 
     function canonicalizeLangCode(input) {
       if (!input) return 'en';
-      const raw = String(input).replace('_', '-');   // pt_BR -> pt-BR
+      const raw = String(input).replace('_', '-');
       const lower = raw.toLowerCase();
-
-      // LANGUAGES에 있는 코드들과 case-insensitive로 매칭해서 "원래 코드"를 반환 (zh-Hans 같은 대소문자 유지)
       const match = LANGUAGES.find(l => l.code.toLowerCase() === lower);
       return match ? match.code : raw;
-    }
-
-    function fallbackChain(code) {
-      // "pt-BR" → ["pt-BR", "pt", "en"]
-      const c = canonicalizeLangCode(code);
-      const parts = c.split('-');
-      const base = parts[0];
-      const chain = [c];
-      if (base && base !== c) chain.push(base);
-      if (!chain.includes('en')) chain.push('en');
-      return chain;
     }
 
     async function fetchJson(path) {
@@ -390,49 +362,40 @@
       return await res.json();
     }
 
-    async function loadI18nDictByCode(code) {
-      // 1) JSON을 먼저 시도 (정확한 코드 → 상위 코드 → en)
-      for (const c of fallbackChain(code)) {
+    async function loadLocale(lang) {
+      const codes = [lang];
+      const base = lang.split('-')[0];
+      if (base !== lang) codes.push(base);
+      if (!codes.includes('en')) codes.push('en');
+
+      for (const code of codes) {
         try {
-          const jsonPath = `${I18N_DIR}/${c}.json`;
-          const dict = await fetchJson(jsonPath);
-          if (dict && typeof dict === 'object') return { dict, resolved: c, source: 'json' };
+          const dict = await fetchJson(`${LOCALES_DIR}/${code}.json`);
+          if (dict && typeof dict === 'object') {
+            return { dict, resolved: code };
+          }
         } catch (_) {}
       }
-
-      // 2) JSON이 없으면 landing_lang.js fallback 사용 (en/ko만 있음)
-      const c = canonicalizeLangCode(code);
-      if (window.LANDING_I18N) {
-        if (LANDING_I18N[c]) return { dict: LANDING_I18N[c], resolved: c, source: 'fallback' };
-        if (LANDING_I18N.en) return { dict: LANDING_I18N.en, resolved: 'en', source: 'fallback' };
-      }
-
-      return { dict: {}, resolved: 'en', source: 'none' };
+      return { dict: {}, resolved: 'en' };
     }
 
-    function applyLandingDict(dict) {
-      const elements = document.querySelectorAll('[data-i18n]');
-      elements.forEach(el => {
+    function applyTranslations(landingDict) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (dict[key] != null) {
-          // 문자열/숫자만 허용 (안전)
-          el.innerHTML = String(dict[key]);
+        if (landingDict[key] != null) {
+          el.innerHTML = String(landingDict[key]);
         }
       });
 
-      // title / meta
-      if (dict['title']) document.title = String(dict['title']);
+      if (landingDict.title) document.title = landingDict.title;
       const meta = document.querySelector('meta[name="description"]');
-      if (meta && dict['meta_desc']) meta.setAttribute('content', String(dict['meta_desc']));
+      if (meta && landingDict.meta_desc) meta.setAttribute('content', landingDict.meta_desc);
     }
 
     function updateLangUI(code) {
-      const c = canonicalizeLangCode(code);
-      const langInfo = LANGUAGES.find(l => l.code === c) || LANGUAGES.find(l => l.code === 'en');
-
+      const langInfo = LANGUAGES.find(l => l.code === code) || LANGUAGES.find(l => l.code === 'en');
       if (langInfo) {
         document.getElementById('current-lang-name').textContent = langInfo.name;
-
         document.querySelectorAll('.lang-dropdown-item').forEach(item => {
           item.classList.toggle('active', item.textContent === langInfo.name);
         });
@@ -440,34 +403,30 @@
       document.getElementById('lang-dropdown-menu').classList.remove('show');
     }
 
-    async function setLandingLanguageByCode(code) {
-      const c = canonicalizeLangCode(code);
+    async function setLanguage(lang) {
+      const code = canonicalizeLangCode(lang);
+      localStorage.setItem(STORAGE_KEY, code);
+      document.documentElement.lang = code;
 
-      // 저장은 "사용자가 선택한 코드" 그대로 저장 (국가코드별 JSON이면 그대로 쓰게)
-      localStorage.setItem('landing_lang', c);
-
-      // 문서 lang은 실제 코드로
-      document.documentElement.lang = c;
-
-      const { dict } = await loadI18nDictByCode(c);
-      applyLandingDict(dict);
-      updateLangUI(c);
+      const { dict, resolved } = await loadLocale(code);
+      currentDict = dict;
+      
+      // Use 'landing' namespace from JSON
+      const landingDict = dict.landing || {};
+      applyTranslations(landingDict);
+      updateLangUI(resolved);
     }
 
     function guessLangCode() {
-      const saved = localStorage.getItem('landing_lang');
+      const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const canonical = canonicalizeLangCode(saved);
         if (LANGUAGES.find(l => l.code === canonical)) return canonical;
       }
 
-      // navigator.language 예: "pt-BR", "zh-Hans", "ko-KR"
       const nav = canonicalizeLangCode(navigator.language || 'en');
-
-      // exact match 우선
       if (LANGUAGES.find(l => l.code === nav)) return nav;
 
-      // base match (예: pt-BR → pt)
       const base = nav.split('-')[0];
       const baseMatch = LANGUAGES.find(l => l.code.toLowerCase() === base.toLowerCase());
       if (baseMatch) return baseMatch.code;
@@ -475,13 +434,12 @@
       return 'en';
     }
 
-    // 초기화
+    // Initialize
     document.getElementById('year').textContent = new Date().getFullYear();
     initLangDropdown();
 
     window.addEventListener('load', () => {
-      const code = guessLangCode();
-      setLandingLanguageByCode(code);
+      setLanguage(guessLangCode());
     });
   </script>
 </body>

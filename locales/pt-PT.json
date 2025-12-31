@@ -1,156 +1,184 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "Política de Privacidade",
-  "effectiveDateLabel": "Data de entrada em vigor:",
-  "effectiveDateValue": "5 de novembro de 2025",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "Dados que Recolhemos",
-    "howWeUse": "Como Utilizamos os Dados",
-    "sharing": "Partilha e Processadores",
-    "security": "Security",
-    "retention": "Retenção de Dados",
-    "rights": "Os seus Direitos",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
-  },
-  "summary": {
-    "title": "Resumo",
-    "bullets": {
-      "noTracking": "<strong>Sem rastreamento. Sem anúncios.</strong> 1Air não inclui publicidade ou rastreadores de terceiros.",
-      "onDevice": "<strong>Os seus vídeos permanecem no seu dispositivo.</strong> A aplicação lê os ficheiros MP4 que escolhe e pode armazená-los na sua pasta Documentos local; o conteúdo é processado no dispositivo.",
-      "icloud": "<strong>iCloud Drive opcional.</strong> Se escolher ficheiros do iCloud Drive, os ficheiros permanecem na sua conta iCloud nos termos da Apple.",
-      "diagnostics": "<strong>Diagnósticos mínimos.</strong> Só recebemos dados de anomalias/diagnósticos anonimizados se optar por partilhar com os programadores através das definições da Apple."
-    }
-  },
-  "who": {
-    "title": "Quem Somos",
-    "developerLabel": "Developer:",
-    "developerValue": "[O seu Nome Jurídico, por exemplo, J-Apps Co.]",
-    "developerSuffix": "(“nós”, “nos” ou “o nosso”)",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "Dados que Recolhemos",
-    "contentYouChoose": {
-      "title": "1) Conteúdo que Escolhe",
-      "p1": "Quando utiliza o seletor de Ficheiros para selecionar vídeos, o 1Air recebe apenas acesso de leitura aos itens que selecionar. Se ativar a funcionalidade “Guardar para Documentos” da aplicação, cópias dos ficheiros selecionados são guardadas localmente na sandbox da aplicação.",
-      "scope": "<strong>Âmbito:</strong> Apenas os ficheiros que selecionar; sem análise de fundo de pastas não relacionadas.",
-      "processing": "<strong>Processamento:</strong> A reprodução e a gestão de ficheiros ocorrem no dispositivo.",
-      "sync": "<strong>Sincronização:</strong> Se selecionar a partir do iCloud Drive, o armazenamento e a sincronização são geridos pelo Apple iCloud de acordo com as políticas da Apple."
-    },
-    "diagnostics": {
-      "title": "2) Diagnósticos (Opcional)",
-      "p1": "Se optar por partilhar análises/relatórios de anomalias com os programadores (Definições da Apple &gt; Privacidade e Segurança &gt; Análises e Melhorias), podemos receber:",
-      "b1": "Registos de anomalias e métricas de desempenho (anonimizados pela Apple)",
-      "b2": "Modelo do dispositivo, versão do SO e metadados técnicos semelhantes",
-      "p2": "Não recebemos a sua identidade a partir destes relatórios."
-    },
-    "support": {
-      "title": "3) Comunicações de Suporte",
-      "p1": "Se nos enviar um e-mail, receberemos o seu endereço de e-mail e o conteúdo da sua mensagem para responder ao seu pedido."
-    },
-    "notCollect": {
-      "title": "Não Recolhemos",
-      "b1": "Identificadores pessoais dentro da aplicação (nome, número de telefone, contactos)",
-      "b2": "Dados de localização precisos",
-      "b3": "Identificadores de publicidade ou dados de rastreamento comportamental"
-    }
-  },
-  "use": {
-    "title": "Como Utilizamos os Dados",
-    "b1": "Para fornecer a funcionalidade principal (acesso a ficheiros que solicita, reprodução de vídeo)",
-    "b2": "Para manter e melhorar a qualidade da aplicação (diagnósticos se tiver optado por participar)",
-    "b3": "Para responder a pedidos de suporte"
-  },
-  "sharing": {
-    "title": "Partilha e Processadores",
-    "p1": "<strong>Não vendemos os seus dados.</strong> Não partilhamos dados pessoais com terceiros para fins de publicidade ou marketing.",
-    "p2": "<strong>Prestadores de Serviços:</strong> Podemos utilizar prestadores de serviços unicamente para operar e suportar a aplicação (por exemplo, Apple iCloud para ficheiros que armazena lá; o pipeline de relatórios de anomalias da Apple se tiver optado por participar). Estes prestadores atuam como processadores ao abrigo dos seus próprios termos e controlos de segurança.",
-    "apple": "<strong>Apple (iCloud &amp; Relatórios de Anomalias):</strong> Ficheiros e análises processados de acordo com a política de privacidade da Apple e as definições do seu dispositivo.",
-    "p3": "Podemos divulgar informações se exigido por lei ou para proteger direitos, segurança e proteção."
-  },
-  "security": {
-    "title": "Security",
-    "p1": "O 1Air armazena ficheiros guardados pelo utilizador dentro da sandbox da aplicação no seu dispositivo. Aplicamos as melhores práticas de segurança da plataforma e confiamos nas proteções de sistema da Apple para iOS/iPadOS/macOS. Nenhum método de armazenamento eletrónico é 100% seguro, mas trabalhamos para proteger as suas informações.",
-    "ollama": {
-      "title": "Integração de Rede Ollama",
-      "warn": "Se ligar o 1Air a um servidor Ollama através da rede utilizando <code>http://</code>, a ligação <strong>não está encriptada em trânsito</strong> (sem TLS). Isto significa que o conteúdo que envia (como prompts de texto, metadados ou outros payloads) pode estar exposto a interceções ou fugas na rede. Ao utilizar <code>http://</code> (especialmente em redes públicas), <strong>assume todos os riscos</strong> e <strong>é responsável</strong> por qualquer exposição resultante da utilização de uma ligação não encriptada. Recomendamos vivamente a utilização de <code>https://</code>, uma rede interna fiável, VPN ou outro transporte seguro."
-    }
-  },
-  "retention": {
-    "title": "Retenção de Dados",
-    "b1": "<strong>Ficheiros no dispositivo:</strong> Permanecem até que os elimine ou desinstale a aplicação.",
-    "b2": "<strong>E-mails de suporte:</strong> Retidos apenas pelo tempo necessário para resolver o seu pedido e cumprir as obrigações legais.",
-    "b3": "<strong>Diagnósticos:</strong> Retidos de acordo com as políticas de retenção de análises da Apple."
-  },
-  "rights": {
-    "title": "Os Seus Direitos de Privacidade",
-    "p1": "Dependendo da sua região, pode ter o direito de aceder, corrigir, eliminar ou restringir determinados dados que detemos sobre si, e de se opor ou retirar o consentimento para o processamento, quando aplicável.",
-    "gdpr": "<strong>RGPD (EEE/RU):</strong> Pode solicitar o acesso ou a eliminação de dados pessoais que controlamos (principalmente e-mails de suporte). Para dados detidos pela Apple (por exemplo, registos de anomalias, ficheiros iCloud), utilize as ferramentas de privacidade da Apple.",
-    "ccpa": "<strong>CCPA/CPRA (Califórnia):</strong> Não vendemos nem partilhamos informações pessoais para publicidade cross-contextual. Pode solicitar o acesso ou a eliminação de informações pessoais que detemos (principalmente e-mails de suporte).",
-    "p2": "Para exercer os seus direitos, contacte-nos em <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Poderemos precisar de verificar o seu pedido."
-  },
-  "children": {
-    "title": "Privacidade Infantil",
-    "p1": "O 1Air é uma aplicação destinada a um público geral e não é especificamente direcionada a crianças. Não recolhemos intencionalmente informações pessoais de crianças. Se acredita que uma criança forneceu informações pessoais a nós através de comunicações de suporte, contacte-nos e as eliminaremos."
-  },
-  "international": {
-    "title": "Transferências Internacionais",
-    "p1": "As suas informações podem ser processadas no país onde reside e noutros países onde os nossos prestadores de serviços operam (por exemplo, a infraestrutura da Apple). Implementamos medidas concebidas para proteger as suas informações de acordo com a lei aplicável."
-  },
-  "changes": {
-    "title": "Alterações a Esta Política",
-    "p1": "Podemos atualizar esta Política de Privacidade de tempos a tempos. Publicaremos a versão atualizada na aplicação ou no nosso site e revisaremos a “Data de entrada em vigor” acima. Alterações materiais serão destacadas."
-  },
-  "contact": {
-    "title": "Contacte-nos",
-    "p1": "Se tiver dúvidas sobre esta Política de Privacidade ou as nossas práticas, contacte-nos:",
-    "emailLabel": "Email:",
-    "dpo": "Responsável pela Proteção de Dados (se aplicável): [Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps. Todos os direitos reservados."
+  "landing": {
+    "title": "1Air — Um leitor MP4 nítido",
+    "meta_desc": "Leitor MP4 limpo e privado com Picture‑in‑Picture e áudio em segundo plano.",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ Novo lançamento",
+    "hero_title": "MP4s, da forma<br>como deveriam ser reproduzidos.",
+    "hero_sub": "Experimente o 1Air Player intuitivo e leve.<br>Sem anúncios, apenas reprodução limpa com áudio em segundo plano.",
+    "btn_download": "Descarregar na App Store",
+    "feat_title": "Por que 1Air?",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "Continue a assistir enquanto multitarefa. Suporte nativo para PiP.",
+    "feat_2_title": "Áudio em Segundo Plano",
+    "feat_2_desc": "O áudio continua quando o ecrã bloqueia. Perfeito para podcasts.",
+    "feat_3_title": "Controlos Suaves",
+    "feat_3_desc": "Gestos para volume e avanço rápido. Rápido e responsivo.",
+    "feat_4_title": "Privado e Sem Anúncios",
+    "feat_4_desc": "Sem rastreamento, sem anúncios. Os seus vídeos permanecem no seu dispositivo.",
+    "feat_5_title": "Integração com IA",
+    "feat_5_desc": "Conecte-se a modelos de IA locais através do Ollama para funcionalidades inteligentes.",
+    "feat_5_btn": "Guia de Configuração",
+    "footer_privacy": "Política de Privacidade",
+    "footer_contact": "Contactar o Apoio",
+    "footer_copy": "1Air Player. Todos os direitos reservados."
   },
   "ollama": {
     "title": "Guia de Configuração do Ollama",
     "subtitle": "Instale o Ollama para ativar as funcionalidades de IA.",
     "win_tab": "Windows",
-    "win_step1_title": "1. Descarregue o Instalador",
-    "win_step1_desc": "Descarregue o instalador para Windows a partir do site oficial.",
+    "win_step1_title": "1. Descarregar Instalador",
+    "win_step1_desc": "Descarregue o instalador para Windows a partir do website oficial.",
     "win_btn": "Descarregar para Windows",
-    "win_step2_title": "2. Instale",
+    "win_step2_title": "2. Instalar",
     "win_step2_desc": "Execute o ficheiro <code>OllamaSetup.exe</code> e clique em [Instalar].",
-    "win_step2_note": "✅ Após a instalação, verá o ícone Alpaca (🦙) na bandeja de tarefas.",
-    "win_step3_title": "3. Verifique a Instalação",
-    "win_step3_desc": "Abra o Prompt de Comando (Win + R, digite <code>cmd</code>) e execute o seguinte comando:",
+    "win_step2_note": "✅ Após a instalação, verá o ícone da Alpaca (🦙) na bandeja de tarefas.",
+    "win_step3_title": "3. Verificar Instalação",
+    "win_step3_desc": "Abra a Linha de Comando (Win + R, digite <code>cmd</code>) e execute o seguinte comando:",
     "mac_tab": "macOS",
-    "mac_step1_title": "1. Descarregue",
+    "mac_step1_title": "1. Descarregar",
     "mac_step1_desc": "Requer macOS 11 Big Sur ou posterior.",
     "mac_btn": "Descarregar para macOS",
-    "mac_step2_title": "2. Instale a Aplicação",
+    "mac_step2_title": "2. Instalar Aplicação",
     "mac_step2_desc": "Descompacte o ficheiro e mova a aplicação <strong>Ollama</strong> para a pasta <code>Applications</code>.",
     "mac_step3_title": "3. Executar e Configurar",
-    "mac_step3_desc": "Clique duas vezes para executar. Deverá ver o ícone Alpaca (🦙) na barra de menu.",
-    "mac_step3_note": "💡 Se for solicitado para instalar ferramentas de linha de comandos, clique em 'Instalar'.",
+    "mac_step3_desc": "Clique duas vezes para executar. Deverá ver o ícone da Alpaca (🦙) na barra de menu.",
+    "mac_step3_note": "💡 Se solicitado a instalar ferramentas de linha de comando, clique em 'Instalar'.",
     "linux_tab": "Ubuntu (Linux)",
     "linux_step1_title": "1. Instalar via Terminal",
     "linux_step1_desc": "Abra o seu terminal e execute o seguinte comando:",
-    "linux_step1_note": "⚠️ As placas gráficas AMD podem necessitar de instalação adicional de drivers.",
+    "linux_step1_note": "⚠️ As placas gráficas AMD podem exigir a instalação adicional de drivers.",
     "linux_step2_title": "2. Verificar o Estado do Serviço",
     "linux_step2_desc": "Certifique-se de que o Ollama está a ser executado em segundo plano.",
     "final_step_title": "🎉 Passo Final: Descarregar Modelo de IA",
-    "final_step_desc": "Após a instalação, deve descarregar o modelo de IA. Execute isto no seu terminal:",
-    "final_step_note": "💡 Se a sua aplicação requer um modelo específico (por exemplo, mistral), substitua 'llama3.2' por esse nome.",
+    "final_step_desc": "Após a instalação, tem de descarregar o modelo de IA. Execute isto no seu terminal:",
+    "final_step_note": "💡 Se a sua aplicação necessitar de um modelo específico (por exemplo, mistral), substitua 'llama3.2' por esse nome.",
     "copy": "Copy",
     "copied": "Copiado!",
-    "footer": "&copy; 2025 Powered by Ollama."
+    "footer": "© 2025 Alimentado por Ollama."
+  },
+  "policy": {
+    "title": "Política de Privacidade",
+    "effectiveDateLabel": "Data de entrada em vigor:",
+    "effectiveDateValue": "5 de novembro de 2025",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "Dados que Recolhemos",
+      "howWeUse": "Como Utilizamos os Dados",
+      "sharing": "Partilha e Processadores",
+      "security": "Security",
+      "retention": "Retenção de Dados",
+      "rights": "Os seus Direitos",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "Visão Geral",
+      "bullets": {
+        "noTracking": "<strong>Sem rastreamento. Sem anúncios.</strong> A 1Air não inclui publicidade ou rastreadores de terceiros.",
+        "onDevice": "<strong>Os seus vídeos permanecem no seu dispositivo.</strong> A aplicação lê ficheiros MP4 que escolhe e pode armazená-los na sua pasta Documentos local; o conteúdo é processado no dispositivo.",
+        "icloud": "<strong>iCloud Drive opcional.</strong> Se escolher ficheiros do iCloud Drive, os ficheiros permanecem na sua conta iCloud nos termos da Apple.",
+        "diagnostics": "<strong>Diagnósticos mínimos.</strong> Só recebemos dados de diagnóstico/falhas anonimizados se optar por partilhar com os programadores através das definições da Apple."
+      }
+    },
+    "who": {
+      "title": "Quem Somos",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "(\"nós\", \"nos\" ou \"o nosso\")",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "Dados que Recolhemos",
+      "contentYouChoose": {
+        "title": "1) Conteúdo que Escolhe",
+        "p1": "Quando utiliza o selecionador de Ficheiros para selecionar vídeos, a 1Air obtém apenas acesso de leitura aos itens que selecionar. Se ativar a funcionalidade \"Guardar para Documentos\" da aplicação, cópias dos ficheiros selecionados são guardadas localmente na sandbox da aplicação.",
+        "scope": "<strong>Âmbito:</strong> Apenas os ficheiros que selecionar; sem análise de fundo de pastas não relacionadas.",
+        "processing": "<strong>Processamento:</strong> A reprodução e a gestão de ficheiros ocorrem no dispositivo.",
+        "sync": "<strong>Sincronização:</strong> Se selecionar do iCloud Drive, o armazenamento e a sincronização são geridos pelo Apple iCloud nos termos das políticas da Apple."
+      },
+      "diagnostics": {
+        "title": "2) Diagnósticos (Opcional)",
+        "p1": "Se optar por partilhar análises/relatórios de falhas com os programadores (Definições da Apple > Privacidade e Segurança > Analíticas e Melhorias), podemos receber:",
+        "b1": "Registos de falhas e métricas de desempenho (anonimizados pela Apple)",
+        "b2": "Modelo de dispositivo, versão do SO e metadados técnicos semelhantes",
+        "p2": "Não recebemos a sua identidade a partir destes relatórios."
+      },
+      "support": {
+        "title": "3) Comunicações de Suporte",
+        "p1": "Se nos enviar um e-mail, receberemos o seu endereço de e-mail e o conteúdo da sua mensagem para responder ao seu pedido."
+      },
+      "notCollect": {
+        "title": "Não Recolhemos",
+        "b1": "Identificadores pessoais dentro da app (nome, número de telefone, contactos)",
+        "b2": "Dados de localização precisos",
+        "b3": "Identificadores de publicidade ou dados de rastreamento comportamental"
+      }
+    },
+    "use": {
+      "title": "Como Utilizamos os Dados",
+      "b1": "Para fornecer funcionalidade principal (acesso a ficheiros que solicita, reprodução de vídeo)",
+      "b2": "Para manter e melhorar a qualidade da app (diagnósticos se tiver ativado)",
+      "b3": "Para responder a pedidos de suporte"
+    },
+    "sharing": {
+      "title": "Partilha e Processadores",
+      "p1": "<strong>Não vendemos os seus dados.</strong> Não partilhamos dados pessoais com terceiros para publicidade ou marketing.",
+      "p2": "<strong>Prestadores de Serviços:</strong> Podemos utilizar prestadores de serviços unicamente para operar e dar suporte à app (por exemplo, Apple iCloud para ficheiros que armazena lá; o pipeline de relatórios de anomalias da Apple se tiver ativado). Estes prestadores atuam como processadores sob os seus próprios termos e controlos de segurança.",
+      "apple": "<strong>Apple (iCloud e Relatórios de Anomalias):</strong> Ficheiros e análises processados de acordo com a política de privacidade da Apple e as configurações do seu dispositivo.",
+      "p3": "Podemos divulgar informações se exigido por lei ou para proteger direitos, segurança e proteção."
+    },
+    "security": {
+      "title": "Security",
+      "p1": "A 1Air armazena ficheiros guardados pelo utilizador na sandbox da app no seu dispositivo. Aplicamos as melhores práticas de segurança da plataforma e dependemos das proteções de sistema da Apple para iOS/iPadOS/macOS. Nenhum método de armazenamento eletrónico é 100% seguro, mas trabalhamos para proteger as suas informações.",
+      "ollama": {
+        "title": "Integração de Rede Ollama",
+        "warn": "Se ligar a 1Air a um servidor Ollama através da rede utilizando <code>http://</code>, a ligação <strong>não está encriptada em trânsito</strong> (sem TLS). Isto significa que o conteúdo que envia (como prompts de texto, metadados ou outros payloads) pode estar exposto a interceptação ou fuga na rede. Ao utilizar <code>http://</code> (especialmente em redes públicas), <strong>assume todos os riscos</strong> e <strong>é responsável</strong> por qualquer exposição resultante da utilização de uma ligação não encriptada. Recomendamos vivamente a utilização de <code>https://</code>, uma rede interna de confiança, VPN ou outro transporte seguro."
+      }
+    },
+    "retention": {
+      "title": "Retenção de Dados",
+      "b1": "<strong>Ficheiros no dispositivo:</strong> Permanecem até que os elimine ou desinstale a app.",
+      "b2": "<strong>Emails de suporte:</strong> Retidos apenas pelo tempo necessário para resolver o seu pedido e cumprir as obrigações legais.",
+      "b3": "<strong>Diagnósticos:</strong> Retidos de acordo com as políticas de retenção de análises da Apple."
+    },
+    "rights": {
+      "title": "Os Seus Direitos de Privacidade",
+      "p1": "Dependendo da sua região, poderá ter direitos de aceder, corrigir, eliminar ou restringir determinados dados que possuímos sobre si, e de se opor ou retirar o consentimento para o processamento, quando aplicável.",
+      "gdpr": "<strong>RGPD (EEE/Reino Unido):</strong> Pode solicitar o acesso ou a eliminação de dados pessoais que controlamos (principalmente emails de suporte). Para dados detidos pela Apple (por exemplo, registos de anomalias, ficheiros iCloud), utilize as ferramentas de privacidade da Apple.",
+      "ccpa": "<strong>CCPA/CPRA (Califórnia):</strong> Não vendemos nem partilhamos informações pessoais para publicidade cross-contextual. Pode solicitar o acesso ou a eliminação de informações pessoais que possuímos (principalmente emails de suporte).",
+      "p2": "Para exercer os seus direitos, contacte-nos em <a href=\"mailto:jappscompany@gmail.com\">jappscompany@gmail.com</a>. Poderemos precisar de verificar o seu pedido."
+    },
+    "children": {
+      "title": "Privacidade Infantil",
+      "p1": "A 1Air é uma app para público geral e não é especificamente direcionada a crianças. Não recolhemos intencionalmente informações pessoais de crianças. Se acredita que uma criança forneceu informações pessoais a nós através de comunicações de suporte, entre em contacto connosco e eliminaremos."
+    },
+    "international": {
+      "title": "Transferências Internacionais",
+      "p1": "As suas informações podem ser processadas no país onde reside e noutros países onde os nossos prestadores de serviços operam (por exemplo, a infraestrutura da Apple). Implementamos medidas concebidas para proteger as suas informações de forma consistente com a lei aplicável."
+    },
+    "changes": {
+      "title": "Alterações a Esta Política",
+      "p1": "Podemos atualizar esta Política de Privacidade de tempos em tempos. Publicaremos a versão atualizada na app ou no nosso website e revisaremos a \"Data de eficácia\" acima. As alterações materiais serão destacadas."
+    },
+    "contact": {
+      "title": "Contacte-nos",
+      "p1": "Se tiver questões sobre esta Política de Privacidade ou as nossas práticas, contacte-nos:",
+      "emailLabel": "Email:",
+      "dpo": "Contacto para Proteção de Dados (se aplicável): Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. Todos os direitos reservados."
+    }
   }
 }

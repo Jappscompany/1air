@@ -1,123 +1,33 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "隱私權政策",
-  "effectiveDateLabel": "生效日期：",
-  "effectiveDateValue": "2025年11月5日",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "我們收集的資料",
-    "howWeUse": "我們如何使用資料",
-    "sharing": "分享與處理者",
-    "security": "Security",
-    "retention": "資料保留",
-    "rights": "您的權利",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
-  },
-  "summary": {
-    "title": "概覽",
-    "bullets": {
-      "noTracking": "<strong>不追蹤。無廣告。</strong> 1Air 不包含廣告或第三方追蹤器。",
-      "onDevice": "<strong>您的影片保留在您的裝置上。</strong> 該應用程式會讀取您選擇的 MP4 檔案，並可將其儲存在本機「文件」資料夾中；內容會在裝置上處理。",
-      "icloud": "<strong>選用的 iCloud Drive。</strong> 如果您從 iCloud Drive 選擇檔案，這些檔案將根據 Apple 的條款停留在您的 iCloud 帳戶中。",
-      "diagnostics": "<strong>最少的診斷資訊。</strong> 如果您選擇透過 Apple 設定與開發人員分享，我們僅會收到匿名化的崩潰/診斷資料。"
-    }
-  },
-  "who": {
-    "title": "我們是誰",
-    "developerLabel": "Developer:",
-    "developerValue": "[您的法律實體名稱，例如：J-Apps Co.]",
-    "developerSuffix": "(“我們”、“您”或“我們的”)",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "我們收集的資料",
-    "contentYouChoose": {
-      "title": "1) 您選擇的內容",
-      "p1": "當您使用「檔案」選擇器選取影片時，1Air 僅獲得您選取項目的唯讀存取權。如果您啟用應用程式的「儲存至文件」功能，選取檔案的副本將儲存在應用程式沙盒中的本機位置。",
-      "scope": "<strong>範圍：</strong> 僅限您選取的檔案；不會掃描不相關的資料夾。",
-      "processing": "<strong>處理：</strong> 播放和檔案管理在裝置上進行。",
-      "sync": "<strong>同步：</strong> 如果您從 iCloud Drive 選擇，儲存和同步則由 Apple iCloud 根據 Apple 的政策管理。"
-    },
-    "diagnostics": {
-      "title": "2) 診斷資訊 (選用)",
-      "p1": "如果您選擇與開發人員分享分析/崩潰報告 (Apple 設定 > 隱私權與安全性 > 分析與改進)，我們可能會收到：",
-      "b1": "Apple 匿名化的崩潰日誌和效能指標",
-      "b2": "裝置型號、作業系統版本和類似的技術中繼資料",
-      "p2": "我們不會從這些報告中收到您的身分。"
-    },
-    "support": {
-      "title": "3) 支援通訊",
-      "p1": "如果您向我們發送電子郵件，我們將收到您的電子郵件地址和訊息內容，以便回覆您的請求。"
-    },
-    "notCollect": {
-      "title": "我們<em >不</em>收集",
-      "b1": "應用程式內的身分識別資訊 (姓名、電話號碼、聯絡人)",
-      "b2": "精確的定位資料",
-      "b3": "廣告識別碼或行為追蹤資料"
-    }
-  },
-  "use": {
-    "title": "我們如何使用資料",
-    "b1": "提供核心功能 (您要求的檔案存取權、影片播放)",
-    "b2": "維護和改善應用程式品質 (如果您選擇加入診斷資訊)",
-    "b3": "回覆支援查詢"
-  },
-  "sharing": {
-    "title": "分享與處理者",
-    "p1": "<strong>我們不銷售您的資料。</strong> 我們不會與第三方分享個人資料以進行廣告或行銷。",
-    "p2": "<strong>服務供應商：</strong> 我們可能僅使用服務供應商來操作和支援應用程式（例如，您儲存在那裡的 Apple iCloud；如果您選擇加入，Apple 的崩潰報告管線）。這些供應商在其自身的條款和安全控制下充當處理者。",
-    "apple": "<strong>Apple (iCloud &amp; 崩潰報告)：</strong> 檔案和分析符合 Apple 的隱私權政策和您的裝置設定處理。",
-    "p3": "如果法律要求或為保護權利、安全和保障，我們可能會公開資訊。"
-  },
-  "security": {
-    "title": "Security",
-    "p1": "1Air 將使用者儲存的檔案儲存在您的裝置應用程式的沙盒中。我們應用平台安全最佳實務，並依賴 Apple 對於 iOS/iPadOS/macOS 的系統保護。沒有一種電子儲存方法是 100% 安全的，但我們致力於保護您的資訊。",
-    "ollama": {
-      "title": "Ollama 網路整合",
-      "warn": "如果您使用 <code>http://</code> 將 1Air 連接到網路上的 Ollama 伺服器，則連線<strong>傳輸過程中未加密</strong>（沒有 TLS）。這意味著您傳送的內容（例如文字提示、中繼資料或其他有效載體）可能會在網路中暴露於攔截或洩漏。在使用 <code>http://</code>（尤其是在公共網路中）時，<strong>您承擔所有風險</strong>，並且<strong>您對</strong>因使用未加密的連線而造成的任何暴露負責。 我們強烈建議使用 <code>https://</code>、受信任的內部網路、VPN 或其他安全傳輸。"
-    }
-  },
-  "retention": {
-    "title": "資料保留",
-    "b1": "<strong>裝置上的檔案：</strong> 除非您刪除它們或卸載應用程式，否則會保留。",
-    "b2": "<strong>支援電子郵件：</strong> 僅保留到解決您的請求並滿足法律義務所需的時間。",
-    "b3": "<strong>診斷：</strong> 按照 Apple 的分析保留政策保留。"
-  },
-  "rights": {
-    "title": "您的隱私權",
-    "p1": "根據您的地區，您可能有權限存取、更正、刪除或限制我們持有的某些資料，並在適用情況下反對或撤回處理同意。",
-    "gdpr": "<strong>GDPR (EEA/UK)：</strong> 您可以要求存取或刪除我們控制的個人資料（主要是支援電子郵件）。對於 Apple 持有的資料（例如崩潰記錄、iCloud 檔案），請使用 Apple 的隱私權工具。",
-    "ccpa": "<strong>CCPA/CPRA (加州)：</strong> 我們不銷售或分享個人資料以用於跨環境廣告。您可能可以要求存取或刪除我們持有的個人資料（主要是支援電子郵件）。",
-    "p2": "要行使權利，請透過 <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a> 與我們聯繫。我們可能需要驗證您的請求。"
-  },
-  "children": {
-    "title": "兒童隱私權",
-    "p1": "1Air 是一個通用受眾應用程式，並未特別針對兒童。我們不會明知地從兒童處收集個人資訊。如果您認為兒童已透過支援通訊向我們提供個人資訊，請與我們聯繫，我們將刪除它。"
-  },
-  "international": {
-    "title": "國際傳輸",
-    "p1": "您的資訊可能會在您居住的國家/地區以及我們的服務供應商運營所在的國家/地區進行處理（例如，Apple 的基礎設施）。我們實施旨在根據適用法律保護您的資訊的措施。"
-  },
-  "changes": {
-    "title": "本政策的變更",
-    "p1": "我們可能會不時更新本隱私權政策。我們將在應用程式或我們的網站上發佈更新的版本，並修訂上述“生效日期”。重大變更將會突出顯示。"
-  },
-  "contact": {
-    "title": "聯繫我們",
-    "p1": "如果您對本隱私權政策或我們的實務有任何疑問，請與我們聯繫：",
-    "emailLabel": "Email:",
-    "dpo": "資料保護聯絡人（如果適用）：[Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps。版權所有。"
+  "landing": {
+    "title": "1Air — 一個簡潔的 MP4 播放器",
+    "meta_desc": "乾淨、隱私的 MP4 播放器，具備畫中畫和背景音訊功能。",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ 新版本",
+    "hero_title": "MP4，以<br>它應該播放的方式。",
+    "hero_sub": "體驗直觀輕巧的 1Air Player。<br>無廣告，僅提供乾淨的播放和背景音訊。",
+    "btn_download": "在 App Store 下載",
+    "feat_title": "為什麼選擇 1Air？",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "在多工處理時繼續觀看。原生畫中畫支援。",
+    "feat_2_title": "背景音訊",
+    "feat_2_desc": "螢幕鎖定時音訊會繼續播放。非常適合播客。",
+    "feat_3_title": "流暢控制",
+    "feat_3_desc": "用於音量和尋找的手勢。快速且靈敏。",
+    "feat_4_title": "私密且無廣告",
+    "feat_4_desc": "無追蹤、無廣告。您的影片停留在您的裝置上。",
+    "feat_5_title": "AI 整合",
+    "feat_5_desc": "透過 Ollama 連接本機 AI 模型以實現智慧功能。",
+    "feat_5_btn": "設定指南",
+    "footer_privacy": "隱私權政策",
+    "footer_contact": "聯絡支援",
+    "footer_copy": "1Air Player。版權所有。"
   },
   "ollama": {
     "title": "Ollama 設定指南",
@@ -125,32 +35,150 @@
     "win_tab": "Windows",
     "win_step1_title": "1. 下載安裝程式",
     "win_step1_desc": "從官方網站下載適用於 Windows 的安裝程式。",
-    "win_btn": "下載 Windows 版本",
+    "win_btn": "下載適用於 Windows",
     "win_step2_title": "2. 安裝",
-    "win_step2_desc": "執行 <code>OllamaSetup.exe</code> 檔案，然後點選 [Install]。",
-    "win_step2_note": "✅ 安裝完成後，您會在工作列托盤中看到 Alpaca 圖示 (🦙)。",
+    "win_step2_desc": "執行 <code>OllamaSetup.exe</code> 檔案，然後點擊 [安裝]。",
+    "win_step2_note": "✅ 安裝完成後，您將在工作列托盤中看到羊駝圖示 (🦙)。",
     "win_step3_title": "3. 驗證安裝",
     "win_step3_desc": "開啟命令提示字元 (Win + R，輸入 <code>cmd</code>) 並執行以下命令：",
     "mac_tab": "macOS",
     "mac_step1_title": "1. 下載",
     "mac_step1_desc": "需要 macOS 11 Big Sur 或更高版本。",
-    "mac_btn": "下載 macOS 版本",
+    "mac_btn": "下載適用於 macOS",
     "mac_step2_title": "2. 安裝應用程式",
-    "mac_step2_desc": "解壓縮檔案，並將 <strong>Ollama</strong> 應用程式移至 <code>應用程式</code> 資料夾。",
-    "mac_step3_title": "3. 執行與設定",
-    "mac_step3_desc": "雙擊執行。您應該會在選單列中看到 Alpaca 圖示 (🦙)。",
-    "mac_step3_note": "💡 如果系統提示您安裝命令行工具，請點擊「安裝」。",
+    "mac_step2_desc": "解壓縮檔案，並將 <strong>Ollama</strong> 應用程式移至 <code>Applications</code> 資料夾。",
+    "mac_step3_title": "3. 執行和設定",
+    "mac_step3_desc": "雙擊執行。您應該在選單列中看到羊駝圖示 (🦙)。",
+    "mac_step3_note": "💡 如果提示安裝命令列工具，請點擊「安裝」。",
     "linux_tab": "Ubuntu (Linux)",
     "linux_step1_title": "1. 透過終端機安裝",
-    "linux_step1_desc": "開啟您的終端機並執行以下命令：",
-    "linux_step1_note": "⚠️ AMD 顯示卡可能需要額外的驅動程式安裝。",
+    "linux_step1_desc": "請打開您的終端機並執行以下命令：",
+    "linux_step1_note": "⚠️ AMD 顯卡可能需要額外安裝驅動程式。",
     "linux_step2_title": "2. 檢查服務狀態",
-    "linux_step2_desc": "確保 Ollama 在背景中執行。",
+    "linux_step2_desc": "確保 Ollama 在後台執行中。",
     "final_step_title": "🎉 最後一步：提取 AI 模型",
-    "final_step_desc": "安裝後，您必須下載 AI 模型。在您的終端機中執行此命令：",
-    "final_step_note": "💡 如果您的應用程式需要特定的模型（例如 mistral），請將 'llama3.2' 替換為該名稱。",
+    "final_step_desc": "安裝完成後，您必須下載 AI 模型。在您的終端機中執行此操作：",
+    "final_step_note": "💡 如果您的應用程式需要特定的模型（例如，mistral），請將 'llama3.2' 替換為該名稱。",
     "copy": "Copy",
     "copied": "已複製！",
-    "footer": "&copy; 2025 由 Ollama 驅動。"
+    "footer": "© 2025 由 Ollama 驅動。"
+  },
+  "policy": {
+    "title": "隱私政策",
+    "effectiveDateLabel": "生效日期：",
+    "effectiveDateValue": "2025 年 11 月 5 日",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "我們收集的資料",
+      "howWeUse": "我們如何使用資料",
+      "sharing": "分享與處理者",
+      "security": "Security",
+      "retention": "資料保留",
+      "rights": "您的權利",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "概覽",
+      "bullets": {
+        "noTracking": "<strong>沒有追蹤。沒有廣告。</strong> 1Air 不包含廣告或第三方追蹤器。",
+        "onDevice": "<strong>您的影片保留在您的裝置上。</strong> 應用程式會讀取您選擇的 MP4 檔案，並可將其儲存在您的本機「文件」資料夾中；內容會在裝置上進行處理。",
+        "icloud": "<strong>可選的 iCloud Drive。</strong> 如果您選擇來自 iCloud Drive 的檔案，這些檔案將保留在您的 iCloud 帳戶中，並受 Apple 條款約束。",
+        "diagnostics": "<strong>最少的診斷資訊。</strong> 如果您選擇與開發人員分享（透過 Apple 設定），我們僅會接收匿名化的崩潰/診斷資料。"
+      }
+    },
+    "who": {
+      "title": "我們是誰",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "（“我們”、“我們”或“我們的”）",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "我們收集的資料",
+      "contentYouChoose": {
+        "title": "1) 您選擇的內容",
+        "p1": "當您使用「檔案」選擇器選擇影片時，1Air 僅會獲得您選擇的專案的唯讀存取權。如果您啟用應用程式的「儲存至文件」功能，選取檔案的副本將會儲存在應用程式的沙盒中的本機儲存空間中。",
+        "scope": "<strong>範圍：</strong> 僅您選擇的檔案；不掃描不相關的資料夾。",
+        "processing": "<strong>處理：</strong> 播放和檔案管理在裝置上進行。",
+        "sync": "<strong>同步：</strong> 如果您從 iCloud Drive 選擇，則 Apple iCloud 會根據 Apple 的政策管理儲存和同步。"
+      },
+      "diagnostics": {
+        "title": "2) 診斷 (可選)",
+        "p1": "如果您選擇與開發人員分享分析/崩潰報告（Apple 設定 > 隱私權與安全性 > 分析與改進），我們可能會收到：",
+        "b1": "崩潰日誌和效能指標（由 Apple 匿名化）",
+        "b2": "裝置型號、作業系統版本和類似的技術中繼資料",
+        "p2": "我們不會從這些報告中收到您的身份。"
+      },
+      "support": {
+        "title": "3) 支援通訊",
+        "p1": "如果您向我們發送電子郵件，我們將收到您的電子郵件地址和訊息內容，以回覆您的請求。"
+      },
+      "notCollect": {
+        "title": "我們<em>不</em>收集",
+        "b1": "應用程式中的個人識別資訊（姓名、電話號碼、聯絡人）",
+        "b2": "精確的定位資料",
+        "b3": "廣告識別碼或行為追蹤資料"
+      }
+    },
+    "use": {
+      "title": "我們如何使用資料",
+      "b1": "提供核心功能（您要求的檔案存取權、影片播放）",
+      "b2": "維護和改善應用程式品質（如果您選擇加入診斷）",
+      "b3": "回覆支援查詢"
+    },
+    "sharing": {
+      "title": "分享與處理者",
+      "p1": "<strong>我們不會出售您的資料。</strong> 我們不會與第三方分享個人資料以進行廣告或行銷。",
+      "p2": "<strong>服務提供商：</strong> 我們可能會使用服務提供商來操作和支援應用程式（例如，您儲存在那裡的 Apple iCloud；如果您選擇加入，Apple 的崩潰報告管道）。這些提供者根據他們自己的條款和安全控制作為處理者行事。",
+      "apple": "<strong>Apple（iCloud 與崩潰報告）：</strong> 檔案和分析將根據 Apple 的隱私權政策和您的裝置設定處理。",
+      "p3": "如果法律要求或為了保護權利、安全和保障，我們可能會公開資訊。"
+    },
+    "security": {
+      "title": "Security",
+      "p1": "1Air 將使用者儲存的檔案儲存在您的裝置上的應用程式沙箱中。我們採用平台安全最佳實務，並依賴 Apple 對於 iOS/iPadOS/macOS 的系統保護。沒有一種電子儲存方法是 100% 安全的，但我們會努力保護您的資訊。",
+      "ollama": {
+        "title": "Ollama 網路整合",
+        "warn": "如果您使用 <code>http://</code> 將 1Air 連接到網路上的 Ollama 伺服器，則該連線在傳輸過程中<strong>並未加密</strong>（沒有 TLS）。這表示您傳送的內容（例如文字提示、中繼資料或其他有效負載）可能會在網路中暴露於截取或洩漏。在使用 <code>http://</code>（尤其是在公共網路中）時，<strong>您承擔所有風險</strong> 並且<strong>您對</strong>使用未加密連線所導致的任何洩露負責。我們強烈建議使用 <code>https://</code>、受信任的內部網路、VPN 或其他安全傳輸。"
+      }
+    },
+    "retention": {
+      "title": "資料保留",
+      "b1": "<strong>裝置上的檔案：</strong> 除非您刪除它們或解除安裝應用程式，否則會保留。",
+      "b2": "<strong>支援電子郵件：</strong> 僅在需要解決您的請求和滿足法律義務的時間內保留。",
+      "b3": "<strong>診斷：</strong> 根據 Apple 的分析保留政策保留。"
+    },
+    "rights": {
+      "title": "您的隱私權",
+      "p1": "根據您的地區，您可能有權存取、更正、刪除或限制我們持有的某些關於您的資料，以及在適用情況下反對或撤回處理的同意。",
+      "gdpr": "<strong>GDPR（歐洲經濟區/英國）：</strong> 您可以要求存取或刪除我們控制的個人資料（主要是支援電子郵件）。對於 Apple 持有的資料（例如崩潰日誌、iCloud 檔案），請使用 Apple 的隱私權工具。",
+      "ccpa": "<strong>CCPA/CPRA（加州）：</strong> 我們不會出售或分享個人資訊以進行跨背景廣告。您可以要求存取或刪除我們持有的個人資訊（主要是支援電子郵件）。",
+      "p2": "若要行使權利，請透過 <a href=\"mailto:jappscompany@gmail.com\">jappscompany@gmail.com</a> 聯絡我們。我們可能需要驗證您的請求。"
+    },
+    "children": {
+      "title": "兒童隱私權",
+      "p1": "1Air 是一款通用受眾應用程式，並非特別針對兒童。我們不會明知收集兒童的個人資訊。如果您認為兒童已透過支援通訊向我們提供個人資訊，請聯絡我們，我們將刪除它。"
+    },
+    "international": {
+      "title": "國際轉移",
+      "p1": "您的資訊可能在您居住的國家/地區以及我們的服務提供商營運的其他國家/地區進行處理（例如，Apple 的基礎設施）。我們實施旨在保護您的資訊，並符合適用法律的措施。"
+    },
+    "changes": {
+      "title": "本政策的變更",
+      "p1": "我們可能會不時更新此隱私權政策。我們將在應用程式或我們的網站上發布更新的版本，並修訂上面的「生效日期」。重大變更將以醒目顯示。"
+    },
+    "contact": {
+      "title": "聯絡我們",
+      "p1": "如果您對此隱私權政策或我們的實務有任何疑問，請聯絡我們：",
+      "emailLabel": "Email:",
+      "dpo": "資料保護聯絡人（如果適用）：Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. 版權所有。"
+    }
   }
 }

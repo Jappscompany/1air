@@ -1,156 +1,184 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "Gizlilik Politikası",
-  "effectiveDateLabel": "Yürürlük tarihi:",
-  "effectiveDateValue": "5 Kasım 2025",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "Topladığımız Veriler",
-    "howWeUse": "Verileri Nasıl Kullanıyoruz",
-    "sharing": "Paylaşım ve İşleyiciler",
-    "security": "Security",
-    "retention": "Veri Saklama",
-    "rights": "Haklarınız",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
-  },
-  "summary": {
-    "title": "Özet",
-    "bullets": {
-      "noTracking": "<strong>Takip yok. Reklam yok.</strong> 1Air reklam veya üçüncü taraf izleyiciler içermez.",
-      "onDevice": "<strong>Videolarınız cihazınızda kalır.</strong> Uygulama, seçtiğiniz MP4 dosyalarını okur ve bunları yerel Belgeler klasörünüzde saklayabilir; içerik cihazda işlenir.",
-      "icloud": "<strong>İsteğe bağlı iCloud Drive.</strong> iCloud Drive’dan dosya seçerseniz, dosyalar Apple’ın şartları altında iCloud hesabınızda kalır.",
-      "diagnostics": "<strong>Asgari teşhisler.</strong> Yalnızca Apple ayarları aracılığıyla geliştiricilerle paylaşmaya onay verirseniz anonim kaza/teşhis verileri alırız."
-    }
-  },
-  "who": {
-    "title": "Biz Kimiz",
-    "developerLabel": "Developer:",
-    "developerValue": "[Yasal Kuruluşunuzun Adı, örn. J-Apps Co.]",
-    "developerSuffix": "(“biz”, “bize” veya “bizim”)",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "Topladığımız Veriler",
-    "contentYouChoose": {
-      "title": "1) Seçtiğiniz İçerik",
-      "p1": "Videoları seçmek için Dosyalar seçiciyi kullandığınızda, 1Air yalnızca seçtiğiniz öğelere okuma erişimi sağlar. Uygulamanın “Belgelere Kaydet” özelliğini etkinleştirirseniz, seçilen dosyaların kopyaları uygulamanın sanal kutusunda yerel olarak kaydedilir.",
-      "scope": "<strong>Kapsam:</strong> Yalnızca seçtiğiniz dosyalar; ilgili olmayan klasörlerin arka plan taraması yok.",
-      "processing": "<strong>İşleme:</strong> Oynatma ve dosya yönetimi cihazda gerçekleşir.",
-      "sync": "<strong>Senkronizasyon:</strong> iCloud Drive’dan seçerseniz, depolama ve senkronizasyon Apple iCloud tarafından Apple’ın politikaları kapsamında yönetilir."
-    },
-    "diagnostics": {
-      "title": "2) Teşhisler (İsteğe Bağlı)",
-      "p1": "Analitik/kaza raporlarını geliştiricilerle paylaşmayı kabul ederseniz (Apple Ayarları > Gizlilik ve Güvenlik > Analitik ve İyileştirmeler), şunları alabiliriz:",
-      "b1": "Kaza günlükleri ve performans ölçütleri (Apple tarafından anonimleştirilir)",
-      "b2": "Cihaz modeli, işletim sistemi sürümü ve benzer teknik meta veriler",
-      "p2": "Bu raporlardan kimliğinizi almıyoruz."
-    },
-    "support": {
-      "title": "3) Destek İletişimleri",
-      "p1": "Bize e-posta gönderirseniz, isteğinize yanıt vermek için e-posta adresinizi ve mesajınızın içeriğini alacağız."
-    },
-    "notCollect": {
-      "title": "Toplamıyoruz",
-      "b1": "Uygulama içindeki kişisel tanımlayıcılar (ad, telefon numarası, kişiler)",
-      "b2": "Kesin konum verileri",
-      "b3": "Reklam tanımlayıcıları veya davranışsal izleme verileri"
-    }
-  },
-  "use": {
-    "title": "Verileri Nasıl Kullanıyoruz",
-    "b1": "Temel işlevselliği sağlamak için (talep ettiğiniz dosya erişimi, video oynatma)",
-    "b2": "Uygulama kalitesini korumak ve iyileştirmek için (katılmayı kabul ettiyseniz teşhisler)",
-    "b3": "Destek sorgularına yanıt vermek"
-  },
-  "sharing": {
-    "title": "Paylaşım ve İşleyiciler",
-    "p1": "<strong>Verilerinizi satmıyoruz.</strong> Kişisel verileri reklam veya pazarlama amacıyla üçüncü taraflarla paylaşmıyoruz.",
-    "p2": "<strong>Hizmet Sağlayıcılar:</strong> Uygulamayı çalıştırmak ve desteklemek için yalnızca hizmet sağlayıcıları kullanabiliriz (örneğin, Apple iCloud, burada depoladığınız dosyalar için; kaydolduysanız Apple’ın çökme raporlama hattı). Bu sağlayıcılar, kendi şartları ve güvenlik kontrolleri altında işlemciler olarak hareket eder.",
-    "apple": "<strong>Apple (iCloud ve Çökme Raporları):</strong> Dosyalar ve analizler, Apple’ın gizlilik politikasına ve cihaz ayarlarınıza göre işlenir.",
-    "p3": "Yasa gerekiyorsa veya hakları, güvenliği ve emniyeti korumak için bilgi açıklayabiliriz."
-  },
-  "security": {
-    "title": "Security",
-    "p1": "1Air, kullanıcı tarafından kaydedilen dosyaları cihazınızdaki uygulama sandbox’ı içinde saklar. Platform güvenlik en iyi uygulamalarını uygular ve iOS/iPadOS/macOS için Apple’ın sistem korumalarına güveniriz. Hiçbir elektronik depolama yöntemi %100 güvenli değildir, ancak bilgilerinizi korumak için çalışıyoruz.",
-    "ollama": {
-      "title": "Ollama Ağ Entegrasyonu",
-      "warn": "1Air’i <code>http://</code> kullanarak ağ üzerinden bir Ollama sunucusuna bağlarsanız, bağlantı <strong>iletim sırasında şifrelenmez</strong> (TLS yok). Bu, gönderdiğiniz içeriğin (örneğin, metin istemleri, meta veriler veya diğer yükler) ağda kesintiye uğrama veya sızma riskine girebileceği anlamına gelir. <code>http://</code> (özellikle genel ağlarda) kullanırken, <strong>tüm riskleri üstlenirsiniz</strong> ve <strong>şifrelenmemiş bir bağlantı kullanmaktan kaynaklanan herhangi bir ifşaattan sorumlusunuz</strong>. <code>https://</code>, güvenilir bir dahili ağ, VPN veya başka bir güvenli taşıma kullanmanızı önemle tavsiye ediyoruz."
-    }
-  },
-  "retention": {
-    "title": "Veri Saklama",
-    "b1": "<strong>Cihaz üzerindeki dosyalar:</strong> Siz silene veya uygulamayı kaldırana kadar kalır.",
-    "b2": "<strong>Destek e-postaları:</strong> Yalnızca isteğinizi çözmek ve yasal yükümlülükleri yerine getirmek için gerekli olduğu sürece saklanır.",
-    "b3": "<strong>Tanı verileri:</strong> Apple’ın analiz saklama politikalarına göre saklanır."
-  },
-  "rights": {
-    "title": "Gizlilik Haklarınız",
-    "p1": "Bölgenize bağlı olarak, hakkımızda tuttuğumuz belirli verilere erişme, düzeltme, silme veya kısıtlama ve geçerli olduğunda işlemeye itiraz etme veya rızayı geri çekme haklarınız olabilir.",
-    "gdpr": "<strong>GDPR (AEA/BK):</strong> Kontrol ettiğimiz kişisel veriye erişim veya silinmesini talep edebilirsiniz (öncelikle destek e-postaları). Apple tarafından tutulan veriler için (örneğin, çökme günlükleri, iCloud dosyaları) lütfen Apple’ın gizlilik araçlarını kullanın.",
-    "ccpa": "<strong>CCPA/CPRA (California):</strong> Kişisel bilgileri çapraz bağlam reklamcılığı için satmıyor veya paylaşmıyoruz. Hakkımızda tuttuğumuz kişisel veriye erişim veya silinmesini talep edebilirsiniz (öncelikle destek e-postaları).",
-    "p2": "Haklarınızı kullanmak için [jappscompany@gmail.com] adresinden bizimle iletişime geçin. Talebinizi doğrulamanız gerekebilir."
-  },
-  "children": {
-    "title": "Çocukların Gizliliği",
-    "p1": "1Air, genel izleyici kitlesi için tasarlanmış bir uygulamadır ve özellikle çocuklara yönelik değildir. Çocuklardan bilinçli olarak kişisel bilgi toplamıyoruz. Bir çocuğun bize destek iletişimleri yoluyla kişisel bilgi sağladığına inanıyorsanız, lütfen bizimle iletişime geçin ve sileriz."
-  },
-  "international": {
-    "title": "Uluslararası Aktarımlar",
-    "p1": "Bilgileriniz, bulunduğunuz ülkede ve hizmet sağlayıcılarımızın faaliyet gösterdiği diğer ülkelerde (örneğin, Apple’ın altyapısı) işlenebilir. Geçerli yasa ile tutarlı olarak bilgilerinizi korumak için tasarlanmış önlemler uyguluyoruz."
-  },
-  "changes": {
-    "title": "Bu Politikadaki Değişiklikler",
-    "p1": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncellenmiş sürümü uygulama içinde veya web sitemizde yayınlayacağız ve yukarıdaki “Etkili Tarih”i revize edeceğiz. Önemli değişiklikler vurgulanacaktır."
-  },
-  "contact": {
-    "title": "Bize Ulaşın",
-    "p1": "Bu Gizlilik Politikası veya uygulamalarımızla ilgili sorularınız varsa, bizimle iletişime geçin:",
-    "emailLabel": "Email:",
-    "dpo": "Veri Koruma İletişim Kişisi (varsa): [Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps. Tüm hakları saklıdır."
+  "landing": {
+    "title": "1Air — Şık bir MP4 oynatıcı",
+    "meta_desc": "Resim İçinde Resim ve arka plan sesi ile temiz, özel MP4 oynatıcı.",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ Yeni Çıktı",
+    "hero_title": "MP4'ler, olması gerektiği gibi<br>çalınır.",
+    "hero_sub": "Sezgisel ve hafif 1Air Player'ı deneyimleyin.<br>Reklam yok, sadece temiz oynatma ve arka plan sesi.",
+    "btn_download": "Uygulama Mağazası'ndan İndirin",
+    "feat_title": "Neden 1Air?",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "Çoklu görev yaparken izlemeye devam edin. Yerel PiP desteği.",
+    "feat_2_title": "Arka Plan Sesi",
+    "feat_2_desc": "Ses ekran kilitlendiğinde devam eder. Podcast'ler için mükemmel.",
+    "feat_3_title": "Akıcı Kontroller",
+    "feat_3_desc": "Ses ve ilerleme için hareketler. Hızlı ve duyarlı.",
+    "feat_4_title": "Özel ve Reklamsız",
+    "feat_4_desc": "Takip yok, reklam yok. Videolarınız cihazınızda kalır.",
+    "feat_5_title": "Yapay Zeka Entegrasyonu",
+    "feat_5_desc": "Akıllı özellikler için Ollama aracılığıyla yerel yapay zeka modellerine bağlanın.",
+    "feat_5_btn": "Kurulum Rehberi",
+    "footer_privacy": "Gizlilik Politikası",
+    "footer_contact": "Destekle İletişime Geçin",
+    "footer_copy": "1Air Player. Tüm hakları saklıdır."
   },
   "ollama": {
     "title": "Ollama Kurulum Rehberi",
-    "subtitle": "AI özelliklerini etkinleştirmek için lütfen Ollama’yı kurun.",
+    "subtitle": "Lütfen yapay zeka özelliklerini etkinleştirmek için Ollama'yı yükleyin.",
     "win_tab": "Windows",
-    "win_step1_title": "1. Yükleyiciyi İndirin",
-    "win_step1_desc": "Yükleyiciyi resmi web sitesinden Windows için indirin.",
+    "win_step1_title": "1. Kurulum Dosyasını İndirin",
+    "win_step1_desc": "Kurulum dosyasını resmi web sitesinden indirin.",
     "win_btn": "Windows için İndirin",
     "win_step2_title": "2. Kurun",
-    "win_step2_desc": "<code>OllamaSetup.exe</code> dosyasını çalıştırın ve [Kur]’a tıklayın.",
-    "win_step2_note": "✅ Kurulduktan sonra, Alpaka simgesini (🦙) görev çubuğu tepsisinde göreceksiniz.",
+    "win_step2_desc": "<code>OllamaSetup.exe</code> dosyasını çalıştırın ve [Kur] düğmesine tıklayın.",
+    "win_step2_note": "✅ Kurulum tamamlandıktan sonra, görev çubuğu tepsisinde Alpaka simgesini (🦙) göreceksiniz.",
     "win_step3_title": "3. Kurulumu Doğrulayın",
-    "win_step3_desc": "Komut İstemi’ni açın (Win + R, <code>cmd</code> yazın) ve aşağıdaki komutu çalıştırın:",
+    "win_step3_desc": "Komut İstemi'ni açın (Win + R, <code>cmd</code> yazın) ve aşağıdaki komutu çalıştırın:",
     "mac_tab": "macOS",
     "mac_step1_title": "1. İndirin",
-    "mac_step1_desc": "macOS 11 Big Sur veya daha yenisi gerektirir.",
+    "mac_step1_desc": "macOS 11 Big Sur veya daha yeni bir sürüm gerektirir.",
     "mac_btn": "macOS için İndirin",
     "mac_step2_title": "2. Uygulamayı Kurun",
     "mac_step2_desc": "Dosyayı açın ve <strong>Ollama</strong> uygulamasını <code>Applications</code> klasörüne taşıyın.",
-    "mac_step3_title": "3. Çalıştır & Kurulum",
-    "mac_step3_desc": "Çalıştırmak için çift tıklayın. Menü çubuğunda Alpaka simgesini (🦙) görmelisiniz.",
-    "mac_step3_note": "💡 Komut satırı araçlarını yüklemeniz istenirse 'Yükle'ye tıklayın.",
+    "mac_step3_title": "3. Çalıştırın ve Kurun",
+    "mac_step3_desc": "Çift tıklayarak çalıştırın. Menü çubuğunda Alpaka simgesini (🦙) görmelisiniz.",
+    "mac_step3_note": "💡 Komut satırı araçlarını yüklemeniz istenirse, 'Kur'a tıklayın.",
     "linux_tab": "Ubuntu (Linux)",
     "linux_step1_title": "1. Terminalden Kurun",
     "linux_step1_desc": "Terminalinizi açın ve aşağıdaki komutu çalıştırın:",
-    "linux_step1_note": "⚠️ AMD grafik kartları için ek sürücü kurulumu gerekebilir.",
+    "linux_step1_note": "⚠️ AMD grafik kartları ek sürücü kurulumu gerektirebilir.",
     "linux_step2_title": "2. Hizmet Durumunu Kontrol Edin",
     "linux_step2_desc": "Ollama'nın arka planda çalıştığından emin olun.",
-    "final_step_title": "🎉 Son Adım: AI Modelini İndirin",
-    "final_step_desc": "Kurulumdan sonra, AI modelini indirmeniz gerekir. Terminalinizde şunu çalıştırın:",
+    "final_step_title": "🎉 Son Adım: AI Modelini Çekin",
+    "final_step_desc": "Kurulumdan sonra AI modelini indirmeniz gerekir. Terminalinizde şunu çalıştırın:",
     "final_step_note": "💡 Uygulamanız belirli bir model (örneğin, mistral) gerektiriyorsa, 'llama3.2' yerine o adla değiştirin.",
     "copy": "Copy",
     "copied": "Kopyalandı!",
-    "footer": "&copy; 2025 Ollama tarafından desteklenmektedir."
+    "footer": "© 2025 Ollama tarafından desteklenmektedir."
+  },
+  "policy": {
+    "title": "Gizlilik Politikası",
+    "effectiveDateLabel": "Yürürlük tarihi:",
+    "effectiveDateValue": "5 Kasım 2025",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "Topladığımız Veriler",
+      "howWeUse": "Verileri Nasıl Kullanıyoruz",
+      "sharing": "Paylaşım ve İşlemciler",
+      "security": "Security",
+      "retention": "Veri Saklama",
+      "rights": "Haklarınız",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "Bakışta",
+      "bullets": {
+        "noTracking": "<strong>Takip yok. Reklam yok.</strong> 1Air, reklam veya üçüncü taraf izleyiciler içermez.",
+        "onDevice": "<strong>Videolarınız cihazınızda kalır.</strong> Uygulama, seçtiğiniz MP4 dosyalarını okur ve bunları yerel Belgeler klasörünüzde depolayabilir; içerik cihaz üzerinde işlenir.",
+        "icloud": "<strong>İsteğe Bağlı iCloud Drive.</strong> Dosyaları iCloud Drive'dan seçerseniz, dosyalar Apple'ın şartları altında iCloud hesabınızda kalır.",
+        "diagnostics": "<strong>Minimum teşhis.</strong> Apple ayarları aracılığıyla geliştiricilerle paylaşmaya karar verirseniz yalnızca anonim çökme/teşhis verileri alırız."
+      }
+    },
+    "who": {
+      "title": "Biz Kimiz",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "(\"biz\", \"bize\" veya \"bizim\")",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "Topladığımız Veriler",
+      "contentYouChoose": {
+        "title": "1) Seçtiğiniz İçerik",
+        "p1": "Dosya seçiciyi kullanarak videolar seçtiğinizde, 1Air yalnızca seçtiğiniz öğelere okuma erişimi alır. Uygulamanın \"Belgelere Kaydet\" özelliğini etkinleştirirseniz, seçilen dosyaların kopyaları uygulama sanal kutusunda yerel olarak kaydedilir.",
+        "scope": "<strong>Kapsam:</strong> Yalnızca seçtiğiniz dosyalar; ilgili olmayan klasörlerin arka plan taranması yok.",
+        "processing": "<strong>İşleme:</strong> Oynatma ve dosya yönetimi cihaz üzerinde gerçekleşir.",
+        "sync": "<strong>Senkronizasyon:</strong> iCloud Drive'dan seçerseniz, depolama ve senkronizasyon Apple iCloud tarafından Apple'ın politikaları altında yönetilir."
+      },
+      "diagnostics": {
+        "title": "2) Teşhis (İsteğe Bağlı)",
+        "p1": "Geliştiricilerle analiz/çökme raporlarını paylaşmayı seçerseniz (Apple Ayarları > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler), şunları alabiliriz:",
+        "b1": "Çökme günlükleri ve performans ölçümleri (Apple tarafından anonimleştirilir)",
+        "b2": "Cihaz modeli, işletim sistemi sürümü ve benzeri teknik meta veriler",
+        "p2": "Bu raporlardan kimliğinizi almayız."
+      },
+      "support": {
+        "title": "3) Destek İletişimleri",
+        "p1": "Bize e-posta gönderirseniz, isteğinize yanıt vermek için e-posta adresinizi ve mesajınızın içeriğini alacağız."
+      },
+      "notCollect": {
+        "title": "Toplamıyoruz",
+        "b1": "Uygulama içindeki kişisel veriler (ad, telefon numarası, kişiler)",
+        "b2": "Kesin konum verileri",
+        "b3": "Reklam tanımlayıcıları veya davranışsal izleme verileri"
+      }
+    },
+    "use": {
+      "title": "Verileri Nasıl Kullanıyoruz",
+      "b1": "Temel işlevselliği sağlamak için (istediğiniz dosya erişimi, video oynatma)",
+      "b2": "Uygulama kalitesini korumak ve iyileştirmek için (katıldıysanız tanı koyma)",
+      "b3": "Destek taleplerine yanıt vermek için"
+    },
+    "sharing": {
+      "title": "Paylaşım ve İşlemciler",
+      "p1": "<strong>Verilerinizi satmıyoruz.</strong> Verileri reklam veya pazarlama amacıyla üçüncü taraflarla paylaşmıyoruz.",
+      "p2": "<strong>Hizmet Sağlayıcıları:</strong> Uygulamayı çalıştırmak ve desteklemek için yalnızca hizmet sağlayıcıları kullanabiliriz (örneğin, depoladığınız dosyalar için Apple iCloud; katıldıysanız Apple'ın çökme raporlama hattı). Bu sağlayıcılar kendi şartları ve güvenlik kontrolleri altında işlemciler olarak hareket eder.",
+      "apple": "<strong>Apple (iCloud ve Çökme Raporları):</strong> Dosyalar ve analizler, Apple'ın gizlilik politikasına ve cihaz ayarlarınıza göre işlenir.",
+      "p3": "Yasa gerektiriyorsa veya hakları, güvenliği ve güvenliği korumak için bilgileri ifşa edebiliriz."
+    },
+    "security": {
+      "title": "Security",
+      "p1": "1Air, kullanıcı tarafından kaydedilen dosyaları cihazınızdaki uygulama kutusunun içinde depolar. Platform güvenlik en iyi uygulamalarını uygularız ve iOS/iPadOS/macOS için Apple'ın sistem korumalarına güveniyoruz. Hiçbir elektronik depolama yöntemi %100 güvenli değildir, ancak bilgilerinizi korumak için çalışıyoruz.",
+      "ollama": {
+        "title": "Ollama Ağ Entegrasyonu",
+        "warn": "1Air'i <code>http://</code> kullanarak ağ üzerinden bir Ollama sunucusuna bağlarsanız, bağlantı <strong>taşıma sırasında şifrelenmez</strong> (TLS yok). Bu, gönderdiğiniz içeriğin (metin istemleri, meta veriler veya diğer yükler gibi) ağda kesintiye uğramaya veya sızdırılmaya maruz kalabileceği anlamına gelir. <code>http://</code> kullanırken (özellikle genel ağlarda), <strong>tüm riskleri üstlenirsiniz</strong> ve <strong>şifrelenmemiş bir bağlantı kullanmaktan kaynaklanan herhangi bir ifşaattan sorumlusunuzdur</strong>. <code>https://</code>, güvenilir bir dahili ağ, VPN veya diğer güvenli bir taşıma kullanmanızı önemle tavsiye ediyoruz."
+      }
+    },
+    "retention": {
+      "title": "Veri Saklama",
+      "b1": "<strong>Cihaz üzerindeki dosyalar:</strong> Siz silene veya uygulamayı kaldırana kadar kalır.",
+      "b2": "<strong>Destek e-postaları:</strong> Yalnızca talebinizi çözmek ve yasal yükümlülükleri karşılamak için gerekli olduğu sürece saklanır.",
+      "b3": "<strong>Tanılar:</strong> Apple'ın analiz saklama politikalarına göre saklanır."
+    },
+    "rights": {
+      "title": "Gizlilik Haklarınız",
+      "p1": "Bölgenize bağlı olarak, hakkımızda tuttuğumuz belirli verilere erişme, düzeltme, silme veya kısıtlama ve uygun olduğunda işlemeyi itiraz etme veya onayınızı geri çekme haklarına sahip olabilirsiniz.",
+      "gdpr": "<strong>GDPR (AEA/BK):</strong> Kontrol ettiğimiz kişisel veriye erişim veya silinmesini talep edebilirsiniz (öncelikle destek e-postaları). Apple tarafından tutulan veriler için (örneğin, çökme günlükleri, iCloud dosyaları) lütfen Apple'ın gizlilik araçlarını kullanın.",
+      "ccpa": "<strong>CCPA/CPRA (California):</strong> Çapraz bağlam reklamcılığı için kişisel bilgi satmıyoruz veya paylaşmıyoruz. Hakkımızda tuttuğumuz kişisel bilgiye erişim veya silinmesini talep edebilirsiniz (öncelikle destek e-postaları).",
+      "p2": "Haklarınızı kullanmak için <a href=\"mailto:jappscompany@gmail.com\">jappscompany@gmail.com</a> adresinden bize ulaşın. Talebinizi doğrulamamız gerekebilir."
+    },
+    "children": {
+      "title": "Çocukların Gizliliği",
+      "p1": "1Air genel kitleye yönelik bir uygulamadır ve özellikle çocuklara yönelik değildir. Çocuklardan bilinçli olarak kişisel bilgi toplamıyoruz. Bir çocuğun destek iletişimi yoluyla bize kişisel bilgi sağladığına inanıyorsanız, lütfen bizimle iletişime geçin ve sileceğiz."
+    },
+    "international": {
+      "title": "Uluslararası Transferler",
+      "p1": "Bilgileriniz, bulunduğunuz ülkede ve hizmet sağlayıcılarımızın faaliyet gösterdiği diğer ülkelerde işlenebilir (örneğin, Apple'ın altyapısı). Uygulanabilir yasalara uygun olarak bilgilerinizi korumak için tasarlanmış önlemler uyguluyoruz."
+    },
+    "changes": {
+      "title": "Bu Politikadaki Değişiklikler",
+      "p1": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncellenmiş sürümü uygulama içinde veya web sitemizde yayınlayacak ve yukarıdaki \"Etkili tarih\"i revize edeceğiz. Önemli değişiklikler vurgulanacaktır."
+    },
+    "contact": {
+      "title": "Bize Ulaşın",
+      "p1": "Bu Gizlilik Politikası veya uygulamalarımız hakkında sorularınız varsa, lütfen bizimle iletişime geçin:",
+      "emailLabel": "Email:",
+      "dpo": "Veri Koruma Sorumlusu (varsa): Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. Tüm hakları saklıdır."
+    }
   }
 }

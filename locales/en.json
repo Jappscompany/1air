@@ -1,124 +1,36 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "Privacy Policy",
-  "effectiveDateLabel": "Effective date:",
-  "effectiveDateValue": "November 5, 2025",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "Data We Collect",
-    "howWeUse": "How We Use Data",
-    "sharing": "Sharing &amp; Processors",
-    "security": "Security",
-    "retention": "Data Retention",
-    "rights": "Your Rights",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
+
+  "landing": {
+    "title": "1Air — A crisp MP4 player",
+    "meta_desc": "Clean, private MP4 player with Picture‑in‑Picture and background audio.",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ New Release",
+    "hero_title": "MP4s, the way<br>they should play.",
+    "hero_sub": "Experience the intuitive and lightweight 1Air Player.<br>No ads, just clean playback with background audio.",
+    "btn_download": "Download on App Store",
+    "feat_title": "Why 1Air?",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "Keep watching while you multitask. Native PiP support.",
+    "feat_2_title": "Background Audio",
+    "feat_2_desc": "Audio continues when screen locks. Perfect for podcasts.",
+    "feat_3_title": "Smooth Controls",
+    "feat_3_desc": "Gestures for volume and seeking. Fast and snappy.",
+    "feat_4_title": "Private & Ad-free",
+    "feat_4_desc": "No tracking, no ads. Your videos stay on your device.",
+    "feat_5_title": "AI Integration",
+    "feat_5_desc": "Connect with local AI models via Ollama for smart features.",
+    "feat_5_btn": "Setup Guide",
+    "footer_privacy": "Privacy Policy",
+    "footer_contact": "Contact Support",
+    "footer_copy": "1Air Player. All rights reserved."
   },
-  "summary": {
-    "title": "At a Glance",
-    "bullets": {
-      "noTracking": "<strong>No tracking. No ads.</strong> 1Air does not include advertising or third-party trackers.",
-      "onDevice": "<strong>Your videos stay on your device.</strong> The app reads MP4 files you choose and can store them in your local Documents folder; content is processed on-device.",
-      "icloud": "<strong>Optional iCloud Drive.</strong> If you choose files from iCloud Drive, the files remain in your iCloud account under Apple’s terms.",
-      "diagnostics": "<strong>Minimal diagnostics.</strong> We only receive anonymized crash/diagnostic data if you opt in to share with developers via Apple settings."
-    }
-  },
-  "who": {
-    "title": "Who We Are",
-    "developerLabel": "Developer:",
-    "developerValue": "[Your Legal Entity Name, e.g., J-Apps Co.]",
-    "developerSuffix": "(“we”, “us”, or “our”)",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "Data We Collect",
-    "contentYouChoose": {
-      "title": "1) Content You Choose",
-      "p1": "When you use the Files picker to select videos, 1Air is granted read access only to the items you select. If you enable the app’s “Save to Documents” feature, copies of selected files are saved locally in the app’s sandbox.",
-      "scope": "<strong>Scope:</strong> Only files you select; no background scanning of unrelated folders.",
-      "processing": "<strong>Processing:</strong> Playback and file management occur on-device.",
-      "sync": "<strong>Sync:</strong> If you select from iCloud Drive, storage and syncing are managed by Apple iCloud under Apple’s policies."
-    },
-    "diagnostics": {
-      "title": "2) Diagnostics (Optional)",
-      "p1": "If you opt in to share analytics/crash reports with developers (Apple Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements), we may receive:",
-      "b1": "Crash logs and performance metrics (anonymized by Apple)",
-      "b2": "Device model, OS version, and similar technical metadata",
-      "p2": "We do not receive your identity from these reports."
-    },
-    "support": {
-      "title": "3) Support Communications",
-      "p1": "If you email us, we will receive your email address and the contents of your message to respond to your request."
-    },
-    "notCollect": {
-      "title": "We Do <em>Not</em> Collect",
-      "b1": "Personal identifiers within the app (name, phone number, contacts)",
-      "b2": "Precise location data",
-      "b3": "Advertising identifiers or behavioral tracking data"
-    }
-  },
-  "use": {
-    "title": "How We Use Data",
-    "b1": "To provide core functionality (file access you request, video playback)",
-    "b2": "To maintain and improve app quality (diagnostics if you opted in)",
-    "b3": "To reply to support inquiries"
-  },
-  "sharing": {
-    "title": "Sharing &amp; Processors",
-    "p1": "<strong>We do not sell your data.</strong> We do not share personal data with third parties for advertising or marketing.",
-    "p2": "<strong>Service Providers:</strong> We may use service providers solely to operate and support the app (e.g., Apple iCloud for files you store there; Apple’s crash reporting pipeline if you opted in). These providers act as processors under their own terms and security controls.",
-    "apple": "<strong>Apple (iCloud &amp; Crash Reports):</strong> Files and analytics handled per Apple’s privacy policy and your device settings.",
-    "p3": "We may disclose information if required by law or to protect rights, safety, and security."
-  },
-  "security": {
-    "title": "Security",
-    "p1": "1Air stores user-saved files within the app’s sandbox on your device. We apply platform security best practices and rely on Apple’s system protections for iOS/iPadOS/macOS. No method of electronic storage is 100% secure, but we work to protect your information.",
-    "ollama": {
-      "title": "Ollama Network Integration",
-      "warn": "If you connect 1Air to an Ollama server over the network using <code>http://</code>, the connection is <strong>not encrypted in transit</strong> (no TLS). This means the content you send (such as text prompts, metadata, or other payloads) may be exposed to interception or leakage on the network. When using <code>http://</code> (especially on public networks), <strong>you assume all risks</strong> and <strong>you are responsible</strong> for any exposure resulting from using an unencrypted connection. We strongly recommend using <code>https://</code>, a trusted internal network, VPN, or other secure transport."
-    }
-  },
-  "retention": {
-    "title": "Data Retention",
-    "b1": "<strong>On-device files:</strong> Remain until you delete them or uninstall the app.",
-    "b2": "<strong>Support emails:</strong> Retained only as long as needed to resolve your request and meet legal obligations.",
-    "b3": "<strong>Diagnostics:</strong> Retained per Apple’s analytics retention policies."
-  },
-  "rights": {
-    "title": "Your Privacy Rights",
-    "p1": "Depending on your region, you may have rights to access, correct, delete, or restrict certain data we hold about you, and to object to or withdraw consent for processing where applicable.",
-    "gdpr": "<strong>GDPR (EEA/UK):</strong> You may request access or deletion of personal data we control (primarily support emails). For data held by Apple (e.g., crash logs, iCloud files), please use Apple’s privacy tools.",
-    "ccpa": "<strong>CCPA/CPRA (California):</strong> We do not sell or share personal information for cross-context advertising. You may request access or deletion of personal information we hold (primarily support emails).",
-    "p2": "To exercise rights, contact us at <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. We may need to verify your request."
-  },
-  "children": {
-    "title": "Children’s Privacy",
-    "p1": "1Air is a general-audience app and is not specifically directed to children. We do not knowingly collect personal information from children. If you believe a child has provided personal information to us via support communications, please contact us and we will delete it."
-  },
-  "international": {
-    "title": "International Transfers",
-    "p1": "Your information may be processed in the country where you reside and in other countries where our service providers operate (e.g., Apple’s infrastructure). We implement measures designed to protect your information consistent with applicable law."
-  },
-  "changes": {
-    "title": "Changes to This Policy",
-    "p1": "We may update this Privacy Policy from time to time. We will post the updated version in-app or on our website and revise the “Effective date” above. Material changes will be highlighted."
-  },
-  "contact": {
-    "title": "Contact Us",
-    "p1": "If you have questions about this Privacy Policy or our practices, contact us:",
-    "emailLabel": "Email:",
-    "dpo": "Data Protection Contact (if applicable): [Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps. All rights reserved."
-  },
+
   "ollama": {
     "title": "Ollama Setup Guide",
     "subtitle": "Please install Ollama to enable AI features.",
@@ -151,6 +63,125 @@
     "final_step_note": "💡 If your app requires a specific model (e.g., mistral), replace 'llama3.2' with that name.",
     "copy": "Copy",
     "copied": "Copied!",
-    "footer": "&copy; 2025 Powered by Ollama."
+    "footer": "© 2025 Powered by Ollama."
+  },
+
+  "policy": {
+    "title": "Privacy Policy",
+    "effectiveDateLabel": "Effective date:",
+    "effectiveDateValue": "November 5, 2025",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "Data We Collect",
+      "howWeUse": "How We Use Data",
+      "sharing": "Sharing & Processors",
+      "security": "Security",
+      "retention": "Data Retention",
+      "rights": "Your Rights",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "At a Glance",
+      "bullets": {
+        "noTracking": "<strong>No tracking. No ads.</strong> 1Air does not include advertising or third-party trackers.",
+        "onDevice": "<strong>Your videos stay on your device.</strong> The app reads MP4 files you choose and can store them in your local Documents folder; content is processed on-device.",
+        "icloud": "<strong>Optional iCloud Drive.</strong> If you choose files from iCloud Drive, the files remain in your iCloud account under Apple's terms.",
+        "diagnostics": "<strong>Minimal diagnostics.</strong> We only receive anonymized crash/diagnostic data if you opt in to share with developers via Apple settings."
+      }
+    },
+    "who": {
+      "title": "Who We Are",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "(\"we\", \"us\", or \"our\")",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "Data We Collect",
+      "contentYouChoose": {
+        "title": "1) Content You Choose",
+        "p1": "When you use the Files picker to select videos, 1Air is granted read access only to the items you select. If you enable the app's \"Save to Documents\" feature, copies of selected files are saved locally in the app's sandbox.",
+        "scope": "<strong>Scope:</strong> Only files you select; no background scanning of unrelated folders.",
+        "processing": "<strong>Processing:</strong> Playback and file management occur on-device.",
+        "sync": "<strong>Sync:</strong> If you select from iCloud Drive, storage and syncing are managed by Apple iCloud under Apple's policies."
+      },
+      "diagnostics": {
+        "title": "2) Diagnostics (Optional)",
+        "p1": "If you opt in to share analytics/crash reports with developers (Apple Settings > Privacy & Security > Analytics & Improvements), we may receive:",
+        "b1": "Crash logs and performance metrics (anonymized by Apple)",
+        "b2": "Device model, OS version, and similar technical metadata",
+        "p2": "We do not receive your identity from these reports."
+      },
+      "support": {
+        "title": "3) Support Communications",
+        "p1": "If you email us, we will receive your email address and the contents of your message to respond to your request."
+      },
+      "notCollect": {
+        "title": "We Do <em>Not</em> Collect",
+        "b1": "Personal identifiers within the app (name, phone number, contacts)",
+        "b2": "Precise location data",
+        "b3": "Advertising identifiers or behavioral tracking data"
+      }
+    },
+    "use": {
+      "title": "How We Use Data",
+      "b1": "To provide core functionality (file access you request, video playback)",
+      "b2": "To maintain and improve app quality (diagnostics if you opted in)",
+      "b3": "To reply to support inquiries"
+    },
+    "sharing": {
+      "title": "Sharing & Processors",
+      "p1": "<strong>We do not sell your data.</strong> We do not share personal data with third parties for advertising or marketing.",
+      "p2": "<strong>Service Providers:</strong> We may use service providers solely to operate and support the app (e.g., Apple iCloud for files you store there; Apple's crash reporting pipeline if you opted in). These providers act as processors under their own terms and security controls.",
+      "apple": "<strong>Apple (iCloud & Crash Reports):</strong> Files and analytics handled per Apple's privacy policy and your device settings.",
+      "p3": "We may disclose information if required by law or to protect rights, safety, and security."
+    },
+    "security": {
+      "title": "Security",
+      "p1": "1Air stores user-saved files within the app's sandbox on your device. We apply platform security best practices and rely on Apple's system protections for iOS/iPadOS/macOS. No method of electronic storage is 100% secure, but we work to protect your information.",
+      "ollama": {
+        "title": "Ollama Network Integration",
+        "warn": "If you connect 1Air to an Ollama server over the network using <code>http://</code>, the connection is <strong>not encrypted in transit</strong> (no TLS). This means the content you send (such as text prompts, metadata, or other payloads) may be exposed to interception or leakage on the network. When using <code>http://</code> (especially on public networks), <strong>you assume all risks</strong> and <strong>you are responsible</strong> for any exposure resulting from using an unencrypted connection. We strongly recommend using <code>https://</code>, a trusted internal network, VPN, or other secure transport."
+      }
+    },
+    "retention": {
+      "title": "Data Retention",
+      "b1": "<strong>On-device files:</strong> Remain until you delete them or uninstall the app.",
+      "b2": "<strong>Support emails:</strong> Retained only as long as needed to resolve your request and meet legal obligations.",
+      "b3": "<strong>Diagnostics:</strong> Retained per Apple's analytics retention policies."
+    },
+    "rights": {
+      "title": "Your Privacy Rights",
+      "p1": "Depending on your region, you may have rights to access, correct, delete, or restrict certain data we hold about you, and to object to or withdraw consent for processing where applicable.",
+      "gdpr": "<strong>GDPR (EEA/UK):</strong> You may request access or deletion of personal data we control (primarily support emails). For data held by Apple (e.g., crash logs, iCloud files), please use Apple's privacy tools.",
+      "ccpa": "<strong>CCPA/CPRA (California):</strong> We do not sell or share personal information for cross-context advertising. You may request access or deletion of personal information we hold (primarily support emails).",
+      "p2": "To exercise rights, contact us at <a href=\"mailto:jappscompany@gmail.com\">jappscompany@gmail.com</a>. We may need to verify your request."
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "p1": "1Air is a general-audience app and is not specifically directed to children. We do not knowingly collect personal information from children. If you believe a child has provided personal information to us via support communications, please contact us and we will delete it."
+    },
+    "international": {
+      "title": "International Transfers",
+      "p1": "Your information may be processed in the country where you reside and in other countries where our service providers operate (e.g., Apple's infrastructure). We implement measures designed to protect your information consistent with applicable law."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "p1": "We may update this Privacy Policy from time to time. We will post the updated version in-app or on our website and revise the \"Effective date\" above. Material changes will be highlighted."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "p1": "If you have questions about this Privacy Policy or our practices, contact us:",
+      "emailLabel": "Email:",
+      "dpo": "Data Protection Contact (if applicable): Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. All rights reserved."
+    }
   }
 }

@@ -25,11 +25,6 @@
     footer { border-top:1px solid #e5e7eb; padding:16px 20px; font-size:14px; color:var(--muted); }
     .card { border:1px solid #e5e7eb; border-radius:12px; padding:16px; background:#fafafa; }
     .lang { margin-top:10px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
-    .lang button {
-      border:1px solid #e5e7eb; background:#fff; padding:6px 10px; border-radius:999px;
-      cursor:pointer; font-size:14px;
-    }
-    .lang button[aria-pressed="true"] { border-color:#0a84ff; color:#0a84ff; }
     
     /* Language Dropdown */
     .lang-dropdown { position: relative; display: inline-block; }
@@ -126,27 +121,27 @@
     <ul>
       <li data-i18n="summary.bullets.noTracking"><strong>No tracking. No ads.</strong> 1Air does not include advertising or third-party trackers.</li>
       <li data-i18n="summary.bullets.onDevice"><strong>Your videos stay on your device.</strong> The app reads MP4 files you choose and can store them in your local Documents folder; content is processed on-device.</li>
-      <li data-i18n="summary.bullets.icloud"><strong>Optional iCloud Drive.</strong> If you choose files from iCloud Drive, the files remain in your iCloud account under Apple’s terms.</li>
+      <li data-i18n="summary.bullets.icloud"><strong>Optional iCloud Drive.</strong> If you choose files from iCloud Drive, the files remain in your iCloud account under Apple's terms.</li>
       <li data-i18n="summary.bullets.diagnostics"><strong>Minimal diagnostics.</strong> We only receive anonymized crash/diagnostic data if you opt in to share with developers via Apple settings.</li>
     </ul>
   </section>
 
   <section id="who-we-are">
     <h2 data-i18n="who.title">Who We Are</h2>
-    <p><strong data-i18n="who.developerLabel">Developer:</strong> <span data-i18n="who.developerValue">[Your Legal Entity Name, e.g., J-Apps Co.]</span> <span data-i18n="who.developerSuffix">(“we”, “us”, or “our”)</span></p>
+    <p><strong data-i18n="who.developerLabel">Developer:</strong> <span data-i18n="who.developerValue">J-Apps Co.</span> <span data-i18n="who.developerSuffix">("we", "us", or "our")</span></p>
     <p><strong data-i18n="who.appLabel">App:</strong> <span data-i18n="who.appValue">1Air (iOS/iPadOS/macOS)</span></p>
-    <p><strong data-i18n="who.contactLabel">Contact:</strong> <a id="contactEmailLink" href="mailto:[jappscompany@gmail.com]">[jappscompany@gmail.com]</a></p>
+    <p><strong data-i18n="who.contactLabel">Contact:</strong> <a id="contactEmailLink" href="mailto:jappscompany@gmail.com">jappscompany@gmail.com</a></p>
   </section>
 
   <section id="data-we-collect">
     <h2 data-i18n="collect.title">Data We Collect</h2>
 
     <h3 data-i18n="collect.contentYouChoose.title">1) Content You Choose</h3>
-    <p data-i18n="collect.contentYouChoose.p1">When you use the Files picker to select videos, 1Air is granted read access only to the items you select. If you enable the app’s “Save to Documents” feature, copies of selected files are saved locally in the app’s sandbox.</p>
+    <p data-i18n="collect.contentYouChoose.p1">When you use the Files picker to select videos, 1Air is granted read access only to the items you select. If you enable the app's "Save to Documents" feature, copies of selected files are saved locally in the app's sandbox.</p>
     <ul>
       <li data-i18n="collect.contentYouChoose.scope"><strong>Scope:</strong> Only files you select; no background scanning of unrelated folders.</li>
       <li data-i18n="collect.contentYouChoose.processing"><strong>Processing:</strong> Playback and file management occur on-device.</li>
-      <li data-i18n="collect.contentYouChoose.sync"><strong>Sync:</strong> If you select from iCloud Drive, storage and syncing are managed by Apple iCloud under Apple’s policies.</li>
+      <li data-i18n="collect.contentYouChoose.sync"><strong>Sync:</strong> If you select from iCloud Drive, storage and syncing are managed by Apple iCloud under Apple's policies.</li>
     </ul>
 
     <h3 data-i18n="collect.diagnostics.title">2) Diagnostics (Optional)</h3>
@@ -180,21 +175,19 @@
   <section id="sharing">
     <h2 data-i18n="sharing.title">Sharing &amp; Processors</h2>
     <p data-i18n="sharing.p1"><strong>We do not sell your data.</strong> We do not share personal data with third parties for advertising or marketing.</p>
-    <p data-i18n="sharing.p2"><strong>Service Providers:</strong> We may use service providers solely to operate and support the app (e.g., Apple iCloud for files you store there; Apple’s crash reporting pipeline if you opted in). These providers act as processors under their own terms and security controls.</p>
+    <p data-i18n="sharing.p2"><strong>Service Providers:</strong> We may use service providers solely to operate and support the app (e.g., Apple iCloud for files you store there; Apple's crash reporting pipeline if you opted in). These providers act as processors under their own terms and security controls.</p>
     <ul>
-      <li data-i18n="sharing.apple"><strong>Apple (iCloud &amp; Crash Reports):</strong> Files and analytics handled per Apple’s privacy policy and your device settings.</li>
+      <li data-i18n="sharing.apple"><strong>Apple (iCloud &amp; Crash Reports):</strong> Files and analytics handled per Apple's privacy policy and your device settings.</li>
     </ul>
     <p data-i18n="sharing.p3">We may disclose information if required by law or to protect rights, safety, and security.</p>
   </section>
 
   <section id="security">
     <h2 data-i18n="security.title">Security</h2>
-    <p data-i18n="security.p1">1Air stores user-saved files within the app’s sandbox on your device. We apply platform security best practices and rely on Apple’s system protections for iOS/iPadOS/macOS. No method of electronic storage is 100% secure, but we work to protect your information.</p>
-
+    <p data-i18n="security.p1">1Air stores user-saved files within the app's sandbox on your device. We apply platform security best practices and rely on Apple's system protections for iOS/iPadOS/macOS. No method of electronic storage is 100% secure, but we work to protect your information.</p>
+    
     <h3 data-i18n="security.ollama.title">Ollama Network Integration</h3>
-    <p class="warn" data-i18n="security.ollama.warn">
-      If you connect 1Air to an Ollama server over the network using <code>http://</code>, the connection is <strong>not encrypted in transit</strong> (no TLS). This means the content you send (such as text prompts, metadata, or other payloads) may be exposed to interception or leakage on the network. When using <code>http://</code> (especially on public networks), <strong>you assume all risks</strong> and <strong>you are responsible</strong> for any exposure resulting from using an unencrypted connection. We strongly recommend using <code>https://</code>, a trusted internal network, VPN, or other secure transport.
-    </p>
+    <p class="warn" data-i18n="security.ollama.warn">If you connect 1Air to an Ollama server over the network using <code>http://</code>, the connection is <strong>not encrypted in transit</strong> (no TLS). This means the content you send (such as text prompts, metadata, or other payloads) may be exposed to interception or leakage on the network. When using <code>http://</code> (especially on public networks), <strong>you assume all risks</strong> and <strong>you are responsible</strong> for any exposure resulting from using an unencrypted connection. We strongly recommend using <code>https://</code>, a trusted internal network, VPN, or other secure transport.</p>
   </section>
 
   <section id="retention">
@@ -202,7 +195,7 @@
     <ul>
       <li data-i18n="retention.b1"><strong>On-device files:</strong> Remain until you delete them or uninstall the app.</li>
       <li data-i18n="retention.b2"><strong>Support emails:</strong> Retained only as long as needed to resolve your request and meet legal obligations.</li>
-      <li data-i18n="retention.b3"><strong>Diagnostics:</strong> Retained per Apple’s analytics retention policies.</li>
+      <li data-i18n="retention.b3"><strong>Diagnostics:</strong> Retained per Apple's analytics retention policies.</li>
     </ul>
   </section>
 
@@ -210,39 +203,39 @@
     <h2 data-i18n="rights.title">Your Privacy Rights</h2>
     <p data-i18n="rights.p1">Depending on your region, you may have rights to access, correct, delete, or restrict certain data we hold about you, and to object to or withdraw consent for processing where applicable.</p>
     <ul>
-      <li data-i18n="rights.gdpr"><strong>GDPR (EEA/UK):</strong> You may request access or deletion of personal data we control (primarily support emails). For data held by Apple (e.g., crash logs, iCloud files), please use Apple’s privacy tools.</li>
+      <li data-i18n="rights.gdpr"><strong>GDPR (EEA/UK):</strong> You may request access or deletion of personal data we control (primarily support emails). For data held by Apple (e.g., crash logs, iCloud files), please use Apple's privacy tools.</li>
       <li data-i18n="rights.ccpa"><strong>CCPA/CPRA (California):</strong> We do not sell or share personal information for cross-context advertising. You may request access or deletion of personal information we hold (primarily support emails).</li>
     </ul>
-    <p data-i18n="rights.p2">To exercise rights, contact us at <a id="rightsEmailLink" href="mailto:[jappscompany@gmail.com]">[jappscompany@gmail.com]</a>. We may need to verify your request.</p>
+    <p data-i18n="rights.p2">To exercise rights, contact us at <a href="mailto:jappscompany@gmail.com">jappscompany@gmail.com</a>. We may need to verify your request.</p>
   </section>
 
   <section id="children">
-    <h2 data-i18n="children.title">Children’s Privacy</h2>
-    <p data-i18n="children.p1">1Air is not directed to children under 13 (or the minimum age required by your jurisdiction). We do not knowingly collect personal data from children.</p>
+    <h2 data-i18n="children.title">Children's Privacy</h2>
+    <p data-i18n="children.p1">1Air is a general-audience app and is not specifically directed to children. We do not knowingly collect personal information from children. If you believe a child has provided personal information to us via support communications, please contact us and we will delete it.</p>
   </section>
 
   <section id="international">
     <h2 data-i18n="international.title">International Transfers</h2>
-    <p data-i18n="international.p1">Your information may be processed in the country where you reside and in other countries where our service providers operate (e.g., Apple’s infrastructure). We implement measures designed to protect your information consistent with applicable law.</p>
+    <p data-i18n="international.p1">Your information may be processed in the country where you reside and in other countries where our service providers operate (e.g., Apple's infrastructure). We implement measures designed to protect your information consistent with applicable law.</p>
   </section>
 
   <section id="changes">
     <h2 data-i18n="changes.title">Changes to This Policy</h2>
-    <p data-i18n="changes.p1">We may update this Privacy Policy from time to time. We will post the updated version in-app or on our website and revise the “Effective date” above. Material changes will be highlighted.</p>
+    <p data-i18n="changes.p1">We may update this Privacy Policy from time to time. We will post the updated version in-app or on our website and revise the "Effective date" above. Material changes will be highlighted.</p>
   </section>
 
   <section id="contact">
     <h2 data-i18n="contact.title">Contact Us</h2>
     <p data-i18n="contact.p1">If you have questions about this Privacy Policy or our practices, contact us:</p>
     <ul>
-      <li><span data-i18n="contact.emailLabel">Email:</span> <a id="footerEmailLink" href="mailto:[jappscompany@gmail.com]">[jappscompany@gmail.com]</a></li>
-      <li data-i18n="contact.dpo">Data Protection Contact (if applicable): [Jake / jappscompany@gmail.com]</li>
+      <li><span data-i18n="contact.emailLabel">Email:</span> <a id="footerEmailLink" href="mailto:jappscompany@gmail.com">jappscompany@gmail.com</a></li>
+      <li data-i18n="contact.dpo">Data Protection Contact (if applicable): Jake / jappscompany@gmail.com</li>
     </ul>
   </section>
 </main>
 
 <footer>
-  <p data-i18n="footer.copyright">© [2025] J-Apps. All rights reserved.</p>
+  <p data-i18n="footer.copyright">© 2025 J-Apps. All rights reserved.</p>
 </footer>
 
 <script>
@@ -270,6 +263,7 @@
     { code: 'ko', name: '한국어' },
     { code: 'ms', name: 'Bahasa Melayu' },
     { code: 'nb', name: 'Norsk Bokmål' },
+    { code: 'nl', name: 'Nederlands' },
     { code: 'pl', name: 'Polski' },
     { code: 'pt-BR', name: 'Português (Brasil)' },
     { code: 'pt-PT', name: 'Português (Portugal)' },
@@ -285,7 +279,8 @@
     { code: 'zh-Hant', name: '繁體中文' }
   ];
 
-  const storageKey = "privacy_lang";
+  const LOCALES_DIR = './locales';
+  const STORAGE_KEY = 'app_lang';
 
   function initLangDropdown() {
     const menu = document.getElementById('lang-dropdown-menu');
@@ -299,11 +294,9 @@
   }
 
   function toggleLangDropdown() {
-    const menu = document.getElementById('lang-dropdown-menu');
-    menu.classList.toggle('show');
+    document.getElementById('lang-dropdown-menu').classList.toggle('show');
   }
 
-  // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
     const dropdown = document.querySelector('.lang-dropdown');
     if (dropdown && !dropdown.contains(e.target)) {
@@ -312,86 +305,91 @@
   });
 
   function guessLang() {
-    const saved = localStorage.getItem(storageKey);
+    const saved = localStorage.getItem(STORAGE_KEY);
     if (saved && LANGUAGES.find(l => l.code === saved)) return saved;
 
-    const nav = (navigator.language || "en").toLowerCase();
-    // Try to match language
+    const nav = (navigator.language || 'en').toLowerCase();
     for (const lang of LANGUAGES) {
-      if (nav.startsWith(lang.code.split('-')[0])) {
+      if (nav.startsWith(lang.code.split('-')[0].toLowerCase())) {
         return lang.code;
       }
     }
-    return "en";
+    return 'en';
   }
 
   async function loadLocale(lang) {
-    try {
-      const res = await fetch(`./locales/${lang}.json`, { cache: "no-store" });
-      if (!res.ok) throw new Error("Failed to load locale: " + lang);
-      return await res.json();
-    } catch (error) {
-      console.warn(`Failed to load ${lang}.json, falling back to en.json`);
-      const res = await fetch(`./locales/en.json`, { cache: "no-store" });
-      if (!res.ok) return null;
-      return await res.json();
+    const codes = [lang];
+    const base = lang.split('-')[0];
+    if (base !== lang) codes.push(base);
+    if (!codes.includes('en')) codes.push('en');
+
+    for (const code of codes) {
+      try {
+        const res = await fetch(`${LOCALES_DIR}/${code}.json`, { cache: 'no-store' });
+        if (!res.ok) continue;
+        const dict = await res.json();
+        if (dict && typeof dict === 'object') {
+          return { dict, resolved: code };
+        }
+      } catch (_) {}
     }
+    return { dict: {}, resolved: 'en' };
   }
 
-  function applyI18n(dict) {
-    document.documentElement.lang = dict._meta?.htmlLang || "en";
+  function getNestedValue(obj, path) {
+    return path.split('.').reduce((acc, k) => (acc && acc[k] != null ? acc[k] : null), obj);
+  }
 
-    const nodes = document.querySelectorAll("[data-i18n]");
-    nodes.forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      const value = key.split(".").reduce((acc, k) => (acc && acc[k] != null ? acc[k] : null), dict);
-      if (value == null) return;
-
-      // allow HTML in translations for <strong>, <code>, entities, links inside text, etc.
-      el.innerHTML = value;
+  function applyI18n(policyDict) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const value = getNestedValue(policyDict, key);
+      if (value != null) {
+        el.innerHTML = String(value);
+      }
     });
 
-    // Keep placeholder mailto values consistent across the page (optional)
-    const email = dict._meta?.contactEmail || "[jappscompany@gmail.com]";
-    ["contactEmailLink","rightsEmailLink","footerEmailLink"].forEach(id => {
+    // Update email links
+    const email = 'jappscompany@gmail.com';
+    ['contactEmailLink', 'footerEmailLink'].forEach(id => {
       const a = document.getElementById(id);
       if (a) {
-        a.href = "mailto:" + email.replace(/^\[|\]$/g, "");
+        a.href = 'mailto:' + email;
         a.textContent = email;
       }
     });
   }
 
   async function setLang(lang) {
-    const finalLang = LANGUAGES.find(l => l.code === lang) ? lang : "en";
-    localStorage.setItem(storageKey, finalLang);
+    const finalLang = LANGUAGES.find(l => l.code === lang) ? lang : 'en';
+    localStorage.setItem(STORAGE_KEY, finalLang);
 
-    const dict = await loadLocale(finalLang);
-    if (!dict) return;
-    applyI18n(dict);
+    const { dict, resolved } = await loadLocale(finalLang);
+    
+    // Use 'policy' namespace from JSON
+    const policyDict = dict.policy || {};
+    applyI18n(policyDict);
+    
+    document.documentElement.lang = dict._meta?.htmlLang || resolved;
 
     // Update dropdown UI
-    const langInfo = LANGUAGES.find(l => l.code === finalLang);
+    const langInfo = LANGUAGES.find(l => l.code === resolved);
     if (langInfo) {
       document.getElementById('current-lang-name').textContent = langInfo.name;
     }
     
-    // Update active state in dropdown
     document.querySelectorAll('.lang-dropdown-item').forEach(item => {
-      item.classList.remove('active');
-      if (item.textContent === langInfo.name) {
-        item.classList.add('active');
-      }
+      item.classList.toggle('active', item.textContent === langInfo?.name);
     });
 
-    // Close dropdown
     document.getElementById('lang-dropdown-menu').classList.remove('show');
   }
 
-  // Initialize on page load
+  // Initialize
+  initLangDropdown();
+  
   window.onload = function() {
-    initLangDropdown();
-    setLang(guessLang()).catch(() => setLang("en"));
+    setLang(guessLang());
   };
 </script>
 </body>

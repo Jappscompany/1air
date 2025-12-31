@@ -1,156 +1,184 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "Zásady ochrany súkromia",
-  "effectiveDateLabel": "Platnosť od:",
-  "effectiveDateValue": "5. november 2025",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "Zhromažďované údaje",
-    "howWeUse": "Ako používame údaje",
-    "sharing": "Zdieľanie a spracovávatelia",
-    "security": "Security",
-    "retention": "Uchovávanie údajov",
-    "rights": "Vaše práva",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
-  },
-  "summary": {
-    "title": "V skratke",
-    "bullets": {
-      "noTracking": "<strong>Žiadne sledovanie. Žiadna reklama.</strong> 1Air neobsahuje reklamy ani sledovače tretích strán.",
-      "onDevice": "<strong>Vaše videá zostávajú vo vašom zariadení.</strong> Aplikácia číta súbory MP4, ktoré vyberiete, a môže ich uložiť do lokálnej zložky Dokumenty; obsah sa spracováva v zariadení.",
-      "icloud": "<strong>Voliteľný iCloud Drive.</strong> Ak vyberiete súbory z iCloud Drive, zostanú vo vašom účte iCloud za podmienok spoločnosti Apple.",
-      "diagnostics": "<strong>Minimálna diagnostika.</strong> Dostávame iba anonymizované údaje o chybách/diagnostike, ak sa rozhodnete zdieľať s vývojármi prostredníctvom nastavení Apple."
-    }
-  },
-  "who": {
-    "title": "Kto sme",
-    "developerLabel": "Developer:",
-    "developerValue": "[Váš právny názov entity, napr. J-Apps Co.]",
-    "developerSuffix": "(„my“, „nás“ alebo „naše“)",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "Zhromažďované údaje",
-    "contentYouChoose": {
-      "title": "1) Obsah, ktorý vyberiete",
-      "p1": "Keď použijete nástroj na výber súborov na výber videí, 1Air získava iba právo čítať položky, ktoré vyberiete. Ak povolíte funkciu „Uložiť do Dokumentov“ v aplikácii, kópie vybraných súborov sa uložia lokálne v sandboxe aplikácie.",
-      "scope": "<strong>Rozsah:</strong> Iba súbory, ktoré vyberiete; žiadne skenovanie nesúvisiacich priečinkov na pozadí.",
-      "processing": "<strong>Spracovanie:</strong> Prehrávanie a správa súborov prebieha v zariadení.",
-      "sync": "<strong>Synchronizácia:</strong> Ak vyberiete z iCloud Drive, ukladanie a synchronizácia sú spravované spoločnosťou Apple iCloud podľa zásad spoločnosti Apple."
-    },
-    "diagnostics": {
-      "title": "2) Diagnostika (voliteľné)",
-      "p1": "Ak sa rozhodnete zdieľať analytické údaje/správy o chybách s vývojármi (Nastavenia Apple > Súkromie a bezpečnosť > Analytika a zlepšenia), môžeme dostať:",
-      "b1": "Záznamy o chybách a metriky výkonu (anonymizované spoločnosťou Apple)",
-      "b2": "Model zariadenia, verzia operačného systému a podobné technické údaje",
-      "p2": "Z týchto správ nedostávame vašu identitu."
-    },
-    "support": {
-      "title": "3) Komunikácia podpory",
-      "p1": "Ak nám pošlete e-mail, dostaneme vašu e-mailovú adresu a obsah vašej správy, aby sme odpovedali na vašu žiadosť."
-    },
-    "notCollect": {
-      "title": "Nezbierame",
-      "b1": "Osobné identifikátory v aplikácii (meno, telefónne číslo, kontakty)",
-      "b2": "Presné údaje o polohe",
-      "b3": "Identifikátory reklamy alebo údaje o správaní počas sledovania"
-    }
-  },
-  "use": {
-    "title": "Ako používame údaje",
-    "b1": "Na poskytovanie základnej funkčnosti (prístup k súborom, ktoré žiadate, prehrávanie videí)",
-    "b2": "Na údržbu a zlepšenie kvality aplikácie (diagnostika, ak ste sa prihlásili)",
-    "b3": "Na odpoveď na žiadosti o podporu"
-  },
-  "sharing": {
-    "title": "Zdieľanie a spracovávatelia",
-    "p1": "<strong>Nepredávame vaše údaje.</strong> Nepožičiavame si osobné údaje tretím stranám na účely reklamy alebo marketingu.",
-    "p2": "<strong>Poskytovatelia služieb:</strong> Môžeme používať poskytovateľov služieb výhradne na prevádzkovanie a podporu aplikácie (napr. Apple iCloud na súbory, ktoré tam ukladáte; kanál na hlásenie chýb Apple, ak ste sa prihlásili). Títo poskytovatelia pôsobia ako spracovatelia v rámci svojich vlastných podmienok a bezpečnostných opatrení.",
-    "apple": "<strong>Apple (iCloud a správy o chybách):</strong> Súbory a analytika spracúvané v súlade so zásadami ochrany osobných údajov spoločnosti Apple a nastaveniami vášho zariadenia.",
-    "p3": "Môžeme odhaliť informácie, ak to vyžaduje zákon alebo na ochranu práv, bezpečnosti a zabezpečenia."
-  },
-  "security": {
-    "title": "Security",
-    "p1": "1Air ukladá používateľom uložené súbory v sandboxe aplikácie vo vašom zariadení. Používame osvedčené postupy zabezpečenia platformy a spoliehame sa na systémové ochrany spoločnosti Apple pre iOS/iPadOS/macOS. Žiadna metóda elektronického úložiska nie je 100% bezpečná, ale usilujeme sa o ochranu vašich informácií.",
-    "ollama": {
-      "title": "Integrácia siete Ollama",
-      "warn": "Ak pripojíte 1Air k serveru Ollama cez sieť pomocou <code>http://</code>, pripojenie <strong>nie je šifrované počas prenosu</strong> (žiadne TLS). To znamená, že obsah, ktorý odošlete (napr. textové výzvy, metadata alebo iné údaje), môže byť vystavený zachyteniu alebo úniku v sieti. Pri používaní <code>http://</code> (najmä vo verejných sieťach) <strong>zobúdate všetky riziká</strong> a <strong>zodpovedáte</strong> za akékoľvek odhalenie vyplývajúce z používania nešifrovaného pripojenia. Dôrazne odporúčame používať <code>https://</code>, dôveryhodnú internú sieť, VPN alebo iný zabezpečený transport."
-    }
-  },
-  "retention": {
-    "title": "Uchovávanie údajov",
-    "b1": "<strong>Súbory v zariadení:</strong> Zostávajú, kým ich nevymažete alebo odinštalujete aplikáciu.",
-    "b2": "<strong>E-maily podpory:</strong> Uchovávajú sa len tak dlho, ako je to potrebné na vyriešenie vášho požiadavku a splnenie zákonných povinností.",
-    "b3": "<strong>Diagnostika:</strong> Uchovávajú sa v súlade so zásadami uchovávania analytiky spoločnosti Apple."
-  },
-  "rights": {
-    "title": "Vaše práva na ochranu osobných údajov",
-    "p1": "V závislosti od vášho regiónu môžete mať právo na prístup, opravu, vymazanie alebo obmedzenie určitých údajov, ktoré o vás máme, a právo vzniesť námietky alebo odvolať súhlas so spracovaním, ak je to možné.",
-    "gdpr": "<strong>GDPR (EHP/Spojené kráľovstvo):</strong> Môžete požiadať o prístup alebo vymazanie osobných údajov, ktoré kontrolujeme (najmä e-maily podpory). Pre údaje uložené spoločnosťou Apple (napr. protokoly chýb, súbory iCloud) použite nástroje na ochranu osobných údajov spoločnosti Apple.",
-    "ccpa": "<strong>CCPA/CPRA (Kalifornia):</strong> Nepredávame ani nezdieľame osobné informácie na účely reklamného cross-contextu. Môžete požiadať o prístup alebo vymazanie osobných údajov, ktoré máme (najmä e-maily podpory).",
-    "p2": "Na uplatnenie práv nás kontaktujte na adrese <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Môžeme vás požiadať o overenie vašej žiadosti."
-  },
-  "children": {
-    "title": "Ochrana osobných údajov detí",
-    "p1": "1Air je aplikácia pre široké publikum a nie je špeciálne zameraná na deti. Nezhromažďujeme úmyselne osobné údaje od detí. Ak veríte, že dieťa nám poskytlo osobné údaje prostredníctvom komunikácie so zákazníckou podporou, kontaktujte nás a my ich vymažeme."
-  },
-  "international": {
-    "title": "Medzinárodné prenosy",
-    "p1": "Vaše informácie môžu byť spracovávané v krajine, v ktorej sa nachádzate, a v ďalších krajinách, kde pôsobia naši poskytovatelia služieb (napr. infraštruktúra spoločnosti Apple). Implementujeme opatrenia navrhnuté na ochranu vašich informácií v súlade s platnými právnymi predpismi."
-  },
-  "changes": {
-    "title": "Zmeny v tejto politike",
-    "p1": "Môžeme túto Politiku ochrany osobných údajov čas od času aktualizovať. Uverejníme aktualizovanú verziu v aplikácii alebo na našich webových stránkach a prehodnotíme vyššie uvedené „Platnosť“. Materiálne zmeny budú zvýraznené."
-  },
-  "contact": {
-    "title": "Kontaktujte nás",
-    "p1": "Ak máte otázky týkajúce sa tejto Politiky ochrany osobných údajov alebo našich postupov, kontaktujte nás:",
-    "emailLabel": "Email:",
-    "dpo": "Kontakt pre ochranu osobných údajov (ak sa uplatňuje): [Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps. Všetky práva vyhradené."
+  "landing": {
+    "title": "1Air — Elegantný MP4 prehrávač",
+    "meta_desc": "Čistý, súkromný MP4 prehrávač s Picture‑in‑Picture a zvukom na pozadí.",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ Nová verzia",
+    "hero_title": "MP4, tak ako<br>majú byť prehrávané.",
+    "hero_sub": "Zažite intuitívny a ľahký 1Air prehrávač.<br>Žiadne reklamy, len čisté prehrávanie so zvukom na pozadí.",
+    "btn_download": "Stiahnuť z App Store",
+    "feat_title": "Prečo 1Air?",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "Pokračujte v sledovaní počas multitaskingu. Nativná podpora PiP.",
+    "feat_2_title": "Zvuk na pozadí",
+    "feat_2_desc": "Zvuk pokračuje aj keď je obrazovka uzamknutá. Perfektné pre podcasty.",
+    "feat_3_title": "Plynulé ovládanie",
+    "feat_3_desc": "Gesty na ovládanie hlasitosti a prechádzanie. Rýchle a pohotové.",
+    "feat_4_title": "Súkromie a bez reklám",
+    "feat_4_desc": "Žiadne sledovanie, žiadne reklamy. Vaše videá zostávajú vo vašom zariadení.",
+    "feat_5_title": "Integrácia s AI",
+    "feat_5_desc": "Pripojte sa k lokálnym AI modelom cez Ollama pre inteligentné funkcie.",
+    "feat_5_btn": "Sprievodca nastavením",
+    "footer_privacy": "Zásady ochrany osobných údajov",
+    "footer_contact": "Kontaktujte podporu",
+    "footer_copy": "1Air Player. Všetky práva vyhradené."
   },
   "ollama": {
-    "title": "Sprievodca nastavením Ollamy",
-    "subtitle": "Nainštalujte si Ollamu, aby ste povoľili funkcie AI.",
+    "title": "Sprievodca nastavením Ollama",
+    "subtitle": "Nainštalujte si Ollama, aby ste mohli používať funkcie AI.",
     "win_tab": "Windows",
     "win_step1_title": "1. Stiahnite si inštalátor",
     "win_step1_desc": "Stiahnite si inštalátor pre Windows z oficiálnej webovej stránky.",
     "win_btn": "Stiahnuť pre Windows",
-    "win_step2_title": "2. Nainštalujte",
-    "win_step2_desc": "Spustite súbor <code>OllamaSetup.exe</code> a kliknite na [Nainštalovať].",
-    "win_step2_note": "✅ Po nainštalovaní uvidíte ikonu Alpaky (🦙) v systémovej lište.",
-    "win_step3_title": "3. Overte inštaláciu",
+    "win_step2_title": "2. Inštalácia",
+    "win_step2_desc": "Spustite súbor <code>OllamaSetup.exe</code> a kliknite na [Inštalovať].",
+    "win_step2_note": "✅ Po inštalácii uvidíte ikonu Alpaca (🦙) v systémovej lište.",
+    "win_step3_title": "3. Overenie inštalácie",
     "win_step3_desc": "Otvorte príkazový riadok (Win + R, napíšte <code>cmd</code>) a spustite nasledujúci príkaz:",
     "mac_tab": "macOS",
-    "mac_step1_title": "1. Stiahnite si",
+    "mac_step1_title": "1. Stiahnutie",
     "mac_step1_desc": "Vyžaduje macOS 11 Big Sur alebo novší.",
     "mac_btn": "Stiahnuť pre macOS",
     "mac_step2_title": "2. Nainštalujte aplikáciu",
     "mac_step2_desc": "Rozbaľte súbor a presuňte aplikáciu <strong>Ollama</strong> do priečinka <code>Applications</code>.",
-    "mac_step3_title": "3. Spustenie a nastavenie",
-    "mac_step3_desc": "Dvojitým kliknutím ju spustite. V menu bar by ste mali vidieť ikonu Alpaky (🦙).",
-    "mac_step3_note": "💡 Ak sa zobrazí výzva na inštaláciu nástrojov príkazového riadka, kliknite na „Inštalovať“.",
+    "mac_step3_title": "3. Spustite a nastavte",
+    "mac_step3_desc": "Dvojklikom spustite. Mali by ste vidieť ikonu Alpaca (🦙) v menu lište.",
+    "mac_step3_note": "💡 Ak sa zobrazí výzva na inštaláciu nástrojov príkazového riadka, kliknite na 'Inštalovať'.",
     "linux_tab": "Ubuntu (Linux)",
     "linux_step1_title": "1. Inštalácia cez terminál",
-    "linux_step1_desc": "Otvorte svoj terminál a spustite nasledujúci príkaz:",
+    "linux_step1_desc": "Otvorte si terminál a spustite nasledujúci príkaz:",
     "linux_step1_note": "⚠️ Grafické karty AMD môžu vyžadovať dodatočnú inštaláciu ovládačov.",
     "linux_step2_title": "2. Skontrolujte stav služby",
-    "linux_step2_desc": "Uistite sa, že beží Ollama na pozadí.",
-    "final_step_title": "🎉 Posledný krok: Stiahnutie AI modelu",
+    "linux_step2_desc": "Uistite sa, že Ollama beží na pozadí.",
+    "final_step_title": "🎉 Záverečný krok: Stiahnutie AI modelu",
     "final_step_desc": "Po inštalácii musíte stiahnuť AI model. Spustite toto vo svojom termináli:",
-    "final_step_note": "💡 Ak vaša aplikácia vyžaduje konkrétny model (napríklad mistral), nahraďte „llama3.2“ týmto názvom.",
+    "final_step_note": "💡 Ak vaša aplikácia vyžaduje konkrétny model (napríklad mistral), nahraďte 'llama3.2' týmto názvom.",
     "copy": "Copy",
     "copied": "Skopírované!",
-    "footer": "&copy; 2025 Powered by Ollama."
+    "footer": "© 2025 Powered by Ollama."
+  },
+  "policy": {
+    "title": "Zásady ochrany osobných údajov",
+    "effectiveDateLabel": "Platnosť od:",
+    "effectiveDateValue": "5. novembra 2025",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "Zhromažďované údaje",
+      "howWeUse": "Ako používame údaje",
+      "sharing": "Zdieľanie a spracovávatelia",
+      "security": "Security",
+      "retention": "Uchovávanie údajov",
+      "rights": "Vaše práva",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "V skratke",
+      "bullets": {
+        "noTracking": "<strong>Žiadne sledovanie. Žiadne reklamy.</strong> 1Air neobsahuje reklamy ani sledovače tretích strán.",
+        "onDevice": "<strong>Vaše videá zostávajú vo vašom zariadení.</strong> Aplikácia číta súbory MP4, ktoré vyberiete, a môže ich uložiť do lokálneho priečinka Dokumenty; spracovanie obsahu prebieha v zariadení.",
+        "icloud": "<strong>Voliteľné iCloud Drive.</strong> Ak vyberiete súbory z iCloud Drive, zostanú vo vašom účte iCloud podľa podmienok spoločnosti Apple.",
+        "diagnostics": "<strong>Minimálna diagnostika.</strong> Dostávame iba anonymizované protokoly o zlyhaniach/diagnostické údaje, ak sa rozhodnete zdieľať ich s vývojármi prostredníctvom nastavení Apple."
+      }
+    },
+    "who": {
+      "title": "Kto sme",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "(\"my\", \"nás\" alebo \"naše\")",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "Zhromažďované údaje",
+      "contentYouChoose": {
+        "title": "1) Obsah, ktorý si vyberiete",
+        "p1": "Keď použijete výber súborov na výber videí, 1Air získa iba prístup na čítanie k položkám, ktoré vyberiete. Ak povolíte funkciu „Uložiť do Dokumentov“ v aplikácii, vytvoria sa lokálne kópie vybraných súborov v sandbox aplikácie.",
+        "scope": "<strong>Rozsah:</strong> Iba súbory, ktoré vyberiete; žiadne skenovanie nesúvisiacich priečinkov na pozadí.",
+        "processing": "<strong>Spracovanie:</strong> Prehrávanie a správa súborov prebieha v zariadení.",
+        "sync": "<strong>Synchronizácia:</strong> Ak vyberiete z iCloud Drive, ukladanie a synchronizácia sú spravované spoločnosťou Apple iCloud podľa zásad spoločnosti Apple."
+      },
+      "diagnostics": {
+        "title": "2) Diagnostika (Voliteľné)",
+        "p1": "Ak sa rozhodnete zdieľať analytické údaje/protokoly o zlyhaniach s vývojármi (Nastavenia Apple > Súkromie a bezpečnosť > Analytika a vylepšenia), môžeme dostať:",
+        "b1": "Protokoly o zlyhaniach a metriky výkonu (anonymizované spoločnosťou Apple)",
+        "b2": "Model zariadenia, verzia OS a podobné technické metadáta",
+        "p2": "Z týchto správ nezískavame vašu identitu."
+      },
+      "support": {
+        "title": "3) Komunikácia s podporou",
+        "p1": "Ak nám pošlete e-mail, dostaneme vašu e-mailovú adresu a obsah vašej správy, aby sme mohli odpovedať na vašu žiadosť."
+      },
+      "notCollect": {
+        "title": "Nezbierame",
+        "b1": "Osobné identifikátory v aplikácii (meno, telefónne číslo, kontakty)",
+        "b2": "Presné údaje o polohe",
+        "b3": "Reklamné identifikátory alebo údaje o sledovaní správania"
+      }
+    },
+    "use": {
+      "title": "Ako používame údaje",
+      "b1": "Na poskytovanie základnej funkčnosti (prístup k súborom, ktoré požadujete, prehrávanie videa)",
+      "b2": "Na udržanie a zlepšenie kvality aplikácie (diagnostika, ak ste ju povolili)",
+      "b3": "Na odpovedanie na dopyty podpory"
+    },
+    "sharing": {
+      "title": "Zdieľanie a spracovávatelia",
+      "p1": "<strong>Nepredávame vaše údaje.</strong> Nezdieľame osobné údaje s tretími stranami na účely reklamy alebo marketingu.",
+      "p2": "<strong>Poskytovatelia služieb:</strong> Môžeme používať poskytovateľov služieb výhradne na prevádzkovanie a podporu aplikácie (napr. Apple iCloud pre súbory, ktoré tam ukladáte; pipeline na hlásenie chýb od spoločnosti Apple, ak ste ju povolili). Títo poskytovatelia pôsobia ako spracovávatelia v rámci svojich vlastných podmienok a bezpečnostných kontrol.",
+      "apple": "<strong>Apple (iCloud a hlásenia chýb):</strong> Súbory a analytika sú spracúvané v súlade s zásadami ochrany súkromia spoločnosti Apple a nastavením vášho zariadenia.",
+      "p3": "Môžeme poskytnúť informácie, ak to vyžaduje zákon alebo na ochranu práv, bezpečnosti a zabezpečenia."
+    },
+    "security": {
+      "title": "Security",
+      "p1": "1Air ukladá súbory uložené používateľmi v rámci sandboxu aplikácie na vašom zariadení. Používame osvedčené postupy platformy a spoliehame sa na systémové ochrany spoločnosti Apple pre iOS/iPadOS/macOS. Žiadna metóda elektronického ukladania nie je 100 % bezpečná, ale snažíme sa chrániť vaše informácie.",
+      "ollama": {
+        "title": "Integrácia siete Ollama",
+        "warn": "Ak pripojíte 1Air k serveru Ollama cez sieť pomocou <code>http://</code>, spojenie <strong>nie je šifrované počas prenosu</strong> (bez TLS). To znamená, že obsah, ktorý odosielate (napr. textové výzvy, metadata alebo iné užitočné zaťaženie), môže byť vystavený zachyteniu alebo úniku v sieti. Pri používaní <code>http://</code> (najmä vo verejných sieťach) <strong>prijímate všetky riziká</strong> a <strong>ste zodpovední</strong> za akékoľvek vystavenie, ktoré vznikne použitím nešifrovaného spojenia. Dôrazne odporúčame používať <code>https://</code>, dôveryhodnú internú sieť, VPN alebo iný zabezpečený prenos."
+      }
+    },
+    "retention": {
+      "title": "Ukladanie údajov",
+      "b1": "<strong>Súbory v zariadení:</strong> Zostávajú, kým ich nevymažete alebo odinštalujete aplikáciu.",
+      "b2": "<strong>E-maily podpory:</strong> Ukladané len tak dlho, ako je potrebné na vyriešenie vášho dopytu a splnenie zákonných povinností.",
+      "b3": "<strong>Diagnostika:</strong> Ukladané v súlade so zásadami ukladania analytiky spoločnosti Apple."
+    },
+    "rights": {
+      "title": "Vaše práva na ochranu osobných údajov",
+      "p1": "V závislosti od vašej oblasti môžete mať právo na prístup, opravu, vymazanie alebo obmedzenie určitých údajov, ktoré o vás máme, a právo namietať proti spracovaniu alebo odvolať súhlas, ak je to možné.",
+      "gdpr": "<strong>GDPR (EHP/Spojené kráľovstvo):</strong> Môžete požiadať o prístup alebo vymazanie osobných údajov, ktoré kontrolujeme (najmä e-maily podpory). Pre údaje uložené spoločnosťou Apple (napr. protokoly chýb, súbory iCloud) použite nástroje na ochranu súkromia spoločnosti Apple.",
+      "ccpa": "<strong>CCPA/CPRA (Kalifornia):</strong> Nepredávame ani nezdieľame osobné informácie na účely reklamy v rôznych kontextoch. Môžete požiadať o prístup alebo vymazanie osobných informácií, ktoré o vás máme (najmä e-maily podpory).",
+      "p2": "Na uplatnenie práv nás kontaktujte na adrese <a href=\"mailto:jappscompany@gmail.com\">jappscompany@gmail.com</a>. Môžeme potrebovať overiť vašu žiadosť."
+    },
+    "children": {
+      "title": "Ochrana súkromia detí",
+      "p1": "1Air je aplikácia pre široké publikum a nie je špeciálne zameraná na deti. Nevyberáme úmyselne osobné informácie od detí. Ak veríte, že dieťa nám poskytlo osobné informácie prostredníctvom komunikácie podpory, kontaktujte nás a my ich vymažeme."
+    },
+    "international": {
+      "title": "Medzinárodné prenosy",
+      "p1": "Vaše informácie môžu byť spracúvané v krajine, kde žijete, a v iných krajinách, kde pôsobia naši poskytovatelia služieb (napr. infraštruktúra spoločnosti Apple). Implementujeme opatrenia navrhnuté na ochranu vašich informácií v súlade s platnými zákonmi."
+    },
+    "changes": {
+      "title": "Zmeny v tejto politike",
+      "p1": "Môžeme túto zásadu ochrany súkromia čas od času aktualizovať. Uverejníme aktualizovanú verziu v aplikácii alebo na našej webovej stránke a upravíme \"Dátum účinnosti\" vyššie. Podstatné zmeny budú zvýraznené."
+    },
+    "contact": {
+      "title": "Kontaktujte nás",
+      "p1": "Ak máte otázky týkajúce sa tejto zásady ochrany súkromia alebo našich postupov, kontaktujte nás:",
+      "emailLabel": "Email:",
+      "dpo": "Kontakt pre ochranu údajov (ak je to relevantné): Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. Všetky práva vyhradené."
+    }
   }
 }

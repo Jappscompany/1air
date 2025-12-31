@@ -1,156 +1,184 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "Politika privatnosti",
-  "effectiveDateLabel": "Datum stupanja na snagu:",
-  "effectiveDateValue": "5. studenog 2025.",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "Podaci koje prikupljamo",
-    "howWeUse": "Kako koristimo podatke",
-    "sharing": "Dijeljenje i procesori",
-    "security": "Security",
-    "retention": "Čuvanje podataka",
-    "rights": "Vaša prava",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
-  },
-  "summary": {
-    "title": "Ukratko",
-    "bullets": {
-      "noTracking": "<strong>Bez praćenja. Bez oglasa.</strong> 1Air ne uključuje oglašavanje ili praćenje trećih strana.",
-      "onDevice": "<strong>Vaši videozapisi ostaju na vašem uređaju.</strong> Aplikacija čita MP4 datoteke koje odaberete i može ih spremiti u vašu lokalnu mapu Dokumenti; sadržaj se obrađuje na uređaju.",
-      "icloud": "<strong>Neobvezan iCloud Drive.</strong> Ako odaberete datoteke s iCloud Drivea, one će ostati na vašem iCloud računu pod uvjetima tvrtke Apple.",
-      "diagnostics": "<strong>Minimalna dijagnostika.</strong> Primamo samo anonimizirane podatke o rušenju/dijagnostici ako odaberete dijeliti s programerima putem postavki tvrtke Apple."
-    }
-  },
-  "who": {
-    "title": "Tko smo mi",
-    "developerLabel": "Developer:",
-    "developerValue": "[Vaše pravno ime tvrtke, npr. J-Apps Co.]",
-    "developerSuffix": "(“mi”, “nas” ili “naša”)",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "Podaci koje prikupljamo",
-    "contentYouChoose": {
-      "title": "1) Sadraj koji odaberete",
-      "p1": "Kada koristite odabir datoteka za odabir videozapisa, 1Air dobiva samo pristup za čitanje odabranih stavki. Ako omogućite značajku “Spremi u Dokumente” aplikacije, kopije odabranih datoteka spremaju se lokalno u sanduku aplikacije.",
-      "scope": "<strong>Opseg:</strong> Samo datoteke koje odaberete; nema pozadinskog skeniranja nesrodnih mapa.",
-      "processing": "<strong>Obrada:</strong> Reprodukcija i upravljanje datotekama odvijaju se na uređaju.",
-      "sync": "<strong>Sinkronizacija:</strong> Ako odaberete s iCloud Drivea, pohranu i sinkronizaciju upravlja Apple iCloud prema pravilima tvrtke Apple."
-    },
-    "diagnostics": {
-      "title": "2) Dijagnostika (neobvezno)",
-      "p1": "Ako odaberete dijeliti analitiku/izvješća o rušenju s programerima (Postavke tvrtke Apple > Privatnost i sigurnost > Analitika i poboljšanja), možemo primiti:",
-      "b1": "Dnevnici rušenja i metrike performansi (anonimizirane od strane tvrtke Apple)",
-      "b2": "Model uređaja, verzija OS-a i slični tehnički podaci",
-      "p2": "Ne primamo vaš identitet iz ovih izvješća."
-    },
-    "support": {
-      "title": "3) Podrška - Komunikacija",
-      "p1": "Ako nam pošaljete e-poruku, primit ćemo vašu adresu e-pošte i sadržaj vaše poruke kako bismo odgovorili na vaš zahtjev."
-    },
-    "notCollect": {
-      "title": "Ne prikupljamo",
-      "b1": "Osobne identifikatore unutar aplikacije (ime, broj telefona, kontakti)",
-      "b2": "Precizne podatke o lokaciji",
-      "b3": "Identifikatore oglasa ili podatke o ponašajnom praćenju"
-    }
-  },
-  "use": {
-    "title": "Kako koristimo podatke",
-    "b1": "Za pružanje osnovne funkcionalnosti (pristup datoteci koju zatražite, reprodukcija videozapisa)",
-    "b2": "Za održavanje i poboljšanje kvalitete aplikacije (dijagnostika ako ste odabrali)",
-    "b3": "Za odgovor na upite za podršku"
-  },
-  "sharing": {
-    "title": "Dijeljenje i procesori",
-    "p1": "<strong>Ne prodajemo vaše podatke.</strong> Ne dijelimo osobne podatke s trećim stranama u svrhu oglašavanja ili marketinga.",
-    "p2": "<strong>Pružatelji usluga:</strong> Možemo koristiti pružatelje usluga isključivo za rad i podršku aplikacije (npr. Apple iCloud za datoteke koje tamo pohranjujete; Appleovu cijev za izvješćivanje o rušenju ako ste se prijavili). Ovi pružatelji usluga djeluju kao prerađivači u skladu s vlastitim uvjetima i kontrolama sigurnosti.",
-    "apple": "<strong>Apple (iCloud &amp; Izvješća o rušenju):</strong> Datoteke i analitika obrađuju se u skladu s Appleovom politikom privatnosti i postavkama vašeg uređaja.",
-    "p3": "Možemo otkriti informacije ako je to potrebno zakonom ili kako bismo zaštitili prava, sigurnost i zaštitu."
-  },
-  "security": {
-    "title": "Security",
-    "p1": "1Air pohranjuje datoteke koje je korisnik spremio unutar sanduka aplikacije na vašem uređaju. Primjenjujemo najbolju praksu sigurnosti platforme i oslanjamo se na Appleove sistemske zaštite za iOS/iPadOS/macOS. Niti jedna metoda elektroničke pohrane nije 100% sigurna, ali radimo na zaštiti vaših informacija.",
-    "ollama": {
-      "title": "Integracija Ollama mreže",
-      "warn": "Ako spojite 1Air na Ollama poslužitelj preko mreže pomoću <code>http://</code>, veza <strong>nije šifrirana tijekom prijenosa</strong> (nema TLS). To znači da sadržaj koji šaljete (poput tekstualnih upita, metapodataka ili drugih tereta) može biti izložen presretanju ili curenju na mreži. Pri korištenju <code>http://</code> (posebno na javnim mrežama), <strong>preuzimate sve rizike</strong> i <strong>odgovorni ste</strong> za bilo kakvu izloženost koja proizlazi iz korištenja nešifrirane veze. Snažno preporučujemo korištenje <code>https://</code>, pouzdane interne mreže, VPN-a ili drugog sigurnog transporta."
-    }
-  },
-  "retention": {
-    "title": "Čuvanje podataka",
-    "b1": "<strong>Datoteke na uređaju:</strong> Ostaju dok ih ne izbrišete ili deinstalirate aplikaciju.",
-    "b2": "<strong>E-mailovi podrške:</strong> Čuvaju se samo dok je potrebno za rješavanje vašeg zahtjeva i ispunjenje zakonskih obveza.",
-    "b3": "<strong>Dijagnostika:</strong> Čuvaju se u skladu s Appleovom politikom čuvanja analitike."
-  },
-  "rights": {
-    "title": "Vaša prava na privatnost",
-    "p1": "Ovisno o vašoj regiji, možda imate pravo pristupiti, ispraviti, izbrisati ili ograničiti određene podatke koje posjedujemo o vama, te prigovoriti ili povući pristanak za obradu, gdje je primjenjivo.",
-    "gdpr": "<strong>GDPR (EEA/UK):</strong> Možete zatražiti pristup ili brisanje osobnih podataka koje kontroliramo (uglavnom e-mailove podrške). Za podatke koje drži Apple (npr. dnevnike rušenja, iCloud datoteke), koristite Appleove alate za zaštitu privatnosti.",
-    "ccpa": "<strong>CCPA/CPRA (Kalifornija):</strong> Ne prodajemo niti dijelimo osobne informacije u svrhu oglašavanja unakrsnog konteksta. Možete zatražiti pristup ili brisanje osobnih podataka koje posjedujemo (uglavnom e-mailove podrške).",
-    "p2": "Kako biste ostvarili prava, kontaktirajte nas na <a href=\"mailto:[jappscompany@gmail.com]\">[jappscompany@gmail.com]</a>. Možda ćemo morati potvrditi vaš zahtjev."
-  },
-  "children": {
-    "title": "Privatnost djece",
-    "p1": "1Air je aplikacija opće namjene i nije specifično usmjerena na djecu. Ne prikupljamo osobne podatke od djece. Ako vjerujete da je dijete pružilo osobne podatke putem komunikacije s podrškom, kontaktirajte nas i izbrisat ćemo ih."
-  },
-  "international": {
-    "title": "Međunarodni prijenosi",
-    "p1": "Vaše se informacije mogu obrađivati u zemlji u kojoj prebivate i u drugim zemljama u kojima naši pružatelji usluga posluju (npr. Appleova infrastruktura). Implementiramo mjere osmišljene za zaštitu vaših informacija u skladu s primjenjivim zakonom."
-  },
-  "changes": {
-    "title": "Izmjene ove politike",
-    "p1": "Možemo povremeno ažurirati ovu politiku privatnosti. Objavit ćemo ažuriranu verziju u aplikaciji ili na našoj web stranici i revidirati “Datum stupanja na snagu” gore. Značajnije promjene bit će istaknute."
-  },
-  "contact": {
-    "title": "Kontaktirajte nas",
-    "p1": "Ako imate pitanja o ovoj politici privatnosti ili našoj praksi, kontaktirajte nas:",
-    "emailLabel": "Email:",
-    "dpo": "Kontakt za zaštitu podataka (ako je primjenjivo): [Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps. Sva prava pridržana."
+  "landing": {
+    "title": "1Air — Pregledan MP4 player",
+    "meta_desc": "Čist, privatni MP4 player s Picture‑in‑Picture i pozadinskim zvukom.",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ Nova verzija",
+    "hero_title": "MP4-ovi, onako<br>kako bi trebali biti prikazani.",
+    "hero_sub": "Iskusite intuitivni i lagani 1Air Player.<br>Bez oglasa, samo čista reprodukcija s pozadinskim zvukom.",
+    "btn_download": "Preuzmi iz App Storea",
+    "feat_title": "Zašto 1Air?",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "Nastavite gledati dok obavljate više zadataka. Podrška za izvorni PiP.",
+    "feat_2_title": "Pozadinski zvuk",
+    "feat_2_desc": "Zvuk se nastavlja kada se zaslon isključi. Savršen za podcastove.",
+    "feat_3_title": "Glattke kontrole",
+    "feat_3_desc": "Gestovi za glasnoću i pretraživanje. Brzo i lako.",
+    "feat_4_title": "Privatno i bez oglasa",
+    "feat_4_desc": "Nema praćenja, nema oglasa. Vaši videozapisi ostaju na vašem uređaju.",
+    "feat_5_title": "AI integracija",
+    "feat_5_desc": "Povežite se s lokalnim AI modelima putem Ollame za pametne značajke.",
+    "feat_5_btn": "Vodič za postavljanje",
+    "footer_privacy": "Politika privatnosti",
+    "footer_contact": "Kontaktirajte podršku",
+    "footer_copy": "1Air Player. Sva prava pridržana."
   },
   "ollama": {
     "title": "Vodič za postavljanje Ollame",
-    "subtitle": "Instalirajte Ollamu kako biste omogućili AI značajke.",
+    "subtitle": "Molimo instalirajte Ollamu da biste omogućili AI značajke.",
     "win_tab": "Windows",
-    "win_step1_title": "1. Preuzmite instalacijski program",
+    "win_step1_title": "1. Preuzmi instalacijski program",
     "win_step1_desc": "Preuzmite instalacijski program za Windows s službene web stranice.",
     "win_btn": "Preuzmi za Windows",
     "win_step2_title": "2. Instaliraj",
-    "win_step2_desc": "Pokrenite <code>OllamaSetup.exe</code> datoteku i kliknite [Instaliraj].",
-    "win_step2_note": "✅ Nakon instalacije vidjet ćete ikonu Alpake (🦙) u ladici s obavijestima.",
-    "win_step3_title": "3. Provjeri instalaciju",
+    "win_step2_desc": "Pokrenite datoteku <code>OllamaSetup.exe</code> i kliknite [Instaliraj].",
+    "win_step2_note": "✅ Nakon instalacije, vidjet ćete ikonu Alpace (🦙) u ladici s alatima.",
+    "win_step3_title": "3. Potvrdi instalaciju",
     "win_step3_desc": "Otvorite Command Prompt (Win + R, upišite <code>cmd</code>) i pokrenite sljedeću naredbu:",
     "mac_tab": "macOS",
     "mac_step1_title": "1. Preuzmi",
     "mac_step1_desc": "Zahtijeva macOS 11 Big Sur ili noviji.",
     "mac_btn": "Preuzmi za macOS",
     "mac_step2_title": "2. Instaliraj aplikaciju",
-    "mac_step2_desc": "Otzipajte datoteku i premjestite aplikaciju <strong>Ollama</strong> u mapu <code>Applications</code>.",
+    "mac_step2_desc": "Otzipaj datoteku i premjesti aplikaciju <strong>Ollama</strong> u mapu <code>Applications</code>.",
     "mac_step3_title": "3. Pokreni i postavi",
-    "mac_step3_desc": "Dvostruko kliknite da biste pokrenuli. Trebali biste vidjeti ikonu Alpace (🦙) na traci izbornika.",
-    "mac_step3_note": "💡 Ako se pojavi obavijest o potrebi za instalacijom alata za naredbeni redak, kliknite 'Instaliraj'.",
+    "mac_step3_desc": "Dvaput klikni za pokretanje. Trebali biste vidjeti ikonu Alpace (🦙) na traci izbornika.",
+    "mac_step3_note": "💡 Ako te se zatraži da instaliraš alate za naredbeni redak, klikni 'Instaliraj'.",
     "linux_tab": "Ubuntu (Linux)",
     "linux_step1_title": "1. Instaliraj putem terminala",
     "linux_step1_desc": "Otvorite svoj terminal i pokrenite sljedeću naredbu:",
-    "linux_step1_note": "⚠️ Grafičke kartice AMD-a mogu zahtijevati dodatnu instalaciju upravljačkih programa.",
-    "linux_step2_title": "2. Provjeri status usluge",
-    "linux_step2_desc": "Provjerite je li Ollama pokrenut u pozadini.",
-    "final_step_title": "🎉 Završni korak: Preuzmi AI model",
+    "linux_step1_note": "⚠️ Grafičke kartice AMD mogu zahtijevati dodatnu instalaciju upravljačkog programa.",
+    "linux_step2_title": "2. Provjerite status usluge",
+    "linux_step2_desc": "Osigurajte da je Ollama pokrenut u pozadini.",
+    "final_step_title": "🎉 Završni korak: Preuzmite AI model",
     "final_step_desc": "Nakon instalacije, morate preuzeti AI model. Pokrenite ovo u svom terminalu:",
-    "final_step_note": "💡 Ako vaša aplikacija zahtijeva određeni model (npr. mistral), zamijenite 'llama3.2' tim imenom.",
+    "final_step_note": "💡 Ako vaša aplikacija zahtijeva određeni model (npr. mistral), zamijenite 'llama3.2' s tim imenom.",
     "copy": "Copy",
     "copied": "Kopirano!",
-    "footer": "&copy; 2025 Pokreće Ollama."
+    "footer": "© 2025 Pokreće Ollama."
+  },
+  "policy": {
+    "title": "Pravila o privatnosti",
+    "effectiveDateLabel": "Datum stupanja na snagu:",
+    "effectiveDateValue": "5. studenog 2025.",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "Podaci koje prikupljamo",
+      "howWeUse": "Kako koristimo podatke",
+      "sharing": "Dijeljenje i procesori",
+      "security": "Security",
+      "retention": "Čuvanje podataka",
+      "rights": "Vaša prava",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "U kratkom",
+      "bullets": {
+        "noTracking": "<strong>Nema praćenja. Nema oglasa.</strong> 1Air ne uključuje oglašavanje niti praćenje trećih strana.",
+        "onDevice": "<strong>Vaši videozapisi ostaju na vašem uređaju.</strong> Aplikacija čita MP4 datoteke koje odaberete i može ih spremiti u vašu lokalnu mapu Dokumenti; obrada se vrši na uređaju.",
+        "icloud": "<strong>Neobvezan iCloud Drive.</strong> Ako odaberete datoteke s iCloud Drivea, datoteke ostaju na vašem iCloud računu u skladu s uvjetima Applea.",
+        "diagnostics": "<strong>Minimalna dijagnostika.</strong> Primamo samo anonimizirane crash/dijagnostičke podatke ako se odlučite dijeliti s programerima putem postavki Applea."
+      }
+    },
+    "who": {
+      "title": "Tko smo mi",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "(\"mi\", \"nas\" ili \"naši\")",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "Podaci koje prikupljamo",
+      "contentYouChoose": {
+        "title": "1) Sadržaj koji odaberete",
+        "p1": "Kada koristite File Picker za odabir videozapisa, 1Air dobiva dopuštenje samo za čitanje odabranih stavki. Ako omogućite značajku aplikacije \"Spremi u Dokumente\", kopije odabranih datoteka spremaju se lokalno u sandbox aplikacije.",
+        "scope": "<strong>Opseg:</strong> Samo datoteke koje odaberete; nema pozadinskog skeniranja nesrodnih mapa.",
+        "processing": "<strong>Obrada:</strong> Reprodukcija i upravljanje datotekama vrši se na uređaju.",
+        "sync": "<strong>Sinkronizacija:</strong> Ako odaberete s iCloud Drivea, pohrana i sinkronizacija upravljaju se Apple iCloud-om u skladu s politikama Applea."
+      },
+      "diagnostics": {
+        "title": "2) Dijagnostika (Neobvezno)",
+        "p1": "Ako se odlučite dijeliti analitiku/izvješća o srušavanjima s programerima (Apple postavke > Privatnost i sigurnost > Analitika i poboljšanja), možemo primiti:",
+        "b1": "Dnevnici srušavanja i metrike performansi (anonimizirane od strane Applea)",
+        "b2": "Model uređaja, verzija OS-a i slični tehnički podaci",
+        "p2": "Ne primamo vaš identitet iz ovih izvješća."
+      },
+      "support": {
+        "title": "3) Komunikacija za podršku",
+        "p1": "Ako nam pošaljete e-poštu, primit ćemo vašu adresu e-pošte i sadržaj vaše poruke kako bismo odgovorili na vaš zahtjev."
+      },
+      "notCollect": {
+        "title": "Ne prikupljamo",
+        "b1": "Osobni podaci unutar aplikacije (ime, broj telefona, kontakti)",
+        "b2": "Precizni podaci o lokaciji",
+        "b3": "Identifikatori za oglašavanje ili podaci o ponašanju u praćenju"
+      }
+    },
+    "use": {
+      "title": "Kako koristimo podatke",
+      "b1": "Za pružanje osnovnih funkcionalnosti (pristup datotekama koje zahtijevate, reprodukcija videozapisa)",
+      "b2": "Za održavanje i poboljšanje kvalitete aplikacije (dijagnostika ako ste odabrali)",
+      "b3": "Za odgovaranje na upite za podršku"
+    },
+    "sharing": {
+      "title": "Dijeljenje i procesori",
+      "p1": "<strong>Ne prodajemo vaše podatke.</strong> Ne dijelimo osobne podatke s trećim stranama u svrhu oglašavanja ili marketinga.",
+      "p2": "<strong>Pružatelji usluga:</strong> Možemo koristiti pružatelje usluga isključivo za pokretanje i podršku aplikacije (npr. Apple iCloud za datoteke koje tamo pohranjujete; Appleovu cijev za prijavu srušenog sustava ako ste odabrali). Ovi pružatelji usluga djeluju kao procesori u skladu sa svojim uvjetima i kontrolama sigurnosti.",
+      "apple": "<strong>Apple (iCloud i izvješća o srušenom sustavu):</strong> Datoteke i analitika obrađuju se u skladu s Appleovom politikom privatnosti i postavkama vašeg uređaja.",
+      "p3": "Možemo otkriti informacije ako to zahtijeva zakon ili kako bismo zaštitili prava, sigurnost i zaštitu."
+    },
+    "security": {
+      "title": "Security",
+      "p1": "1Air pohranjuje korisničke datoteke unutar sigurnog područja aplikacije na vašem uređaju. Primjenjujemo najbolju praksu sigurnosti platforme i oslanjamo se na sistemsku zaštitu Applea za iOS/iPadOS/macOS. Niti jedna metoda elektroničke pohrane nije 100% sigurna, ali radimo na zaštiti vaših informacija.",
+      "ollama": {
+        "title": "Integracija Ollama mreže",
+        "warn": "Ako spojite 1Air na Ollama poslužitelj putem mreže koristeći <code>http://</code>, veza <strong>nije šifrirana u prijenosu</strong> (nema TLS). To znači da sadržaj koji šaljete (poput tekstualnih upita, metapodataka ili drugih tereta) može biti izložen presretanju ili curenju na mreži. Prilikom korištenja <code>http://</code> (osobito na javnim mrežama), <strong>preuzimate sve rizike</strong> i <strong>odgovorni ste</strong> za svaku izloženost koja proizlazi iz korištenja nešifrirane veze. Snažno preporučujemo korištenje <code>https://</code>, pouzdane interne mreže, VPN-a ili drugog sigurnog prijenosa."
+      }
+    },
+    "retention": {
+      "title": "Čuvanje podataka",
+      "b1": "<strong>Datoteke na uređaju:</strong> Ostaju dok ih ne izbrišete ili deinstalirate aplikaciju.",
+      "b2": "<strong>E-pošta za podršku:</strong> Čuva se samo dok je potrebno za rješavanje vašeg zahtjeva i ispunjavanje zakonskih obveza.",
+      "b3": "<strong>Dijagnostika:</strong> Čuva se u skladu s Appleovom politikom čuvanja analitike."
+    },
+    "rights": {
+      "title": "Vaša prava na privatnost",
+      "p1": "Ovisno o vašoj regiji, možda imate pravo na pristup, ispravljanje, brisanje ili ograničavanje određenih podataka koje posjedujemo o vama, te na prigovor ili povlačenje pristanka za obradu gdje je primjenjivo.",
+      "gdpr": "<strong>GDPR (EEA/UK):</strong> Možete zatražiti pristup ili brisanje osobnih podataka koje kontroliramo (uglavnom e-pošta za podršku). Za podatke koje čuva Apple (npr. dnevnici srušenog sustava, iCloud datoteke), koristite Appleove alate za privatnost.",
+      "ccpa": "<strong>CCPA/CPRA (Kalifornija):</strong> Ne prodajemo niti dijelimo osobne informacije za cross-contextualno oglašavanje. Možete zatražiti pristup ili brisanje osobnih podataka koje posjedujemo (uglavnom e-pošta za podršku).",
+      "p2": "Kako biste ostvarili prava, kontaktirajte nas na <a href=\"mailto:jappscompany@gmail.com\">jappscompany@gmail.com</a>. Možda ćemo trebati potvrditi vaš zahtjev."
+    },
+    "children": {
+      "title": "Privatnost djece",
+      "p1": "1Air je aplikacija za široku publiku i nije specifično namijenjena djeci. Ne prikupljamo namjerno osobne podatke od djece. Ako vjerujete da je dijete dalo osobne podatke putem komunikacije za podršku, kontaktirajte nas i mi ćemo ih izbrisati."
+    },
+    "international": {
+      "title": "Međunarodni prijenosi",
+      "p1": "Vaše se informacije mogu obrađivati ​​u zemlji u kojoj prebivate i u drugim zemljama u kojima naši pružatelji usluga posluju (npr. infrastruktura Applea). Primjenjujemo mjere osmišljene da zaštite vaše informacije u skladu s primjenjivim zakonom."
+    },
+    "changes": {
+      "title": "Izmjene ove politike",
+      "p1": "Možemo povremeno ažurirati ovu Politiku privatnosti. Objavit ćemo ažuriranu verziju unutar aplikacije ili na našoj web stranici i revidirati \"Datum stupanja na snagu\" gore. Značajne promjene bit će istaknute."
+    },
+    "contact": {
+      "title": "Kontaktirajte nas",
+      "p1": "Ako imate pitanja o ovoj Politici privatnosti ili našoj praksi, kontaktirajte nas:",
+      "emailLabel": "Email:",
+      "dpo": "Kontakt za zaštitu podataka (ako je primjenjivo): Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. Sva prava pridržana."
+    }
   }
 }

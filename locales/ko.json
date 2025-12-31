@@ -1,156 +1,184 @@
 {
   "_meta": {
     "htmlLang": "en",
-    "contactEmail": "[jappscompany@gmail.com]"
+    "contactEmail": "jappscompany@gmail.com"
   },
-  "title": "개인 정보 처리 방침",
-  "effectiveDateLabel": "시행일:",
-  "effectiveDateValue": "2025년 11월 5일",
-  "languageLabel": "Language:",
-  "nav": {
-    "summary": "Summary",
-    "dataWeCollect": "수집하는 데이터",
-    "howWeUse": "데이터 사용 방법",
-    "sharing": "공유 및 처리자",
-    "security": "Security",
-    "retention": "데이터 보존",
-    "rights": "귀하의 권리",
-    "children": "Children",
-    "changes": "Changes",
-    "contact": "Contact"
-  },
-  "summary": {
-    "title": "간단한 요약",
-    "bullets": {
-      "noTracking": "<strong>추적 없음. 광고 없음.</strong> 1Air에는 광고 또는 타사 추적기가 포함되어 있지 않습니다.",
-      "onDevice": "<strong>귀하의 비디오는 장치에 남아 있습니다.</strong> 이 앱은 사용자가 선택한 MP4 파일을 읽고 로컬 문서 폴더에 저장할 수 있습니다. 콘텐츠는 장치에서 처리됩니다.",
-      "icloud": "<strong>선택적 iCloud Drive.</strong> iCloud Drive에서 파일을 선택하는 경우 파일은 Apple의 조건에 따라 iCloud 계정에 남아 있습니다.",
-      "diagnostics": "<strong>최소한의 진단.</strong> Apple 설정에서 개발자와 공유하도록 선택하는 경우에만 익명의 충돌/진단 데이터를 받습니다."
-    }
-  },
-  "who": {
-    "title": "우리는 누구입니까",
-    "developerLabel": "Developer:",
-    "developerValue": "[귀하의 법적 실체 이름, 예: J-Apps Co.]",
-    "developerSuffix": "(\"우리\", \"당사\" 또는 \"우리\")",
-    "appLabel": "App:",
-    "appValue": "1Air (iOS/iPadOS/macOS)",
-    "contactLabel": "Contact:"
-  },
-  "collect": {
-    "title": "수집하는 데이터",
-    "contentYouChoose": {
-      "title": "1) 사용자가 선택한 콘텐츠",
-      "p1": "파일 선택기를 사용하여 비디오를 선택하면 1Air는 사용자가 선택한 항목에 대한 읽기 액세스 권한만 부여받습니다. 앱의 “문서에 저장” 기능을 활성화하면 선택한 파일의 사본이 앱의 샌드박스에 로컬로 저장됩니다.",
-      "scope": "<strong>범위:</strong> 선택한 파일만, 관련 없는 폴더의 백그라운드 스캔 없음.",
-      "processing": "<strong>처리:</strong> 재생 및 파일 관리는 장치에서 발생합니다.",
-      "sync": "<strong>동기화:</strong> iCloud Drive에서 선택하는 경우 저장 및 동기화는 Apple의 정책에 따라 Apple iCloud에서 관리합니다."
-    },
-    "diagnostics": {
-      "title": "2) 진단 (선택 사항)",
-      "p1": "분석/충돌 보고서를 개발자와 공유하도록 선택하는 경우(Apple 설정 > 개인 정보 보호 및 보안 > 분석 및 개선), 다음을 받을 수 있습니다.",
-      "b1": "Apple에서 익명화된 충돌 로그 및 성능 지표",
-      "b2": "장치 모델, OS 버전 및 이와 유사한 기술 메타데이터",
-      "p2": "이러한 보고서에서 귀하의 신원을 받지 않습니다."
-    },
-    "support": {
-      "title": "3) 지원 통신",
-      "p1": "이메일을 보내시면 귀하의 이메일 주소와 요청에 응답하기 위한 메시지 내용이 수신됩니다."
-    },
-    "notCollect": {
-      "title": "수집하지 않음",
-      "b1": "앱 내의 개인 식별 정보(이름, 전화 번호, 연락처)",
-      "b2": "정밀한 위치 데이터",
-      "b3": "광고 식별자 또는 행동 추적 데이터"
-    }
-  },
-  "use": {
-    "title": "데이터 사용 방법",
-    "b1": "핵심 기능 제공(요청한 파일 액세스, 비디오 재생)",
-    "b2": "앱 품질 유지 및 개선(분석 보고서 공유에 동의한 경우)",
-    "b3": "지원 문의에 답변"
-  },
-  "sharing": {
-    "title": "공유 및 처리자",
-    "p1": "<strong>저희는 귀하의 데이터를 판매하지 않습니다.</strong> 귀하의 개인 데이터를 광고 또는 마케팅 목적으로 제3자와 공유하지 않습니다.",
-    "p2": "<strong>서비스 제공업체:</strong> 앱을 운영하고 지원하기 위해서만 서비스 제공업체를 사용할 수 있습니다(예: 파일을 저장하는 Apple iCloud; 옵트인한 경우 Apple의 충돌 보고 파이프라인). 이러한 제공업체는 자체 약관 및 보안 제어에 따라 프로세서 역할을 합니다.",
-    "apple": "<strong>Apple (iCloud 및 충돌 보고서):</strong> Apple의 개인 정보 보호 정책 및 귀하의 장치 설정에 따라 처리되는 파일 및 분석 자료입니다.",
-    "p3": "법률에 따라 요구되거나 권리, 안전 및 보안을 보호하기 위해 정보를 공개할 수 있습니다."
-  },
-  "security": {
-    "title": "Security",
-    "p1": "1Air는 귀하의 장치에서 앱의 샌드박스 내에 사용자 저장 파일을 저장합니다. 저희는 플랫폼 보안 모범 사례를 적용하고 iOS/iPadOS/macOS에 대한 Apple의 시스템 보호에 의존합니다. 전자 저장 방법은 100% 안전하지 않지만 귀하의 정보를 보호하기 위해 노력합니다.",
-    "ollama": {
-      "title": "Ollama 네트워크 통합",
-      "warn": "네트워크를 통해 <code>http://</code>를 사용하여 1Air를 Ollama 서버에 연결하면 연결이 <strong>전송 중에 암호화되지 않습니다</strong> (TLS 없음). 즉, 귀하가 보내는 콘텐츠(텍스트 프롬프트, 메타데이터 또는 기타 페이로드 등)가 네트워크에서 가로채거나 유출될 수 있습니다. <code>http://</code> (특히 공용 네트워크에서)를 사용하는 경우 <strong>모든 위험을 감수하고</strong> <strong>암호화되지 않은 연결을 사용하는 데 따른 모든 책임</strong>을 집니다. <code>https://</code>, 신뢰할 수 있는 내부 네트워크, VPN 또는 기타 보안 전송을 사용하는 것을 강력히 권장합니다."
-    }
-  },
-  "retention": {
-    "title": "데이터 보존",
-    "b1": "<strong>장치 내 파일:</strong> 삭제하거나 앱을 제거할 때까지 유지됩니다.",
-    "b2": "<strong>지원 이메일:</strong> 귀하의 요청을 해결하고 법적 의무를 준수하는 데 필요한 기간 동안만 보존됩니다.",
-    "b3": "<strong>진단:</strong> Apple의 분석 보존 정책에 따라 보존됩니다."
-  },
-  "rights": {
-    "title": "귀하의 개인 정보 보호 권리",
-    "p1": "귀하의 지역에 따라 저희가 귀하에 대해 보유한 특정 데이터에 액세스, 수정, 삭제 또는 제한할 권리가 있으며, 적용 가능한 경우 처리 동의를 거부하거나 철회할 권리가 있을 수 있습니다.",
-    "gdpr": "<strong>GDPR (EEA/UK):</strong> 저희가 제어하는 개인 데이터에 액세스하거나 삭제를 요청할 수 있습니다(주로 지원 이메일). Apple이 보유한 데이터(예: 충돌 로그, iCloud 파일)의 경우 Apple의 개인 정보 보호 도구를 사용하십시오.",
-    "ccpa": "<strong>CCPA/CPRA (캘리포니아):</strong> 저희는 교차 컨텍스트 광고를 위해 개인 정보를 판매하거나 공유하지 않습니다. 저희가 보유한 개인 정보(주로 지원 이메일)에 액세스하거나 삭제를 요청할 수 있습니다.",
-    "p2": "권리를 행사하려면 [jappscompany@gmail.com]으로 문의하십시오. 귀하의 요청을 확인해야 할 수도 있습니다."
-  },
-  "children": {
-    "title": "어린이의 개인 정보 보호",
-    "p1": "1Air는 일반 대중을 대상으로 하는 앱이며 특별히 어린이를 대상으로 하지 않습니다. 저희는 어린이가 제공한 개인 정보를 의도적으로 수집하지 않습니다. 자녀가 지원 통신을 통해 개인 정보를 제공했다고 생각되면 저희에게 연락하고 삭제해 주십시오."
-  },
-  "international": {
-    "title": "국제 이전",
-    "p1": "귀하의 정보는 귀하가 거주하는 국가와 저희 서비스 제공업체가 운영되는 다른 국가에서 처리될 수 있습니다(예: Apple의 인프라). 저희는 적용 가능한 법률에 따라 귀하의 정보를 보호하기 위해 고안된 조치를 구현합니다."
-  },
-  "changes": {
-    "title": "본 정책의 변경 사항",
-    "p1": "저희는 수시로 본 개인 정보 보호 정책을 업데이트할 수 있습니다. 업데이트된 버전은 앱 내 또는 웹사이트에 게시하고 위의 “유효 날짜”를 수정합니다. 중요한 변경 사항은 강조 표시됩니다."
-  },
-  "contact": {
-    "title": "문의하기",
-    "p1": "본 개인 정보 보호 정책 또는 저희의 관행에 대해 질문이 있으시면 저희에게 연락하십시오:",
-    "emailLabel": "Email:",
-    "dpo": "데이터 보호 책임자(해당하는 경우): [Jake / jappscompany@gmail.com]"
-  },
-  "footer": {
-    "copyright": "© [2025] J-Apps. All rights reserved."
+  "landing": {
+    "title": "1Air — 깔끔한 MP4 플레이어",
+    "meta_desc": "Picture-in-Picture 및 백그라운드 오디오를 지원하는 깨끗하고 개인적인 MP4 플레이어입니다.",
+    "nav_features": "Features",
+    "nav_privacy": "Privacy",
+    "nav_download": "Download",
+    "hero_badge": "✨ 새로운 출시",
+    "hero_title": "MP4, 제대로<br>재생되는 방식.",
+    "hero_sub": "직관적이고 가벼운 1Air Player를 경험해 보세요.<br>광고 없이 깔끔한 재생과 백그라운드 오디오를 즐기세요.",
+    "btn_download": "App Store에서 다운로드",
+    "feat_title": "1Air가 특별한 이유",
+    "feat_1_title": "Picture-in-Picture",
+    "feat_1_desc": "멀티태스킹 중에도 계속 시청하세요. 기본 PiP 지원.",
+    "feat_2_title": "백그라운드 오디오",
+    "feat_2_desc": "화면이 잠겨도 오디오가 계속 재생됩니다. 팟캐스트에 적합합니다.",
+    "feat_3_title": "부드러운 컨트롤",
+    "feat_3_desc": "음량 및 탐색을 위한 제스처. 빠르고 즉각적인 반응.",
+    "feat_4_title": "개인 정보 보호 및 광고 없음",
+    "feat_4_desc": "추적 또는 광고가 없습니다. 동영상은 장치에 안전하게 보관됩니다.",
+    "feat_5_title": "AI 통합",
+    "feat_5_desc": "Ollama를 통해 로컬 AI 모델에 연결하여 스마트 기능을 사용하세요.",
+    "feat_5_btn": "설치 가이드",
+    "footer_privacy": "개인 정보 처리 방침",
+    "footer_contact": "지원팀에 문의",
+    "footer_copy": "1Air Player. All rights reserved."
   },
   "ollama": {
-    "title": "Ollama 설정 가이드",
-    "subtitle": "AI 기능을 활성화하려면 Ollama를 설치하십시오.",
+    "title": "Ollama 설치 가이드",
+    "subtitle": "AI 기능을 활성화하려면 Ollama를 설치하세요.",
     "win_tab": "Windows",
-    "win_step1_title": "1. 설치 관리자 다운로드",
-    "win_step1_desc": "공식 웹사이트에서 Windows용 설치 관리자를 다운로드하십시오.",
+    "win_step1_title": "1. 설치 프로그램 다운로드",
+    "win_step1_desc": "공식 웹사이트에서 Windows용 설치 프로그램을 다운로드하세요.",
     "win_btn": "Windows용 다운로드",
     "win_step2_title": "2. 설치",
-    "win_step2_desc": "<code>OllamaSetup.exe</code> 파일을 실행하고 [설치]를 클릭하십시오.",
+    "win_step2_desc": "<code>OllamaSetup.exe</code> 파일을 실행하고 [설치]를 클릭하세요.",
     "win_step2_note": "✅ 설치가 완료되면 작업 표시줄 트레이에 Alpaca 아이콘(🦙)이 표시됩니다.",
     "win_step3_title": "3. 설치 확인",
-    "win_step3_desc": "명령 프롬프트(Win + R, <code>cmd</code> 입력)를 열고 다음 명령을 실행하십시오:",
+    "win_step3_desc": "명령 프롬프트(Win + R, <code>cmd</code> 입력)를 열고 아래 명령을 실행하세요:",
     "mac_tab": "macOS",
     "mac_step1_title": "1. 다운로드",
     "mac_step1_desc": "macOS 11 Big Sur 이상이 필요합니다.",
     "mac_btn": "macOS용 다운로드",
-    "mac_step2_title": "2. 애플리케이션 설치",
-    "mac_step2_desc": "파일을 압축 해제하고 <strong>Ollama</strong> 앱을 <code>Applications</code> 폴더로 이동합니다.",
+    "mac_step2_title": "2. 응용 프로그램 설치",
+    "mac_step2_desc": "파일을 압축 해제하고 <strong>Ollama</strong> 앱을 <code>Applications</code> 폴더로 이동하세요.",
     "mac_step3_title": "3. 실행 및 설정",
-    "mac_step3_desc": "더블 클릭하여 실행합니다. 메뉴 막대에 알파카 아이콘(🦙)이 표시되어야 합니다.",
+    "mac_step3_desc": "두 번 클릭하여 실행합니다. 메뉴 막대에 Alpaca 아이콘(🦙)이 표시되어야 합니다.",
     "mac_step3_note": "💡 명령줄 도구를 설치하라는 메시지가 표시되면 '설치'를 클릭하세요.",
     "linux_tab": "Ubuntu (Linux)",
-    "linux_step1_title": "1. 터미널을 통해 설치",
+    "linux_step1_title": "1. 터미널을 통한 설치",
     "linux_step1_desc": "터미널을 열고 다음 명령을 실행하세요:",
     "linux_step1_note": "⚠️ AMD 그래픽 카드는 추가 드라이버 설치가 필요할 수 있습니다.",
     "linux_step2_title": "2. 서비스 상태 확인",
-    "linux_step2_desc": "Ollama가 백그라운드에서 실행 중인지 확인합니다.",
+    "linux_step2_desc": "Ollama가 백그라운드에서 실행 중인지 확인하세요.",
     "final_step_title": "🎉 최종 단계: AI 모델 가져오기",
     "final_step_desc": "설치 후 AI 모델을 다운로드해야 합니다. 터미널에서 다음을 실행하세요:",
     "final_step_note": "💡 앱에 특정 모델(예: mistral)이 필요한 경우 'llama3.2'를 해당 이름으로 바꾸세요.",
     "copy": "Copy",
     "copied": "복사됨!",
-    "footer": "&copy; 2025 Ollama에서 제공합니다."
+    "footer": "© 2025 Ollama에서 제공합니다."
+  },
+  "policy": {
+    "title": "개인 정보 보호 정책",
+    "effectiveDateLabel": "시행일:",
+    "effectiveDateValue": "2025년 11월 5일",
+    "languageLabel": "Language:",
+    "nav": {
+      "summary": "Summary",
+      "dataWeCollect": "수집하는 데이터",
+      "howWeUse": "데이터 사용 방법",
+      "sharing": "공유 및 처리자",
+      "security": "Security",
+      "retention": "데이터 보존",
+      "rights": "귀하의 권리",
+      "children": "Children",
+      "changes": "Changes",
+      "contact": "Contact"
+    },
+    "summary": {
+      "title": "간단하게 살펴보기",
+      "bullets": {
+        "noTracking": "<strong>추적 없음. 광고 없음.</strong> 1Air에는 광고나 타사 추적기가 포함되어 있지 않습니다.",
+        "onDevice": "<strong>귀하의 비디오는 장치에 남아 있습니다.</strong> 앱은 선택한 MP4 파일을 읽고 로컬 Documents 폴더에 저장할 수 있습니다. 콘텐츠는 장치에서 처리됩니다.",
+        "icloud": "<strong>선택적 iCloud Drive.</strong> iCloud Drive에서 파일을 선택하는 경우, 파일은 Apple의 조건에 따라 귀하의 iCloud 계정에 남아 있습니다.",
+        "diagnostics": "<strong>최소 진단.</strong> Apple 설정에서 개발자와 공유하도록 선택하는 경우 익명화된 충돌/진단 데이터를 수신합니다."
+      }
+    },
+    "who": {
+      "title": "우리는 누구입니까",
+      "developerLabel": "Developer:",
+      "developerValue": "J-Apps Co.",
+      "developerSuffix": "(\"저희\", \"우리\", 또는 \"당사\")",
+      "appLabel": "App:",
+      "appValue": "1Air (iOS/iPadOS/macOS)",
+      "contactLabel": "Contact:"
+    },
+    "collect": {
+      "title": "수집하는 데이터",
+      "contentYouChoose": {
+        "title": "1) 귀하가 선택한 콘텐츠",
+        "p1": "파일 선택기를 사용하여 비디오를 선택하면 1Air는 선택한 항목에 대한 읽기 액세스 권한만 부여받습니다. 앱의 \"문서에 저장\" 기능을 활성화하는 경우 선택한 파일의 사본이 앱의 샌드박스에 로컬로 저장됩니다.",
+        "scope": "<strong>범위:</strong> 선택한 파일만, 관련 없는 폴더의 백그라운드 스캔은 없습니다.",
+        "processing": "<strong>처리:</strong> 재생 및 파일 관리는 장치에서 발생합니다.",
+        "sync": "<strong>동기화:</strong> iCloud Drive에서 선택하는 경우 저장 및 동기화는 Apple의 정책에 따라 Apple iCloud에서 관리합니다."
+      },
+      "diagnostics": {
+        "title": "2) 진단 (선택 사항)",
+        "p1": "분석/충돌 보고서를 개발자와 공유하도록 선택하는 경우 (Apple 설정 > 개인 정보 보호 및 보안 > 분석 및 개선), 다음을 수신할 수 있습니다:",
+        "b1": "충돌 로그 및 성능 지표 (Apple에서 익명화)",
+        "b2": "장치 모델, OS 버전 및 유사한 기술 메타데이터",
+        "p2": "저희는 이러한 보고서에서 귀하의 신원을 받지 않습니다."
+      },
+      "support": {
+        "title": "3) 지원 통신",
+        "p1": "이메일을 보내시면 귀하의 이메일 주소와 요청에 응답하기 위한 메시지 내용을 받게 됩니다."
+      },
+      "notCollect": {
+        "title": "저희는 수집하지 않습니다",
+        "b1": "앱 내 개인 식별자(이름, 전화번호, 연락처)",
+        "b2": "정밀한 위치 데이터",
+        "b3": "광고 식별자 또는 행동 추적 데이터"
+      }
+    },
+    "use": {
+      "title": "데이터 사용 방법",
+      "b1": "핵심 기능 제공(요청한 파일 액세스, 비디오 재생)",
+      "b2": "앱 품질 유지 및 개선(동의한 경우 진단)",
+      "b3": "지원 문의에 응답"
+    },
+    "sharing": {
+      "title": "공유 및 처리자",
+      "p1": "<strong>당사는 귀하의 데이터를 판매하지 않습니다.</strong> 당사는 광고 또는 마케팅 목적으로 개인 데이터를 제3자와 공유하지 않습니다.",
+      "p2": "<strong>서비스 제공업체:</strong> 당사는 앱을 운영하고 지원하기 위해서만 서비스 제공업체를 사용할 수 있습니다(예: 파일을 저장하는 Apple iCloud; 동의한 경우 Apple의 충돌 보고 파이프라인). 이러한 제공업체는 자체 조건 및 보안 제어에 따라 프로세서 역할을 합니다.",
+      "apple": "<strong>Apple (iCloud 및 충돌 보고서):</strong> 파일 및 분석은 Apple의 개인 정보 보호 정책 및 장치 설정에 따라 처리됩니다.",
+      "p3": "법률에 따라 요구되거나 권리, 안전 및 보안을 보호하기 위해 정보를 공개할 수 있습니다."
+    },
+    "security": {
+      "title": "Security",
+      "p1": "1Air는 사용자가 저장한 파일을 장치의 샌드박스 내에 저장합니다. 당사는 플랫폼 보안 모범 사례를 적용하고 iOS/iPadOS/macOS에 대한 Apple의 시스템 보호에 의존합니다. 전자 저장 방법은 100% 안전하지 않지만 당사는 귀하의 정보를 보호하기 위해 노력합니다.",
+      "ollama": {
+        "title": "Ollama 네트워크 통합",
+        "warn": "네트워크를 통해 <code>http://</code>를 사용하여 1Air를 Ollama 서버에 연결하면 연결이 <strong>전송 중에 암호화되지 않습니다</strong>(TLS 없음). 즉, 전송하는 콘텐츠(텍스트 프롬프트, 메타데이터 또는 기타 페이로드 등)가 네트워크에서 가로채기 또는 유출될 수 있습니다. <code>http://</code>(특히 공용 네트워크에서)를 사용하는 경우 <strong>모든 위험을 감수</strong>하고 <strong>귀하는 책임</strong>이 있습니다. 암호화되지 않은 연결을 사용하는 데 따른 노출로 인해 발생하는 모든 결과에 대해 책임을 집니다. <code>https://</code>, 신뢰할 수 있는 내부 네트워크, VPN 또는 기타 보안 전송을 사용하는 것을 강력히 권장합니다."
+      }
+    },
+    "retention": {
+      "title": "데이터 보관",
+      "b1": "<strong>장치 내 파일:</strong> 삭제하거나 앱을 제거할 때까지 유지됩니다.",
+      "b2": "<strong>지원 이메일:</strong> 요청 해결 및 법적 의무 충족에 필요한 기간 동안만 보관됩니다.",
+      "b3": "<strong>진단:</strong> Apple의 분석 보관 정책에 따라 보관됩니다."
+    },
+    "rights": {
+      "title": "귀하의 개인 정보 보호 권리",
+      "p1": "귀하의 지역에 따라 당사가 귀하에 대해 보유하고 있는 특정 데이터에 액세스, 수정, 삭제 또는 제한할 권리 및 적용 가능한 경우 처리에 이의를 제기하거나 동의를 철회할 권리가 있을 수 있습니다.",
+      "gdpr": "<strong>GDPR (EEA/UK):</strong> 당사가 관리하는 개인 데이터에 대한 액세스 또는 삭제를 요청할 수 있습니다(주로 지원 이메일). Apple이 보유한 데이터(예: 충돌 로그, iCloud 파일)의 경우 Apple의 개인 정보 보호 도구를 사용하십시오.",
+      "ccpa": "<strong>CCPA/CPRA (캘리포니아):</strong> 당사는 교차 컨텍스트 광고를 위해 개인 정보를 판매하거나 공유하지 않습니다. 당사가 보유한 개인 정보(주로 지원 이메일)에 대한 액세스 또는 삭제를 요청할 수 있습니다.",
+      "p2": "권리를 행사하려면 jappscompany@gmail.com으로 문의하십시오. 당사는 귀하의 요청을 확인해야 할 수 있습니다."
+    },
+    "children": {
+      "title": "어린이의 개인 정보 보호",
+      "p1": "1Air는 일반 대상 앱이며 특별히 어린이를 대상으로 하지 않습니다. 당사는 어린이로부터 개인 정보를 알면서 수집하지 않습니다. 어린이가 지원 커뮤니케이션을 통해 개인 정보를 당사에 제공했다고 생각되면 당사에 연락하고 당사는 해당 정보를 삭제합니다."
+    },
+    "international": {
+      "title": "국제 이전",
+      "p1": "귀하의 정보는 거주 국가와 당사의 서비스 제공업체가 운영되는 다른 국가에서 처리될 수 있습니다(예: Apple의 인프라). 당사는 적용 가능한 법률에 따라 귀하의 정보를 보호하도록 설계된 조치를 구현합니다."
+    },
+    "changes": {
+      "title": "본 정책의 변경 사항",
+      "p1": "당사는 수시로 본 개인 정보 보호 정책을 업데이트할 수 있습니다. 업데이트된 버전은 앱 또는 웹사이트에 게시하고 위의 \"유효 날짜\"를 수정합니다. 중대한 변경 사항은 강조 표시됩니다."
+    },
+    "contact": {
+      "title": "문의하기",
+      "p1": "본 개인 정보 보호 정책 또는 당사의 관행에 대해 질문이 있으면 당사에 문의하십시오:",
+      "emailLabel": "Email:",
+      "dpo": "데이터 보호 연락처(해당하는 경우): Jake / jappscompany@gmail.com"
+    },
+    "footer": {
+      "copyright": "© 2025 J-Apps. All rights reserved."
+    }
   }
 }
