@@ -366,16 +366,20 @@
       const codes = [lang];
       const base = lang.split('-')[0];
       if (base !== lang) codes.push(base);
-      if (!codes.includes('en')) codes.push('en');
+        if (!codes.includes('en')) codes.push('en');
 
-      for (const code of codes) {
-        try {
-          const dict = await fetchJson(`${LOCALES_DIR}/${code}.json`);
-          if (dict && typeof dict === 'object') {
-            return { dict, resolved: code };
+          for (const code of codes) {
+            try {
+              console.log(`[i18n] Trying to load: ${LOCALES_DIR}/${code}.json`);
+              const dict = await fetchJson(`${LOCALES_DIR}/${code}.json`);
+              if (dict && typeof dict === 'object') {
+                console.log(`[i18n] Successfully loaded: ${code}.json`);
+                return { dict, resolved: code };
+              }
+            } catch (e) {
+              console.error(`[i18n] Failed to load ${code}.json:`, e);
           }
-        } catch (_) {}
-      }
+        }
       return { dict: {}, resolved: 'en' };
     }
 
@@ -410,9 +414,13 @@
 
       const { dict, resolved } = await loadLocale(code);
       currentDict = dict;
-      
-      // Use 'landing' namespace from JSON
-      const landingDict = dict.landing || {};
+
+      // ✅ landing 있으면 landing, 없으면 최상위 dict 사용
+      const landingDict =
+        (dict && typeof dict === 'object')
+          ? (dict.landing && typeof dict.landing === 'object' ? dict.landing : dict)
+          : {};
+
       applyTranslations(landingDict);
       updateLangUI(resolved);
     }
